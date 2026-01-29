@@ -1,0 +1,5703 @@
+_id,insurance_carrier_id,name
+1,1,Consumer Health Advantage
+2,1,Consumer Health Select
+3,1,Signature Advantage
+4,1,Signature Freedom
+5,1,Signature Select
+6,2,Health Savings Account
+7,2,NowSelect
+8,2,Summit
+9,3,Activate
+10,3,Engage
+11,3,Innova
+12,4,Classic Comprehensive
+13,4,Classic Plus PPO Benefit Designs (1700 Series)
+14,4,Classic PPO Benefit Designs (1200 Series)
+15,4,Classic Value PPO Benefit Designs (1400 Series)
+16,5,Coast to Coast Vision
+17,5,Bonus Benefits
+19,7,PacifiCare SignatureValue® (HMO)
+20,7,PacifiCare SignatureEliteSM (PPO)
+21,7,PacifiCare SignatureIndependence® (Indemnity)
+22,7,Medicare Advantage
+23,7,PacifiCare SignatureFreedom®
+24,8,Cost-sharing HMO
+25,8,High-deductible health plan (HDHP) HMO
+26,8,HMO
+27,8,HSA-Qualified Deductible HMO Plan
+28,8,Multi-Choice Max Plan
+29,8,Multi-Choice Plan
+30,8,Out-of-area PPO
+31,8,POS
+32,8,PPO
+33,8,Traditional HMO
+34,9,CoverageFirst
+35,9,Flexible Spending Account (FSA)
+36,9,Health Maintenance Organization (HMO)
+37,9,High Deductible Health Plan (HDHP)
+38,9,Humana Classic (out-of-area plan)
+39,9,Humana Medicare
+40,9,HumanaOne
+41,9,Personal Care Account (PCA) PPO
+42,9,Point of Service (POS)
+43,9,Preferred Provider Organization (PPO)
+44,10,HMO
+45,10,POS
+46,10,HDHP
+47,11,AmeriHealth 65 HMO
+48,11,AmeriHealth HMO
+49,11,AmeriHealth Mercy
+50,11,AmeriHealth POS
+51,11,AmeriHealth PPO
+52,12,Affinity Network Health Plan
+53,13,Connecticut Blue Ribbon
+54,13,Delaware Basic Indemnity and Standard Indemnity
+55,13,Freedom Plan® AccessSM and Liberty Plan AccessSM 3
+56,13,Freedom Plan® and Liberty PlanSM 3 
+57,13,Freedom Plan® ClassicSM and Liberty Plan ClassicSM 3
+58,13,Freedom Plan® DirectSM and Liberty Plan DirectSM 3
+59,13,Freedom Plan® Laurel SelectSM
+60,13,Freedom Plan® LaurelSM
+61,13,Freedom Plan® MetroSM and Liberty Plan MetroSM 3
+62,13,Freedom Plan® SelectSM 4 and Liberty Plan SelectSM 4
+63,13,Freedom Plan® Value OptionSM
+64,13,Healthy New York
+65,13,HMO Laurel SelectSM
+66,13,HMO LaurelSM
+67,13,HMO Select/Freedom Network and HMO Select/Liberty Network3
+68,13,HMO/Freedom Network and HMO/Liberty Network3
+69,13,Individual Plan
+70,13,Oxford Consumer Options SuiteSM
+71,13,Oxford Exclusive PlanSM
+72,13,Oxford Exclusive PlanSM Metro
+73,13,Oxford HSA
+74,13,Oxford MyPlan
+75,13,Oxford USAsm
+76,14,Mutual of Omaha Health Insurance
+77,15,Medicaid
+78,16,CompreHealth
+79,16,CompreHealth EPO
+80,16,CompreHealth PPO
+81,16,ConsumerDirect EPO
+82,16,ConsumerDirect PPO
+84,16,InBalance EPO
+85,16,InBalance PPO
+86,16,EmblemHealth PPO
+87,17,Anthem Blue Cross HMO
+88,17,Anthem Blue Cross PPO
+89,17,Anthem Blue Cross POS
+90,17,Anthem Blue Cross Senior Secure
+91,18,HMO
+92,18,POS
+93,18,PPO
+94,18,Traditional
+95,19,POS
+96,19,PPO
+97,19,QHDHP
+98,20,HealthSave
+99,20,HMO/Plus
+100,20,Nationcare
+101,20,Select Med
+102,20,Select Value
+103,20,SelectCare
+112,22,HMO
+113,22,POS
+114,22,PPO
+115,23,HMO
+116,23,PPO
+117,24,Medicare
+118,25,HIP Classic® HMO
+119,25,HIP Prime® EPO
+120,25,HIP Prime® HMO
+121,25,HIP Prime® POS
+122,25,HIP Prime® PPO
+123,25,HIP Select® EPO
+124,25,HIP Select® PPO
+125,25,HIP SmartStart® EPO
+126,25,HIP VIP® Medicare Plan
+127,25,HIPaccess® I
+128,25,HIPaccess® II
+129,25,myFund®
+130,25,Premium EPO
+131,25,Premium HMO
+132,25,Premium POS
+133,25,Premium PPO
+134,26,HMO
+135,26,POS
+136,26,PPO
+137,27,Health Savings Advantage HDHP
+138,27,High Deductible
+139,27,High Option
+140,27,Standard Option
+141,28,HMO
+142,29,HMO
+143,29,POS
+144,29,PPO
+145,30,BlueChoices Basic
+146,30,BlueChoices BlueAdvantage
+147,30,Health Savings Account
+148,31,HMO
+149,31,HMO Silver Network
+150,31,Elect Open Access (EOA) and EOA Silver Network
+151,31,PPO
+152,31,POS
+153,31,Primary EPO
+154,32,Direct HMO
+155,32,Direct POS
+156,32,DirectShare POS
+157,32,Empire Prism
+158,32,EPO
+159,32,HMO
+160,32,PPO
+161,32,Value EPO
+162,33,Aetna Choice® POS II
+163,33,Aetna Choice® POS
+164,33,Aetna Elect Choice®
+165,33,Aetna Emeriti® Retirement Health Solutions
+166,33,Aetna Health Network Only
+167,33,Aetna Health Network Option
+168,33,Aetna HealthFund®
+169,33,Aetna HMO
+170,33,Aetna Managed Choice®
+171,33,Aetna Medicare OpenSM Plan (PFFS)
+172,33,Aetna MedicareSM Plan (HMO)
+173,33,Aetna MedicareSM Plan (PPO)
+174,33,Aetna National Medical Excellence Program®
+175,33,Aetna Open Access Elect Choice
+176,33,Aetna Open Access Managed Choice
+177,33,Aetna Open Access Select
+178,33,Aetna Open Access® HMO
+179,33,Aetna Open Choice® PPO
+180,33,Aetna QPOS® (Quality Point-of-Service®)
+181,33,Aetna Retiree Health Access®
+182,33,Aetna Select SM
+183,33,Aetna Traditional Choice® indemnity insurance
+184,33,Aetnas Public Sector Retiree Health Program
+185,34,Flex Copay Programs
+186,34,Flex Deductible Programs
+187,34,High Deductible Health Plans
+188,34,Keystone 65
+189,34,Keystone Direct POS
+190,34,Keystone Health Plan East HMO
+191,34,Keystone Point-of-Service (POS)
+192,34,Personal Choice 65
+193,34,Personal Choice® PPO
+194,34,Security 65
+195,34,Select Advantage
+196,34,Traditional Blue Cross® and Blue Shield® Plans
+197,35,ClassicBlue
+198,35,EPOBlue
+199,35,FreedomBlue
+200,35,PPOBlue
+201,36,HAP/HMO
+202,36,HAP Preferred
+203,36,Health Engagement
+204,36,PPO
+205,36,POS
+206,36,EPA
+207,36,EPO
+208,36,HDHP
+213,38,Workers Compensation
+214,39,UniCare Health Savings Account Plan
+215,39,UniCare HMO Illinois
+216,39,UniCare HMO Performance Illinois
+217,39,UniCare HMO Texas
+218,39,UniCare PPO & Platinum Network
+219,39,UniCare PPO with HRA - CompleteChoice HealthFund
+220,40,Nationwide Health Plan
+221,41,High-Deductible Health Plan
+222,41,Personal Choice EPO
+223,41,Personal Choice PPO
+224,41,Traditional Choice HMO
+225,42,Horizon Advantage Direct Access 100/70
+226,42,Horizon Advantage Direct Access 100/80/60
+227,42,Horizon Advantage Direct Access 100/90/70
+228,42,Horizon Advantage PPO
+229,42,Horizon Basic and Essential EPO & EPO Plus
+230,42,Horizon Basic Plan A/50
+231,42,Horizon Direct Access Plan A/50 70/50
+232,42,Horizon Direct Access Plan C 100/70
+233,42,Horizon Direct Access Plan C 80/70
+234,42,Horizon HMO
+235,42,Horizon MyWay HSA
+236,43,HealthyAdvantage HMO
+237,44,ASO
+238,44,HMO
+239,44,HMO Out of Area (Student Benefits)
+240,44,OOA/PPO
+241,44,POS
+242,44,PPO
+243,45,EPO (Exclusive Provider Organization)
+244,45,HMO Open Access
+245,45,Network Open Access
+246,45,Open Access Plus
+247,45,POS
+248,45,PPO
+249,46,Comprehensive Blue PPO
+250,46,HSA Blue PPO II
+251,46,Access Blue PPO
+252,46,Comprehensive Blue PPO II
+253,46,Short-Term Blue
+254,47,AIG Health Insurance
+255,48,AFLAC Health Insurance
+256,49,Definity Health Reimbursement Account
+257,49,Definity Health Savings Account
+258,49,FlexPoint
+259,49,Optimum Choice Inc
+260,49,Signature Advantage
+261,49,Signature Value
+262,49,Signature Value Healthcare Partners Network
+263,49,Simply Engaged
+264,49,Suite Spot
+265,49,Tiered Benefits
+266,49,UnitedHealthcare Basics
+267,49,UnitedHealthcare Choice
+268,49,UnitedHealthcare Choice Plus
+269,49,UnitedHealthcare Core
+270,49,UnitedHealthcare Edge
+271,49,UnitedHealthcare MultiChoice
+272,49,UnitedHealthcare Options Non-Differential PPO
+273,49,United Healthcare Options PPO
+274,49,UnitedHealthcare Pledge Plan
+275,49,UnitedHealthcare Select
+276,49,UnitedHealthcare Select Plus
+277,49,ValueMax
+278,50,Providence ASO
+279,50,Providence Dual Option
+280,50,Providence HSA Qualified Dual Option Plan
+281,50,Providence HSA Qualified Plan
+282,50,Providence Medicare Choice
+283,50,Providence Medicare Extra
+284,50,Providence Open Option
+285,50,Providence Optimum Plans
+286,50,Providence Personal Option
+287,50,Providence Traditional Option
+288,50,Providence Value Plan
+289,51,HMO
+290,51,PPO
+291,51,POS
+292,52,MAPFRE Excel
+293,52,MAPFRE Choice I
+294,52,MAPFRE Choice II
+295,52,MAPFRE Choice III
+296,52,MAPFRE Choice Unlimited
+297,52,MAPFRE Major Medical
+298,52,MAPFRE PPO in USVI
+303,53,Affinity Dental Health Plan
+304,53,Child Health Plus
+305,55,Cash
+306,55,American Express
+307,55,MasterCard
+308,55,VISA Card
+309,55,Debit Card
+310,54,PPO 
+311,54,HMO
+313,33,Other
+314,12,Other
+315,48,Other
+316,33,Aetna Retiree Health Access
+317,33,Aetna HealthFund® HMO
+318,33,Aetna HMO Deductible
+319,56,Other
+320,58,POS
+321,58,EPO Plus
+322,58,EPO
+323,58,PPO
+324,49,Other
+325,49,United HealthCare AARP Medicare Complete HMO 
+326,59,Medicare Advantage HMO 
+327,31,Health Net Medicare Advantage HMO
+328,45,Cigna Great - West Point of Services (POS) 
+329,45,Cigna Great - West HMO
+330,60,Blue Shield Access + HMO Plan 
+331,60,Blue Shield Net Value HMO CalPERS Limited Network 
+332,60,CCPOA Medical Plan 
+333,60,CalPERS - Blue Shield 65 Plus HMO Group
+334,60,CalPERS Access + HMO 
+335,60,CalPERS NetValue HMO 
+336,60,California Choice Access + HMO 
+337,60,HMO
+338,60,Local Access + HMO  
+339,60,Other
+340,61,Blue Cross Large Group HMO 
+341,61,Other
+342,45,Other
+343,31,Other
+344,43,Other
+345,47,Other
+346,37,Other
+347,11,Other
+348,17,Other
+349,6,Other
+350,22,Other
+351,46,Other
+352,51,Other
+353,28,Other
+354,44,Other
+355,16,Other
+356,32,Other
+357,27,Other
+358,36,Other
+359,26,Other
+360,10,Other
+361,35,Other
+362,25,Other
+363,42,Other
+364,9,Other
+365,34,Other
+367,8,Other
+368,52,Other
+369,15,Other
+370,14,Other
+371,41,Other
+372,40,Other
+373,13,Other
+374,7,Other
+375,23,Other
+376,4,Other
+377,50,Other
+378,54,Other
+379,3,Other
+380,30,Other
+381,2,Other
+382,59,Other
+383,20,Other
+384,19,Other
+385,1,Other
+386,29,Other
+387,58,Other
+388,39,Other
+389,18,Other
+390,38,Other
+391,63,Aetna Advantage Dental
+392,63,Aetna Advantage Plus Dental
+393,63,Aetna Dental Access / Vital Savings by Aetna
+394,63,Aetna HealthFund / Aetna DentalFund
+395,63,Affordable Health Choices from Aetna
+396,63,Basic Dental
+397,63,Dental Discount
+398,63,Dental EPP
+399,63,Dental Maintenance Organization (DMO)
+400,63,Family Preventative
+401,63,Other
+402,53,Family Health Plus
+403,53,Medicaid
+404,53,Other
+405,65,Interplan Health Group
+406,9,HumanaChoice (PPO)
+407,73,Flexible Blue IISM (2500)
+408,91,Maximizer (PPO)
+409,91,Health Savings Account (HSA) Value
+410,91,Beneficial Rx (PPO)
+411,91,Beneficial Value (PPO)
+412,91,Health Savings Account (HSA) 3000
+413,82,Other
+414,90,Other
+415,79,Other
+416,85,Other
+417,93,Other
+418,87,Other
+419,70,Other
+420,89,Other
+421,84,Other
+422,71,Other
+423,74,Other
+424,64,Other
+425,92,Other
+426,83,Other
+427,62,Other
+428,81,Other
+429,80,Other
+430,78,Other
+431,75,Other
+432,76,Other
+433,67,TRICARE Prime
+434,68,TRICARE For Life
+436,86,Other
+437,66,Other
+438,88,Other
+439,72,Other
+440,77,Other
+441,94,MedicareMax - Miami-Dade County
+442,94,MedicareMaxValue - Miami-Dade County
+443,94,MedicareMax Plus - Miami-Dade County
+444,94,MedicareMax - Broward County
+445,94,MedicareMaxValue - Broward County
+446,94,MedicareMax Plus - Broward County
+447,95,STANDARD
+448,95,EXTENDED
+449,95,HSA
+450,96,Other
+451,97,Other
+452,98,Medicaid
+453,98,CHIP
+454,98,Medicare Advantage
+455,45,Indemnity
+456,98,Other
+457,44,Maryland Physicians Care
+459,99,Other
+460,100,PAC
+461,100,HealthChoice
+462,101,Primary Adult Care (PAC)
+463,101,HealthChoice
+464,102,Other
+465,70,CHP State Selection - HMO
+466,103,Sagamore Plus
+467,103,Sagamore Select
+468,104,Blue Edge - PPO
+469,104,Other
+470,13,Oxford Medicare Advantage
+471,106,Other
+472,106,FCHP Direct Care
+473,106,FCHP Select Care
+474,103,Other
+475,106,FCHP Flex Care
+476,106,Fallon Senior Plans
+477,106,Fallon Preferred Care PPO
+478,106,Major Medical
+479,106,FCHP Independent Care
+480,106,FCHP Independent Care 1000
+481,106,FCHP MassHealth and Elder Service Plan
+482,107,Other
+483,108,AFLAC Dental
+484,108,Other
+485,109,Basic (PPO)
+486,109,Comprehensive (PPO)
+487,109,PPO Components
+488,110,Basic OA III
+489,110,Comprehensive OA III
+490,110,OA III Components
+491,111,Presbyterian Select
+492,111,Presbyterian Classic
+493,111,Presbyterian Classic for Kids
+494,111,Presbyterian Savvy100
+495,111,Presbyterian Short Term
+496,111,Presbyterian Senior Care (HMO)
+497,111,Presbyterian MediCare PPO
+498,111,Presbyterian Value Care (HMO)
+499,111,Presbyterian Custom Care (HMO)
+500,111,Presbyterian Smart Care (HMO)
+501,111,Presbyterian My Care (HMO)
+502,111,Presbyterian Flex Care (POS)
+503,111,Presbyterian Choice Care (POS)
+504,111,Presbyterian Preferred Care (PPO)
+505,111,Presbyterian PresElect (PPO)
+506,111,Presbyterian Advantage Care (HDHP)
+507,111,Presbyterian Salud
+508,112,Abrazo Advantage (HMO)
+509,112,Abrazo Advantage Plus (HMO SNP)
+510,12,Child Health Plus (CHPlus)
+511,12,Family Health Plus (FHP)
+512,12,Medicare Plan
+513,12,Medicaid Plan
+514,48,Cancer/Specified-Disease Insurance
+515,48,Critical Care & Recovery Insurance
+516,48,Hospital Confinement Indemnity Insurance
+517,48,Hospital Confinement & Sickness Indemnity Insurance
+518,48,Hospital Intensive Care Insurance
+519,48,Lump Sum Cancer Insurance
+520,48,Lump Sum Critical Illness
+521,113,Healthy Families Program
+522,113,Alliance Group Care
+523,113,Alliance CompleteCare
+524,113,Medi-Cal
+525,113,Other
+526,112,Other
+527,114,Other
+528,114,High Deductible Health Plans (HDHP)
+529,114,Percentage Plans (PPO-Style Plan)
+530,114,Flat Dollar Plans
+531,115,Other
+532,115,AlohaCare (QUEST)
+533,115,AlohaCare Advantage (HMO)
+534,115,Aloha Care Advantage Plus (HMO SNP)
+535,82,Plantinum
+536,82,Gold
+537,82,Silver
+538,82,NetCare Low Duductible
+539,82,NetCare High Deductible
+540,82,QHDHP 80%
+541,82,QHDHP 100%
+542,82,Peak Pref 500
+543,82,Peak Pref 1000
+544,82,Peak Pref 2500
+545,82,Peak Pref 5000
+546,82,Peak Plus Platinum 80%
+547,82,Peak Plus Platinum 70%
+548,82,Peak Plus Gold 80%
+549,82,Peak Plus Gold 70%
+550,82,Peak Plus Silver 80%
+551,82,Pleak Plus Silver 70%
+552,82,Peak Plus 70% QHDHP
+553,82,Peak Plus 80% QHDHP
+554,82,QHDHP Plus 100%
+555,116,Other
+556,116,Americare Preferred Critical Illness PLUS
+557,116,Americare Preferred Supplemental Medical Insurance
+558,116,CareAssist Short-Term Convalescent Care
+559,116,Medicare Supplemental Insurance
+560,116,Americare Preferred Short-Term Medical Plan
+561,117,WPS Individual Preferred Plan-PPO
+562,118,Other
+563,118,Prevention and Wellness Services
+564,118,Fitness and Wellness Services
+565,118,Specialty Network Management Programs
+566,117,WPS Individual HSA-Qualified
+567,117,WPS Instant Protection Plan
+568,119,Other
+569,119,Presidential (PFFS)
+570,119,Presidential Plus (PFFS)
+571,120,Other
+572,120,Patriot (PFFS)
+573,120,Patriot Plus (PFFS)
+574,120,Ambassador (PPO)
+575,120,Ambassador Plus (PPO)
+576,121,Other
+577,121,Patriot (PFFS)
+578,121,Patriot Plus (PFFS)
+579,121,Ambassador Plus (PPO)
+580,121,Ambassador (PPO)
+581,37,UnitedHealthcare Dual Complete (HMO-POS SNP)
+582,37,UnitedHealthcare hawk-i
+583,123,Other
+584,123,UnitedHealthcare At Home
+585,123,UnitedHealthcare Community Plan M*Plus
+586,123,UnitedHealthcare Health and Home Connection 
+587,123,UnitedHealthcare Dual Complete (HMO SNP)
+588,123,UnitedHealthcare Dual Complete RP (Regional PPO SNP) 
+589,123,Citrus Plus 
+590,123,UnitedHealthcare Dual Complete EV (HMO SNP) 
+591,123,UnitedHealthcare Dual Complete LP (HMO SNP)
+592,123,Florida Healthy Kids
+593,127,Other
+594,127,UnitedHealthcare Dual Complete (LPPO SNP)
+595,129,Other
+596,129,NJ FamilyCare
+597,129,UnitedHealthcare Dual Complete (LPPO SNP)
+598,131,Other
+599,131,UnitedHealthcare Community Plan for Adults
+601,131,UnitedHealthcare Dual Advantage 
+602,131,UnitedHealthcare Dual Complete RP (Regional PPO SNP)
+603,131,UnitedHealthcare Dual Complete LP (HMO SNP) 
+605,131,UnitedHealthcare Dual Complete (HMO SNP) 
+606,131,UnitedHealthcare Community Plan for Kids
+607,131,UnitedHealthcare Community Plan for Families
+608,137,Other
+609,137,UnitedHealthcare Community Plan for Families
+610,137,UnitedHealthcare Dual Complete (HMO SNP)
+611,137,UnitedHealthcare® MedicareComplete® (HMO)
+612,137,UnitedHealthcare Community Plan for Kids
+613,137,UnitedHealthcare aB
+614,141,Other
+615,141,UnitedHealthcare Community Plan for Families
+616,141,UnitedHealthcare Dual Complete (HMO SNP)
+617,11,AmeriHealth® PPO 
+618,11,AmeriHealth® HMO 
+619,11,AmeriHealth® New Jersey Protect 
+620,11,AmeriHealth 65® HMO 
+621,11,AmeriHealth® Mercy 
+622,11,AmeriHealth® Mercy 
+623,11,AmeriHealth Rx - Medicare Part D
+624,11,AmeriHealth Advantage
+625,11,AmeriHealth® Point-of-Service (POS) 
+626,11,Flex Copay Programs 
+627,11,AmeriHealth® PPO High Deductible Health Plans 
+628,11,AmeriHealth+ HSA Solution 
+631,11,AmeriHealth® HMO Plus 
+632,11,AmeriHealth® Value Network 
+633,11,AmeriHealth® New Jersey EPO 
+634,11,AmeriHealth® Direct POS 
+635,11,Flex Deductible Programs 
+637,11,AmeriHealth Administrators®
+638,11,AmeriHealth+ FSA 
+639,11,AmeriHealth+ HRA 
+640,11,AmeriHealth® POS Coinsurance 
+641,11,AmeriHealth® HMO Plus Coinsurance 
+642,11,AmeriHealth® Value Network 
+643,147,Other
+644,147,Medicaid
+645,61,Premier Plus
+646,61,SmartSense® Plus
+647,61,CoreGuardSM Plus
+648,61,ClearProtectionSM Plus
+649,61,Lumenos® HSA Plus
+650,61,Lumenos® HSA 1500/5000
+651,61,Tonik®
+652,61,PPO Share
+653,61,Select HMO
+654,61,HMO Saver
+655,61,Individual HMO
+656,61,Dental Blue® PPO Plans
+657,61,Dental SelectHMO Plan
+658,61,International Emergency Dental Program 
+659,61,Medicare Advantage
+660,151,Other
+661,151,Premier
+662,151,Lumenos® HSA Plus
+663,151,SmartSenseSM Plus
+664,151,CoreShareSM Plus
+665,151,ClearProtectionSM
+666,151,Tonik®
+667,151,Child-Only Health Coverage
+668,151,HSA
+670,154,Other
+671,154,Dental PPO
+672,155,Other
+673,155,Concordia Flex Dental Program 
+674,155,Concordia Preferred Dental Program 
+675,155,Concordia Plus Dental Program 
+676,158,Other
+677,158,Premier 
+678,158,Smart Sense® 
+679,158,Lumenos® HSA Plus 
+680,160,Other
+681,160,Medicare Advantage
+682,160,Medicare Supplement
+683,161,Other
+684,161,Premier Plus
+685,161,Lumenos HSA Plus
+686,161,SmartSense Plus
+687,161,CoreShare
+688,161,HSA
+689,164,Other
+690,164,Premier Plus
+691,164,Lumenos HSA Plus
+692,164,SmartSense Plus
+693,164,Child-Only Health Coverage
+694,164,HSA
+695,166,Other
+696,166,HealthChoice
+697,166,HealthChoice Standard
+698,166,HealthChoice Basic
+699,166,HMO Standard
+700,166,HMO Basic
+701,166,HSA
+702,170,Other
+703,170,Premier Plus
+704,170,Lumenos HSA Plus
+705,170,SmartSense Plus
+706,170,CoreShare
+707,171,Other
+708,171,Premier Plus
+709,171,CoreShare
+710,171,Lumenos HSA Plus
+711,171,ClearProtectionSM Plus
+712,171,Tonik®
+713,171,SmartSense Plus
+714,175,Other
+715,175,Premier
+716,175,SmartSense
+717,175,Lumenos HSA Plus
+718,176,Other
+719,176,Premier Plus
+720,176,Lumenos HSA Plus
+721,176,SmartSense Plus
+722,176,CoreShare
+723,178,Other
+724,178,Premier
+725,178,SmartSense Plus
+726,178,CoreShareSM 
+727,178,Lumenos HSA Plus
+728,179,Other
+729,179,Premier Plus
+730,179,Lumenos HSA Plus
+731,179,SmartSense Plus
+732,179,CoreShare
+733,182,Other
+734,182,Plus Plan* - (HMO)
+735,182,Dual Plus Plan* - (HMO -SNP)
+736,186,Other
+737,186,Plus Plan* - (HMO)
+738,186,Dual Plus Plan* - (HMO-SNP)
+739,188,Other
+740,188,Plus Plan* - (HMO)
+741,188,Dual Plus Plan* - (HMO -SNP)
+742,191,Other
+743,191,Plus Plan* - (HMO)
+744,191,Dual Plus Plan* - (HMO -SNP)
+745,192,Other
+746,192,Plus Plan* - (HMO)
+747,192,Dual Plus Plan* - (HMO -SNP)
+748,195,Other
+749,195,Plus Plan* - (HMO)
+750,195,Dual Plus Plan* - (HMO -SNP)
+751,197,Other
+752,197,Plus Plan* - (HMO)
+753,197,Dual Plus Plan* - (HMO -SNP)
+754,198,Other
+755,198,Plus Plan* - (HMO)
+756,198,Dual Plus Plan* - (HMO -SNP)
+757,199,Other
+758,199,Plus Plan* - (HMO)
+759,199,Dual Plus Plan* - (HMO -SNP)
+760,201,Other
+761,201,Plus Plan* - (HMO)
+762,201,Dual Plus Plan* - (HMO -SNP)
+763,202,Other
+764,202,Plus Plan* - (HMO)
+765,202,Dual Plus Plan* - (HMO -SNP)
+766,203,Other
+767,203,Plus Plan* - (HMO)
+768,203,Dual Plus Plan* - (HMO -SNP)
+769,204,Other
+770,204,Dual Plus Plan* - (HMO -SNP)
+771,204,Plus Plan* - (HMO)
+772,206,Other
+773,206,Plus Plan* - (HMO)
+774,206,Dual Plus Plan* - (HMO -SNP)
+775,207,Other
+776,207,Plus Plan* - (HMO)
+777,207,Dual Plus Plan* - (HMO -SNP)
+778,209,Other
+779,209,Healthy Advantage HMO
+780,209,Healthy Advantage POS
+781,209,HSA-Qualified High Deductible Health Plan POS
+782,209,HSA-Qualified High Deductible Health Plan HMO
+783,209,Arise Health Plan Bridge65
+784,209,Arise Health Plan Bridge65 POS
+785,46,Blue PPO III
+786,290,Other
+787,290,DentalBlue Bronze
+788,290,DentalBlue Silver
+789,290,DentalBlue Gold
+790,212,Other
+791,212,Assurant Health AccessSM
+792,212,CoreMed SM
+793,212,OneDeductible
+794,212,OneDeductible (HSA)
+795,212,Real ChoicesSM
+796,212,Assurant Self-Funded Health Plan
+797,6,EmbarkSM
+798,6,Employee SelectSM
+799,6,VantageSM
+800,6,Asuris HSA Healthplan 2.0SM
+801,6,Asuris AdvanceSM
+802,6,AspireSM
+803,6,EnhanceSM
+804,6,Asuris Emerge Core
+805,6,Asuris Emerge Plus
+806,6,Asuris Emerge HSA Plan-80/60/60
+807,6,Asuris Emerge HSA Plan 50/50/50
+808,6,Asuris Emerge HSA 100 Plan
+809,6,Asuris Conversion Plan
+810,6,Asuris TruAdvantage Basic (PPO)
+811,6,Asuris TruAdvantage + Rx Enhanced (PPO)
+812,6,Asuris TruAdvantage + Rx Classic (PPO)
+813,291,Other
+814,291,Columbia Dental
+815,291,Traditional Dental
+816,292,Other
+817,292,Plan 10E
+818,292,PLAN 15E
+819,292,PLAN 20E
+820,293,Other
+821,293,Medicare Health Maintenance Organization (HMO)
+822,293,Preferred Provider Organization (PPO)
+823,293,ATRIO Bronze (PPO)
+824,293,ATRIO Bronze Rx (PPO)
+825,293,ATRIO Silver (PPO)
+826,293,ATRIO Silver Rx (PPO)
+827,293,ATRIO Gold Rx (PPO)
+828,293,ATRIO Platinum Rx (PPO)
+829,294,Other
+830,122,Windsor Sterling Gold Plus-PPO
+831,122,Sterling Silver Connect In- Network (PFFS)
+832,122,Sterling Emerald Connect In-Network (PFFS)
+833,122,Sterling Gold Connect In-Network (PFFS) 
+834,122,Medicare Extra Emerald Plan-HMO
+835,295,Other
+836,295,Avera MyPlan
+837,295,High Deductible Health Plans (HSA)
+839,295,MyPlan Maternity
+840,295,Avera SELECT
+841,124,Medicare Extra Gold Plan-HMO
+842,124,Medicare Extra Diamond Plan-HMO
+843,124,Medicare Extra Comp Plus-(HMO SNP)
+844,124,Medicare Silver Plan-HMO
+845,473,Other
+846,473,MyPlan Dental
+847,125,WHA Premier- 15
+848,296,Other
+849,125,WHA Premier- 15MHP
+850,296,AvMed Choice
+851,296,AvMed Open Access
+852,125,WHA Premier- 20
+853,296,AvMed Open Access CareSelect
+854,125,WHA Premier- 20MHP
+855,296,AvMed Open Access POS
+856,296,AvMed HDHPs
+857,125,WHA Premier- 40
+858,296,AvMed Consumer
+859,125,WHA Premier- 10MHP
+860,296,AvMed Medicare Choice HMO
+861,125,Premier Medicare Supplement 10
+862,296,AvMed Individual Health
+863,125,Premier Medicare Supplement 10MHP
+864,125,Advantage 15-30
+865,297,Other
+866,297,Medicare Supplement Insurance
+867,125,Advantage 15-30MHP
+868,297,Medicare Advantage
+869,125,Advantage 420
+870,125,Advantage 70
+871,125,Advantage 70-MHP
+872,298,Other
+873,125,Advantage 40
+874,298,Beech Street PPO Network
+875,125,Advantage 40MHP
+876,298,Beech Street Primary Health Benefit Network
+877,125,Western 4010 (RX Included)
+878,125,Western 4010MHP (RX Included)
+879,125,Western 2025 (RX Included)
+880,125,Western 2025MHP (RX Included) 
+881,125,Western 4025 (RX Included)
+882,125,Western 4025MHP (RX Included)
+883,125,Western 1800-HSA
+884,125,Western 1800MHP- HSA
+885,125,Western 2800-HSA
+886,125,Western 2800MHP- HSA
+887,125,Western 2800B- HSA
+888,125,Western 2800BMHP- HSA
+889,125,Dental- DMHO Plan 903
+890,125,Dental- PPO1 Plan 1/123
+891,125,Dental-PPO2 Plan 2/124
+892,125,Other
+893,126,Coventry One
+894,126,Coventry Dental
+895,126,Other
+896,128,Blue Select-PPO
+897,128,Blue Select Plus-PPO
+898,128,Blue Select Basics-PPO
+899,128,Blue Priority-HSA
+900,128,Short-Term Blue
+901,130,Alliance Select-PPO
+902,130,Alliance Comprehensive-PPO
+903,130,Alliance Enhanced-PPO
+904,130,Alliance Value-PPO
+905,130,Alliance Select Gold-PPO
+906,130,Alliance Select Silver-PPO
+907,130,Alliance Select Bronze Value-PPO
+908,130,Other
+909,117,Other
+910,124,Other
+911,122,Other
+912,128,Other
+913,132,WellCare Access- (HMO) 
+914,132,WellCare Dividend- (HMO) 
+915,132,WellCare Value- (HMO) 
+916,132,Other
+917,133,WellCare Access- (HMO)
+918,133,WellCare Value- (HMO)
+919,133,Other
+920,134,WellCare Access- (HMO) 
+921,134,WellCare Advance- (HMO)
+922,134,WellCare Choice- (HMO-POS)
+923,134,WellCare Liberty- (HMO-SNP) 
+924,134,WellCare Value- (HMO-POS)
+925,134,Other
+926,135,WellCare Access- (HMO-SNP)
+927,135,WellCare Value- (HMO)
+928,135,Other
+929,11,Concordia Flex Dental Program 
+930,136,WellCare Value- (HMO-POS)
+931,11,Concordia Plus Dental Program 
+932,136,WellCare Access- (HMO-SNP)
+933,11,Concordia Preferred Dental Program 
+934,136,Other
+935,138,WellCare Dividend- (HMO-POS)
+936,138,WellCare Access- (HMO)
+937,48,AFLAC Dental
+938,151,Dental PPO
+939,138,WellCare Value- (HMO-POS) 
+940,138,Other
+941,6,Columbia Dental
+942,139,WellCare Value- (HMO-SNP)
+943,6,Traditional Dental
+944,139,WellCare Access- (HMO)
+945,139,Other
+946,140,WellCare Access- (HMO-SNP)
+947,140,WellCare Value- (HMO-POS) 
+948,295,MyPlan Dental
+949,140,Other
+950,142,WellCare Access- (HMO-SNP)
+951,305,Other
+952,142,WellCare Advance- (HMO)
+953,328,Other
+954,142,WellCare Choice- (HMO-POS)
+955,330,Other
+956,142,WellCare Choice- (HMO)
+957,306,Other
+958,142,WellCare Dividend- (HMO)
+959,307,Other
+960,142,WellCare Essential- (HMO) 
+961,311,Other
+962,142,WellCare Select- (HMO-POS-SNP)
+963,309,Other
+964,142,WellCare Value- (HMO-POS)
+965,334,Other
+966,142,Other
+967,303,Other
+968,316,Other
+969,318,Other
+970,143,WellCare Access- (HMO-SNP)
+971,320,Other
+972,143,WellCare Choice- (HMO-POS)
+973,143,WellCare Value- (HMO)
+974,304,Other
+975,143,Other
+976,340,Other
+977,345,Other
+978,352,Other
+979,72,Medicare Silver- (HMO)
+980,72,Medicare Value RX- (HMO)
+981,381,Other
+982,72,Medicare Platinum RX- (HMO) 
+983,406,Other
+985,72,Medicare Platinum Select RX- (HMO) 
+986,144,VNSNY Choice Medicare Maximum- (HMO-SNP) 
+987,418,Other
+988,144,VNSNY Choice Medicare Preferred- (HMO-SNP)
+989,425,Other
+990,144,Other
+991,428,Other
+992,145,Medicare Plus RX
+993,430,Other
+994,145,Medicare Plus Select
+995,400,Other
+996,145,Medicare Plus RX Extra Value
+997,145,Medicare Plus  RX Premier
+998,298,Beech Street Complementary Network
+999,145,Other
+1000,298,Beech Street Supplemental Network
+1001,22,Network Blue
+1002,22,Network Blue Dental
+1003,22,Blue Care for Kids
+1004,299,Other
+1005,299,HealthMate Coast-to-Coast
+1006,299,Consumer-Driven Health Plans
+1007,299,BlueCHiP Coordinated Health Plan
+1008,299,BlueCHiP for Healthy Options
+1009,299,Classic Blue
+1010,299,Blue Cross Dental
+1011,299,VantageBlue
+1012,299,HealthMate Coast-to-Coast Direct
+1013,299,HealthMate for HSA Direct
+1014,299,Blue Cross Dental Direct
+1015,299,2012 BlueCHiP for Medicare
+1016,299,Plan 65
+1017,299,Blue MedicareRxSM(PDP)
+1018,299,BlueCHiP for Medicare Employer Group
+1019,299,Plan 65 Employer Group
+1020,299,Blue MedicareRxSM(PDP) Employer Group
+1021,299,Group BlueCHiP for Medicare
+1022,299,Group Blue MedicareRxsm (PDP)
+1023,299,Group Plan 65
+1024,299,Pre-existing Condition Insurance Plan for Rhode Island 
+1025,300,Other
+1026,300,Total Blue
+1027,300,Classic Blue
+1028,300,BlueChoice Plus
+1029,300,BlueChoice Essential
+1030,300,300 Plan
+1031,300,800 Plan
+1032,300,320 Plan
+1033,300,820 Plan
+1034,300,Healthy Blue
+1035,300,860 Healthy Blue
+1036,300,551 Plan
+1037,300,851 Plan
+1038,300,579 Plan
+1039,300,879 Plan
+1040,300,Preferred Blue HDHP
+1041,300,BlueCard PPO
+1042,300,Federal Employee Program (FEP)
+1043,300,Federal DentalBlue
+1044,300,Preferred Health Flexible Spending Account (FSA)
+1045,300,Preferred Dependent Care Account (DCA)
+1046,300,Preferred Health Reimbursement Arrangement (HRA) 
+1047,300,Preferred Health Limited Flexible Spending Account (LFSA) 
+1048,300,Preferred Health Savings Account (HSA)
+1049,300,Preferred Health Reimbursement Account (HRA)
+1050,301,Other
+1051,301,BlueOptions Plans
+1052,301,BlueOptions Temporary Insurance
+1053,301,BlueOptions HSA
+1054,301,BlueSelect
+1055,301,FamilyBlue
+1056,301,GoBlue
+1057,301,Miami-Dade Blue
+1058,301,Blueprint for Health
+1059,302,Other
+1060,302,SelectBlue
+1061,302,BlueValue
+1062,302,BlueEdge
+1063,302,Blue Pathway
+1064,302,BlueChoice Pathway
+1065,302,MediGap Plan A
+1066,302,MediGap Plan B
+1067,302,MediGap Plan C
+1068,302,MediGap Plan F
+1069,302,MediGap High Deductible Plan F
+1070,302,MediGap Plan G
+1071,302,MediGap Plan K
+1072,302,MediGap Plan L
+1073,302,MediGap Plan N
+1074,302,PPO BlueCard® Network
+1075,302,BlueAdvantageSM HMO
+1076,302,HMO Illinois
+1077,302,BlueChoice Plan
+1078,302,BlueChoice Select® plan
+1079,302,Community Participating Option (CPO) Plan
+1080,302,BlueEdge SM
+1081,146,CDH Plus 1500 (POS)
+1082,302,BlueCare Dental PPO
+1083,302,BlueCare DHMO
+1084,146,CDH Plus 3000 (POS)
+1085,146,CDH Plus 5000 (POS)
+1086,308,Other
+1087,146,CDH 1500 (POS)
+1088,308,AffordaBlue
+1089,308,Basic Blue
+1090,146,CDH 3000 (POS)
+1091,308,Blue By Design(HSA)
+1092,146,CDH 5000 (POS)
+1093,308,Comprehensive Major Medical
+1094,308,Healthy Blue
+1095,308,Shared Pay Comprehensive
+1096,146,Evolution Plus 2500 (POS)
+1097,308,Value Blue
+1098,146,Evolution Plus 5000 (POS)
+1099,308,Plan 150
+1100,308,Short Term Medical
+1101,146,Evolution 2500 (POS)
+1102,308,Dental Care Program
+1103,308,Comprehensive Dental
+1104,146,Evolution 5000 (POS)
+1105,308,Orthodontic Rider
+1106,308,Plan 65 Plan A
+1107,308,Plan B
+1108,308,Plan 65/Plan C/Select
+1109,308,Plan D
+1110,308,F* Plan 65 Plan F/Select 
+1111,308,Plan G
+1112,308,Plan 65/Plan K**/Select
+1113,308,Plan L**
+1114,308,Plan M
+1115,308,Plan 65 Plan N
+1116,310,Other
+1117,310,Preferred-Care Blue Premium
+1118,310,Blue4U is a new PPO
+1119,310,AffordaBlue
+1120,310,RateSaver
+1121,310,Blue KC 
+1122,310,Blue KC (HSA)
+1123,310,Short-Term Security
+1124,310,Blue Dental
+1125,146,Premier Choice 100 500 (POS)
+1126,146,Premier Choice 100 1000 (POS)
+1127,310,Blue Dental Plus
+1128,310,Medicare Supplement Insurance
+1129,146,Premier Choice 100 2500 (POS)
+1130,310,Medicare Select
+1131,146,Premier Choice 100 5000 (POS)
+1132,146,Premier Value 80 500 (POS)
+1133,312,Other
+1134,312,Community Blue (POS)
+1135,312,BlueConnect 
+1136,312,BlueValue
+1137,146,Premier Value 80 1000 (POS)
+1138,312,BlueSelect
+1139,312,BlueSaver
+1140,146,Premier Value 80 2500 (POS)
+1141,312,BlueMax
+1142,312,Point of Service
+1143,146,Choice 80 1000 (POS)
+1144,312,Variable Income Plan (VIP)
+1145,312,Cancer or Serious Disease Plans
+1146,312,BlueChoice 65
+1147,312,BlueChoice 65 Select
+1148,313,Other
+1149,146,Choice 80 2500 (POS)
+1150,313,BlueCard® 
+1151,146,Choice 80 5000 (POS)
+1152,314,Other
+1153,146,Value 80 2500 (POS)
+1154,314,BlueEssentials Choice
+1155,314,BluePreferred Basics
+1156,146,Sunny Joe Plan 1500 (PPO)
+1157,314,TempCare 
+1158,314,High Deductible (HSA)
+1159,146,Sunny Joe Plan 2000 (PPO)
+1160,314,BlueEssentials Choice High-Deductible
+1161,314,BlueSenior Classic 
+1162,146,Sunny Joe Plan 3000 (PPO)
+1163,314,MedicareBlue PPO
+1164,146,Sunny Joe Plan 5000 (PPO)
+1165,314,BluePride
+1166,314,BlueFreedom
+1167,146,HSA 100% 1500 (PPO)
+1168,314,PremierBlue
+1169,146,HSA 100% 2000 (PPO)
+1170,314,Short Term Medical
+1171,146,HSA 100% 2500 (PPO)
+1172,315,Other
+1173,146,HSA 100% 3500 (PPO)
+1174,315,BlueDirect
+1175,315,BlueEdge SM (HSA compatible)
+1176,146,HSA 100% 5000 (PPO)
+1177,315,Blue Transitions SM
+1178,146,HSA 80 1500 (PPO)
+1179,315,Medicare Supplement Plan A
+1180,315,Medicare Supplement Plan B
+1181,146,HSA 80 2000 (PPO)
+1182,315,Medicare Supplement Plan F
+1183,146,HSA 80 2500 (PPO)
+1184,146,HSA 80 3500 (PPO)
+1185,315,Medicare Supplement Plan High Deductible F
+1186,146,HSA 80 5000 (PPO)
+1187,146,HSA 1x 2500 (PPO)
+1188,315,Medicare Supplement Plan N 
+1189,146,HSA 1x 5000 (PPO)
+1190,315,BlueSaludSM
+1191,315,BlueNet EPO
+1192,146,Super PPO 2000
+1193,315,"BlueNet ""H"" EPO"
+1194,315,BluePPO Evolution
+1195,146,Super PPO 3500
+1196,315,Blue PPO Options
+1197,146,Super PPO 5000
+1198,315,HMO Blue
+1199,146,Super PPO 7500
+1200,315,BlueEdge HSA for Groups
+1201,315,BlueEdge HCA for Groups
+1202,315,BlueEdge Incentives Program
+1203,315,Dental
+1204,146,Super PPO 1x 10000
+1205,317,Other
+1206,317,Blue Advantage
+1207,317,Blue Advantage Saver
+1208,317,Blue Options HRA
+1209,317,Blue AssuranceSM
+1210,317,BlueOptions
+1211,146,Premier PPO 500
+1212,317,BlueOptions1.2.3.
+1213,317,BlueOptionsHSA
+1214,317,DentalBlue
+1215,146,Premier PPO 1000
+1216,317,DentalBlue Select
+1217,317,BlueMedicare HMO SM
+1218,317,BlueMedicare PPO SM
+1219,317,Blue Medicare Supplement
+1220,146,Premier PPO 1500
+1221,146,Premier PPO 2000
+1222,319,Other
+1223,319,Simply Blue and Health Check Basic
+1224,146,Premier PPO 2500
+1225,319,Health Check HSA
+1226,146,Premier PPO 3500
+1227,319,Health Check Select®
+1228,319,Blue Pathway SM
+1229,319,Blue TransitionsSM
+1230,319,BlueSelect Dental
+1231,319,Medicare Supplement Plan A
+1232,146,Premier PPO 5000
+1233,319,Medicare Supplement Plan F
+1234,146,Premier PPO 10000
+1235,319,Medicare Supplement Plan High Deductible F
+1236,319,Medicare Supplement Plan N 
+1237,146,Premier PPO 1x 4000
+1238,319,Chamber Choice OKC
+1239,319,Oklahoma Chamber Blue
+1240,146,Premier PPO 1x 6000
+1241,319,Chamber Choice Tulsa
+1242,146,Premier PPO 1x 7500
+1243,319,O-EPIC
+1244,319,BlueLincs HMO
+1245,146,Value PPO 500
+1246,146,Value PPO 1000
+1247,319,BlueCare Dental
+1248,319,BlueCare Dental ConnectionTM 
+1249,146,Value PPO 1500
+1250,319,BlueChoice® PPO
+1251,319,BlueOptions® PPO
+1252,146,Value PPO 2000
+1253,319,BlueOptimizeSM
+1254,319,BluePreferred® PPO 
+1255,319,HSA Blue
+1256,146,Value PPO 1x 3250
+1257,146,Value PPO 1x 5000
+1258,319,Blue Traditional
+1259,104,PPO Select® Blue Advantage Series IV
+1260,104,PPO Select® Choice Series IV
+1261,104,PPO Select® Saver Series IV
+1262,104,BlueChoice® Network
+1263,104,BlueEdgeSM Individual HSA
+1264,104,Blue PathwaySM
+1265,104,SelecTEMP® PPO
+1266,146,Saver PPO 1000
+1267,323,Other
+1268,323,Vermont Freedom Plan (VFP)
+1269,146,Saver PPO 2000
+1270,323,Catamount BlueSM
+1271,323,HSA BlueCare (High Deductible HMO)
+1272,146,Saver PPO 3500
+1273,323,HSA Blue (High Deductible PPO)
+1274,323,BlueCare Access HSA
+1275,146,Saver PPO 5000
+1276,323,BlueCare (HMO)
+1277,146,Saver PPO 7500
+1278,323,BlueCare Access (HMO)
+1279,323,The Vermont Freedom Plan (VFP) (PPO) 
+1280,146,Peak PPO 2500
+1281,323,BlueCare Options (POS)
+1282,323,Vermont Health Partnership (POS)VHP
+1283,146,Peak PPO 5000
+1284,146,Peak PPO 10000
+1285,90,BlueChoice Personal HSA
+1286,90,Kid Care CHIP
+1287,90,Senior Blue®
+1288,90,MedicareBlue PPO
+1289,90,Wyoming Choice NetworkPPO
+1290,90,BlueChoice
+1291,90,Premium Only Plan (POP)
+1292,90,Flexible Spending Account (FSA)
+1293,90,Health Reimbursement Arrangement (HRA)
+1294,90,Health Savings Account (HSA)
+1295,326,Other
+1296,326,BlueOptimum Plus
+1297,326,BlueValue Plus
+1298,326,BlueEssential Plus
+1299,326,BlueBasic Plus
+1300,326,BluePortfolio Plus
+1301,326,Senior Security
+1302,326,Senior Preferred
+1303,326,BluePreferred 100/50 
+1304,326,BluePreferred 90/70
+1305,326,BluePreferred 80/60
+1306,326,BluePreferred 70/50
+1307,326,View BluePreferred HSA Plus 100/50 benefit summaries
+1308,326,BluePreferred HSA Plus 90/50
+1309,326,BluePreferred HSA Plus 80/50
+1310,326,BluePreferred HSA Plus 70/50
+1311,326,BlueSelect HMO Plus
+1312,326,BluePreferred Dental Plan 
+1313,329,Other
+1314,329,Blue Choice PPO
+1315,329,Blue Care IPA
+1316,329,Blue Select POS
+1317,329,SimplyBlue EPO
+1318,329,Blue Classic Traditional
+1319,329,BlueAdvantage Consumer-Directed Health Plans
+1320,329,BlueIndividual
+1321,329,Medicare Supplement
+1322,329,BlueEPO Individual
+1323,329,BlueAdvantage® Individual EPO
+1324,329,BlueAdvantage® Individual PPO
+1325,329,Traditional Dental 
+1326,329,BlueDental
+1327,331,Other
+1328,331,HMO Blue
+1329,331,HMO Blue New England
+1330,331,HMO Blue Deductible
+1331,331,Preferred Blue PPO Deductible
+1332,331,PPO Saver Deductible
+1333,331,Blue Care Elect Deductible
+1334,331,Access Blue Basic
+1335,331,"Access Blue Basic $2,000 Deductible"
+1336,331,Access Blue Saver
+1337,331,HMO Blue Options
+1338,331,HMO Blue New England Options
+1339,331,PPO Options
+1340,331,Dental Blue
+1341,331,Dental Blue PPO
+1342,331,Medex® Bronze
+1343,331,Medex Core
+1344,331,Medicare HMO BlueSM PlusRx (HMO)
+1345,331,Medicare PPO BlueSM PlusRx (PPO)
+1346,331,Federal Employee Program (FEP) Standard Option PPO
+1347,331,Federal Employee Program (FEP) Basic Option PPO
+1348,332,Other
+1349,332,Keep Fit?
+1350,332,Young Adult Blue Max?
+1351,332,Flexible Blue II?
+1352,332,Smart Select?
+1353,332,OneBlue?
+1354,332,Individual Care Blue Plus?
+1355,332,BCN Advantage HMO-POSSM
+1356,332,Medicare Plus Blue PPO VitalitySM
+1357,332,Medicare Plus Blue PPO SignatureSM
+1358,332,Medicare Plus Blue PPO AssureSM
+1359,332,MyBlue MedigapSM
+1360,332,Legacy Medigap
+1361,332,Personal Blue Dental PlusSM
+1362,332,Flexible Blue Dental PlusSM
+1363,332,"Healthy BlueSM HRA, HSA or FSA"
+1364,332,Healthy BlueSM HRA
+1365,332,Healthy BlueSM HSA
+1366,332,Healthy BlueSM FSA
+1367,332,Simply BlueSMHRA and HSA
+1368,332,Healthy Blue HMO HRASM
+1369,332,Healthy Blue OutcomesSM (PPO) 
+1370,332,Healthy Blue IncentivesSM (PPO)*
+1371,332,Healthy Blue LivingSM (HMO)
+1372,332,Healthy Blue Living RewardsSM (HMO)
+1373,332,Blue EssentialsSM (HMO)*
+1374,332,Healthy Blue HSA sm
+1375,332,Healthy Blue HRA sm
+1376,332,Flexible Blue*
+1377,332,Community BlueSM
+1378,332,BCN Advantage HMO-POS?
+1379,146,Co Pay 30 (HMO) Plan
+1380,332,Blue Care Network's HMO HRA
+1381,146,Open Access Deductible         Z - 1500
+1382,146,Open Access Deductible  Z - 2500
+1383,337,Other
+1384,146,Open Access Deductible Z - 5000
+1385,337,InstaCare
+1386,146,Open Access Deductible Z - 7500
+1387,337,GoBlue 
+1388,337,Simply Blue
+1389,337,Personal Blue
+1390,146,"Open Access Deductible Z - 10,000"
+1391,337,Options Blue
+1392,146,Open access Deductible V - 1500
+1393,337,Platinum Blue
+1394,337,Senior Gold
+1395,146,Open Access Deductible V - 2500
+1396,337,MedicareBlue PPO
+1397,146,Open Access Deductible V - 5000
+1398,337,Prepaid Medical Assistance Program (PMAP)
+1399,337,Minnesota Senior Care Plus (MSC+)
+1400,337,MinnesotaCare
+1401,337,Minnesota Senior Health Options (MSHO)
+1402,337,Options Blue compatible with HSA
+1403,337,Options Blue compatible with HRA
+1404,337,Aware Gold
+1405,337,Aware Gold with copay
+1406,146,Open Access Deductible V - 7500 
+1407,337,Comprehensive Major Medical with deductible
+1408,337,Comprehensive Major Medical with copay
+1409,146,"Open Access Deductible V - 10,000"
+1410,337,Blue Value with deductible
+1411,337,Freedom 1-2-3
+1412,146,Open Access Deductible V - 5000IntRX
+1413,337,Options Blue HSA
+1414,337,Options Blue HRA
+1415,146,Open Access Deductible V - 7500IntRX
+1416,337,Group Platinum Blue(SM)
+1417,337,Group Medicare supplement
+1418,146,"Open Access Deductible V - 10,000IntRX"
+1419,337,Group MedicareBlue PPO (Regional PPO)
+1420,146,Open Access Deductible FD - 1500
+1421,337,Aware Gold Limited
+1422,337,Aware® PPO
+1423,146,Open access Deductible FD - 2500
+1424,337,Blue Alignment
+1425,337,Preferred Gold with deductible
+1426,146,Open Access Deductible FD - 5000
+1427,337,Preferred Gold with copay
+1428,146,Premier 100-1500 (PPO)
+1429,146,Premier 100-2500 (PPO)
+1430,338,Other
+1431,338,AffordaBlue
+1432,338,Blue Saver
+1433,338,Comprehensive Major Med. 80
+1434,338,Comprehensive Major Med. 60
+1435,338,Personal Choice 80
+1436,338,Personal Choice 60
+1437,338,Personal Choice for Students
+1438,338,Basic Blue Deductible 
+1439,338,Basic Blue No Deductible
+1440,338,BlueChoice
+1441,338,Blue Saver® High Deductible Health Plan
+1442,338,AffordaBlue for Business
+1443,338,Classic Blue
+1444,338,CompChoice
+1445,338,SelectChoice
+1446,338,Self-funding
+1447,338,True Blue®
+1448,338,Medicare Supplement Plan A
+1449,146,Premier 100-5000 (PPO)
+1450,338,Medicare Supplement Plan C
+1451,338,Medicare Supplement Plan F
+1452,146,Premier 100-10000 (PPO) 
+1453,338,Medicare Supplement High Deductible Plan F
+1454,146,Premier Value 100-2500 (PPO) 
+1455,338,Medicare Supplement Plan L
+1456,338,Medicare Supplement Plan N 
+1457,339,Other
+1458,146,Premier Value 100-7500 (PPO) 
+1459,146,Plus 80-1500
+1460,339,Personal BluePlansSM SE
+1461,339,Personal BlueSM Secure SE
+1462,146,Plus 80-2500
+1463,339,Personal BlueSM Basic SE
+1464,146,Plus 80-5000
+1465,339,Personal BlueSM High Deductible Health Plan
+1466,339,Medicare Plan A
+1467,339,Medicare Plan B
+1468,146,Momentum 80-2500
+1469,339,Medicare Plan C
+1470,339,Medicare Plan D
+1471,146,Momentum 80-5000
+1472,339,Medicare Plan F
+1473,339,Medicare Plan L
+1474,146,Momentum 70-2500
+1475,339,Medicare Plan N
+1476,339,Medicare BlueSM Saver PPO
+1477,146,Momentum 70-5000
+1478,339,Medicare Blue (PPO)
+1479,339,Medicare Blue Plus (PPO)
+1480,146,Momentum 70-10000
+1481,339,Business BlueSM Complete
+1482,146,Saver HSA 1500
+1483,339,Business BlueSM Secure
+1484,339,Business BlueSM Basic
+1485,146,Saver HSA 2500
+1486,339,Business BlueSM High Deductible Health Plan
+1487,339,Business True BlueSM
+1488,146,Saver HSA 5000
+1489,339,MyBlueDentalSM
+1490,342,Other
+1491,148,Medicare Vantage Premium plan (HMO-POS) 
+1492,342,Federal Employees (FEP) 
+1493,342,Medicare Supplement
+1494,146,Other
+1495,342,Medicare Advantage
+1496,342,PPO Other
+1497,342,HMO 
+1498,343,Other
+1499,343,Classic HMO 104 Plus
+1500,148,Medicare Vantage Value Plan (HMO-POS)
+1501,343,Classic HMO 205
+1502,343,Classic PPO 824
+1503,343,Aqua Package 1
+1504,343,Aqua Package 2
+1505,343,POS 250D Select Package 1
+1506,343,POS 250D Select Package 2
+1507,343,Traditional 901 Hosp/Med/MM (w/Drug)
+1508,148,Medicare Vantage Zero Plan (HMO-POS)
+1509,343,Slate POS 7100 Package 1
+1510,343,Healthy Balance POS 8100 Package 1
+1511,148,Medicare Vantage Traditional Plus (HMO)
+1512,343,Healthy Balance POS 8100 Package 2
+1513,148,Medicare Capitol Plan (HMO-POS) 
+1514,343,Healthy Balance PPO 8000 Package 1
+1515,148,Vantage Group Freedom (POS)
+1516,343,Healthy Balance PPO 8000 Package 2
+1517,343,Denim POS 6150
+1518,148,Vantage Group Freedom (HMO)
+1519,343,HSA
+1520,148,Vantage Group Freedom (HSA) 
+1521,343,HRA
+1522,343,FSA
+1523,148,Other
+1524,343,BCBS MediGap
+1525,343,Dental PPO Comprehensive Contributory Coverage more
+1526,343,PDF Icon Dental PPO Comprehensive Voluntary Coverage
+1527,227,Other
+1528,227,HSA Blue PPO
+1529,227,Simply Blue
+1530,227,Essential Blue Plus
+1531,149,Advantage Plan
+1532,227,BlueCare PPO
+1533,149,Comprehensive Plan
+1534,149,Medicare Healthy Advantage (HMO-SNP)
+1535,149,Other
+1536,350,Other
+1537,350,BlueCare Direct
+1538,350,BlueCare Direct Advantage
+1539,350,BlueCare Direct Essentials
+1540,150,UHA- 600 (PPO)
+1541,350,BlueCare Direct Select
+1542,350,BlueCare Assure
+1543,150,UHA- 3000
+1544,350,BlueCare HMO Direct
+1545,150,Other
+1546,350,CHIP
+1547,350,Special Care
+1548,350,BlueCare Security
+1549,350,BlueCare PPO
+1550,350,BlueCare QHD PPO
+1551,350,BlueCare EPO
+1552,88,"Any, Any, Any Gold (PFFS) H5820-002"
+1553,350,BLueCare QHD EPO
+1554,350,AffordaBlue
+1555,88,"Any, Any, Any Gold MA Only (PFFS) H5820-026"
+1556,350,BlueCare Traditional
+1557,88,"Any, Any, Any Gold MA Only (PFFS) H8098-001"
+1558,350,BlueCare HMO Plus
+1559,88,"Any, Any, Any Gold MA Only (PFFS) H8098-003"
+1560,350,BlueCare Senior
+1561,350,Concordia Preferred Dental
+1562,88,Medicare Masterpiece (PPO) H5429-001
+1563,350,Concordia Flex Dental
+1564,88,Universal Hassle-Free (PPO) H5096-001
+1565,350,BlueCare HMO Individual Conversion
+1566,350,BlueCare PPO Individual Converson
+1567,350,BlueCare Cooperative
+1568,350,BlueCare FSA
+1569,350,BlueCare HRA
+1570,350,BLueCare COBRA
+1571,60,Vital Shield Plans
+1572,60,Vital Shield Plus Plans
+1573,60,Essential Plans
+1574,60,Active Start Plans
+1575,60,Balance Plans
+1576,88,Universal Hassle-Free MA Only (PPO) H5096-002
+1577,60,Shield Spectrum PPO
+1578,60,Access+HMO
+1579,88,Medicare Masterpiece (HMO) H5404-001
+1580,60,Access+Value HMO
+1581,60,Shield Savings 1800/3600
+1582,88,Medicare Masterpiece MA Only (HMO) H5404-116
+1583,60,Shield Savings 3500
+1584,60,Shield Savings 4000/8000
+1585,88,Medicare Masterpiece (HMO) South Florida H5404-034
+1586,60,Shield Savings 5200
+1587,60,Healthy Families
+1588,88,Medicare Masterpiece (HMO) Dade County H5404-143
+1589,88,Medicare Masterpiece Plus (HMO-POS) H5404-086
+1590,88,Medicare Masterpiece Premier (HMO) H5404-138
+1591,354,Other
+1592,354,Medicare Óptimo Novel (HMO POS)
+1593,88,Medicare Masterpiece Premier SNP-Dual (HMO SNP) H5404-111
+1594,354,Medicare Óptimo Premier (HMO)
+1595,354,Medicare Óptimo Select (HMO)
+1596,88,"Medicare Masterpiece Premier SNP-Diabetes, CHF, CVD (HMO SNP) H5404-135"
+1597,354,Medicare Óptimo (PPO)
+1598,354,Medicare Óptimo Plus (PPO)
+1599,88,Medicare Masterpiece Premier SNP-Dementia (HMO SNP) H5404-136
+1600,354,Medicare Selecto con Medicare Platino (HMO SNP)
+1601,88,Medicare Masterpiece Premier SNP-COPD (HMO SNP) H5404-137
+1602,354,Medicare Selecto con Medicare Platino 2 (HMO SNP)
+1603,354,Medicare Óptimo ELA (PPO)
+1604,88,Texas Hassle-Free (HMO-POS) Houston H6642-001
+1605,354,Care Plus
+1606,88,Texas Hassle-Free MA Only (HMO-POS) H6642-004
+1607,354,Care Plus ELA
+1608,88,Texas Hassle-Free D-SNP (HMO-POS SNP) H6642-008
+1609,88,Texas Hassle-Free C-SNP (HMO-POS SNP) H6642-007
+1610,88,Nevada Hassle-Free C-SNP (HMO-POS SNP) H6705-003
+1611,355,Other
+1612,88,Nevada Hassle-Free (HMO-POS) H6705-001
+1613,355,LifeTraxx
+1614,356,Other
+1615,356,MassHealth
+1616,356,Commonwealth Care
+1617,356,Employer Choice/Commonwealth Choice
+1618,93,Bravo Health Texas STARPLUS
+1619,93,Member Insight
+1620,93,Bravo Classic (HMO)
+1621,93,Bravo Classic Plus (HMO-POS)
+1622,93,Bravo Achieve Plus (HMO-POS SNP)
+1623,93,Bravo Select (HMO SNP)
+1624,93,Bravo Traditions (HMO SNP)
+1625,93,Bravo Freedom (PPO)
+1626,93,Bravo Acheive
+1627,93,Bravo Premier Plus (HMO-POS)
+1628,93,Bravo Complete (HMO)
+1629,93,Bravo Silver (HMO SNP)
+1630,93,Bravo Gold
+1631,93,Bravo Premier (HMO)
+1632,93,Bravo GoldRX (HMO-POS)
+1633,93,Bravo Traditions PPO (PPO SNP)
+1634,360,Other
+1635,360,Bridgeway Health Solution's Acute Program
+1636,360,Bridgeway Health Solution's Arizona Long-Term Care Services (ALTCS)
+1637,360,Advantage by Bridgeway Health Solutions (HMO SNP)
+1638,361,Other
+1639,361,TANF
+1640,361,CHIP
+1641,361,ABD (Non Duals)
+1642,361,Medicare Advantage
+1643,361,Healthy Families
+1644,362,Other
+1645,362,Medi-Cal
+1646,362,OneCare
+1647,362,Healthy Families
+1648,363,Other
+1649,363,PersonalBlue PPO
+1650,363,PersonalBlue with HSA
+1651,363,Individual Short Term
+1652,363,Guaranteed Issue
+1653,363,Dominion Dental
+1654,363,Senior Blue HMO
+1655,363,Senior Blue PPO
+1656,363,CHIP
+1657,363,eBasics
+1658,363,Traditional
+1659,363,PPO
+1660,363,PPO Plus
+1661,363,PPO 1-2-3
+1662,363,POS
+1663,363,HMO 
+1664,363,Comprehensive
+1665,363,BlueCross Dental
+1666,363,COBRA
+1667,363,mini-COBRA
+1668,87,CDPHP SmartOptions
+1669,87,Transitional EPO
+1670,87,High Deductible PPO
+1671,87,HMO 
+1672,87,Transitional PPO
+1673,87,Group Medicare
+1674,87,Delta Dental
+1675,87,Crystal Run Focused EPO
+1676,87,CDPHP Value Rx (HMO)
+1677,87,CHPHP Choice (HMO)
+1678,87,CDPHP Choice Rx (HMO)
+1679,87,Original Medicare
+1680,87,CDPHP Core Rx (PPO)
+1681,87,CDPHP Classic and Classic Rx (PPO)
+1682,87,CDPHP Prime Rx (PPO)
+1683,87,Standard Healthy New York
+1684,87,High Deductible Healthy New York
+1685,87,Non-Group HMO Option
+1686,87,Child Health Plus
+1687,87,Family Health Plus
+1688,87,Select Plan (Managed Medicaid)
+1689,70,Capital Health Plan
+1690,364,Other
+1691,364,ONECare Medicare Health Plan
+1692,364,Care 1st Health Plan
+1693,365,Other
+1694,365,Medicare
+1695,365,Medi-Cal
+1696,365,Healthy Families
+1697,51,BlueChoice HMO
+1698,51,BlueChoice HMO Open Access
+1699,51,BlueChoice Open Enrollment
+1700,51,BlueChoice HMO HSA
+1701,51,BlueChoice HMO HRA Open Access
+1702,51,BlueChoice HMO HSA Open Access
+1703,51,BlueChoice Opt-Out Plus HRA Open Access
+1704,51,BluePreferred HRA (PPO)
+1705,51,BluePreferred HSA (PPO)
+1706,51,HealthyBlue 2.0
+1707,51,HealthyBlue 2.0 HRA
+1708,51,HeatlhyBlue 2.0 HSA
+1709,51,HealthyBlue Dual Option HSA
+1710,51,HealthyBlue Triple Option HRA
+1711,51,HealthyBlue Triple Option HSA
+1712,51,BlueChoice Advantage
+1713,51,BlueChoice Opt-Out Open Access (POS)
+1714,51,BlueChoice Opt-Out Plus Open Access (POS)
+1715,51,Maryland Point of Service (MPOS)
+1716,51,BluePreferred (PPO)
+1717,51,Preferred Provider Organization (PPO/PPN)
+1718,51,Select Preferred Provider Plan (PPO)
+1719,51,BlueChoice Discount Dental Program
+1720,51,DHMO Dental
+1721,51,Preferred Dental (PPO)
+1722,51,Traditional Dental
+1723,51,Individual Select-Dental HMO
+1724,51,Individual Select-Preferred Dental
+1725,366,Other
+1726,366,HMO H6-3000
+1727,366,HMO H1
+1728,366,HMO H3-2
+1729,366,HMO H6-2
+1730,366,HMO H6-1000-2
+1731,366,HMO H6-500
+1732,366,POS-500
+1733,366,POS-1000
+1734,366,POS-1500
+1735,366,POS-5000
+1736,366,QHDHP 100-1
+1737,366,QHDHP 100-2A
+1738,366,QHDHP 100-3A
+1739,366,QHDHP 100-4
+1740,366,Premier-2
+1741,366,Premier-1000-7
+1742,366,Premier-2500-7
+1743,366,Premier-5000
+1744,366,Premier-2 (PPO)
+1745,366,Premier-1000-7 (PPO)
+1746,366,Premier-2500-7 (PPO)
+1747,366,Premier-5000 (PPO)
+1748,366,Classic-2 (PPO)
+1749,366,Classic-250-2 (PPO)
+1750,366,Classic-500-2 (PPO)
+1751,366,Value-250-7 (PPO)
+1752,366,Value-500-7 (PPO)
+1753,366,Value-1000-7 (PPO)
+1754,366,Value-2000-2 (PPO)
+1755,366,Value-3000-1 (PPO)
+1756,366,Enterprise-250-1 (PPO)
+1757,366,Enterprise-500-1 (PPO)
+1758,366,Enterprise-1000-1 (PPO)
+1759,366,Enterprise-1500-1 (PPO)
+1760,366,Enterprise-2500-1 (PPO)
+1761,366,Enterprise-5000-1 (PPO)
+1762,366,Select Std 1500 (PPO)
+1763,366,Select 2500-3 (PPO)
+1764,366,Select 5000 (PPO)
+1765,366,CDPOS-1000
+1766,366,CDPOS-1500
+1767,366,CDPOS-2000
+1768,366,CDPOS-2500
+1769,366,CDPOS-3000
+1770,366,CDPOS-5000
+1771,366,CDHP 1000-1
+1772,366,CDHP 1500-1
+1773,366,CDHP 2000-1
+1774,366,CDHP 2500-1
+1775,366,CDHP 3000-1
+1776,366,CDHP 5000-1
+1777,366,SA PPO 30-1000
+1778,366,SA PPO 30-2000
+1779,366,SA POS 30-1000
+1780,366,Simple 3
+1781,366,SA POS 30-2000
+1782,366,Innovation 4
+1783,366,QHDHP C
+1784,366,Simple 2
+1785,366,A-16
+1786,366,A-15
+1787,366,Innovation 3
+1788,366,Simple 1
+1789,366,QHDHP B2
+1790,366,A-14
+1791,366,A-13
+1792,366,QHDHP B1
+1793,366,Innovation 2
+1794,366,A-12
+1795,366,A-11
+1796,366,Innovation 1
+1797,366,QHDHP A
+1798,366,A-10
+1799,366,A-9
+1800,366,A-8
+1801,366,A-7
+1802,366,PPO B
+1803,366,PPO C
+1804,366,A-14M
+1805,366,A-13M
+1806,366,Coventry Dental
+1807,368,Other
+1808,368,CareMore Value Plus
+1809,368,CareMore StartSmart
+1810,368,CareMore Reliance
+1811,368,CareMore Breathe
+1812,368,CareMore ESRD
+1813,368,CareMore Heart
+1814,368,CareMore Connect
+1815,368,CareMore Touch
+1816,368,CareMore Dental
+1817,369,Other
+1818,369,CareOregon /OHP
+1819,369,CareOregon Advantage
+1820,370,Other
+1821,370,Michigan Medicaid
+1822,370, CareSource Advantage® (HMO) 
+1823,371,Other
+1824,371,CareSource Advantage® (HMO) 
+1825,371,Ohio ABD Medicaid
+1826,371,Ohio CFC Medicaid
+1827,372,Other
+1828,372,Carolina Connect HDHP
+1829,372,Carolina Connect Standard Plan
+1830,372,Medicare Supplement
+1831,373,Other
+1832,373,Celtic Basic
+1833,373,CeltiCare
+1834,373,CeltiCare II
+1835,373,CeltiCare Preferred
+1836,373,CelticSaver HSA
+1837,373,Celtic Short-Term
+1838,373,Celtic PostGrad
+1839,373,CeltiCare Preferred Select PPO
+1840,373,"CeltiCare Preferred ""Any Doc"" PPO "
+1841,373,CeltiCare Preferred Managed Indemnity
+1842,373,CelticSaver HSA PPO
+1843,373,CelticSaver HSA Managed Indemnity
+1844,374,Other
+1845,374,Commonwealth Care
+1846,374,CeltiCare Direct
+1847,374,CeltiCare Premier
+1848,374,Commonwealth Care Type I
+1849,374,Commonwealth Care Type II
+1850,374,Commonwealth Care Type III
+1851,374,CeltiCare Commonwealth Choice Gold
+1852,374,CeltiCare Commonwealth Choice Silver 
+1853,374,CeltiCare Commonwealth Choice Bronze
+1854,153,Today's Options Advantage- 300 (PPO) 
+1855,153,Today's Options Advantage- 400 (PPO) 
+1856,153,Today's Options Advantage- 150A (PPO)
+1857,153,Today's Options Advantage- 250A (PPO)
+1858,153,Today's Options Advantage- 450B (PPO)
+1859,153,Today's Options Advantage- 450F (PPO)
+1860,153,Today's Options Advantage- 450G (PPO)
+1861,153,Today's Options Advantage- 450H (PPO)
+1862,153,Today's Options Advantage- 450I (PPO)
+1863,153,Today's Options Advantage- 550B (PPO)
+1864,153,Today's Options Advantage-  650B (PPO)
+1865,153,Other
+1866,156,CHP
+1867,156,Other
+1868,49,UnitedHealth One- Co Pay Select Value
+1869,49,UnitedHealth One-Co Pay Select
+1870,49,High Deductible Plan- 100 
+1871,49,High Deductible Plan- 80
+1872,49,High Deductible Plan- Saver
+1873,49,UnitedHealth One- HSA- 100
+1874,49,UnitedHealth One-HSA- 70
+1875,49,UnitedHealth One- HSA-75
+1876,49,UnnitedHealth One- (Supplemental Accident Benefit)
+1877,49,Health Plan Only
+1878,49,"Health Plan with up to 2,500 Supplement Accident Benefit"
+1879,49,"Health Plan with up to 5, 000 Supplement Accident Benefit"
+1880,157,UPREHS 60/30 Plus Plan
+1881,157,UPREHS Medicare Secondary Plan
+1882,157,UPREHS Prime Medicare Plan
+1883,157,Other
+1884,152,Classic
+1885,152,Value Plus
+1886,152,Standard D
+1887,152,Value 
+1888,152,Other
+1889,159,Tufts Advantage plan (HMO)
+1890,159,Tufts Advantage plan (PPO)
+1891,159,Tufts Advantage HMO Saver Plan (HSA)
+1892,159,Tufts Advantage PPO Saver Plan (HSA)
+1893,159,Medicare Preferred Basic (no RX) (HSA)
+1894,159,Medicare Preferred Basic (RX) (HMO)
+1895,159,Medicare Preferred Value (no RX) (HMO)
+1896,159,Medicare Preferred Value (RX) (HMO)
+1897,159,Medicare Preferred Prime (RX) (HMO) 
+1898,159,Medicare Preferred Prime (no RX) (HMO)
+1899,159,Medicare Preferred Prime RX Plus (HMO)
+1900,159,Medicare Preferred Supplement Care Plan
+1901,159,Medicare Preferred Supplement One Plan
+1902,159,GIC
+1903,159,Other
+1904,69,TRICARE Standard and Extra
+1905,69,TRICARE Prime
+1906,69,TRICARE Retired Reserve
+1910,69,TRICARE Prime Remote
+1911,69,TRICARE Reserve Select
+1912,375,Other
+1913,375,Medi-Cal
+1914,69,TRICARE For Life
+1915,375,Healthy Families
+1916,375,Healthy Kids
+1917,375,In Home Supportive Services (IHSS)
+1918,375,Access for Infants and Mothers (AIM)
+1919,376,Other
+1920,376,Central Health Medicare Advantage HMO
+1921,162,Trillium Advantage (no RX) (HMO)
+1922,162,Trillium Advantage RX (HMO)
+1923,377,Other
+1924,377,DC Medicaid
+1925,162,Trillium Advantage RX Smart (HMO) 
+1926,377,DC HealthCare Alliance
+1927,162,Trillium Advantage Dual Special Needs Plan (HMO)
+1928,162,Trillium Advantage TLC ISNP (HMO)
+1929,378,Other
+1930,162,Other
+1931,379,Other
+1932,379,CHIP
+1933,163,Individual Plan
+1934,163,Medicaid
+1935,380,Other
+1936,163,Other
+1937,165,Medicaid Managed Care
+1938,380,CCHP Senior Program (HMO)
+1939,165,Family Health Plus
+1940,380,CCHP Senior Select Program (HMO SNP)
+1941,380,CCHP Ruby 10 / 20 / 40
+1942,165,Child Health Plus
+1943,380,CCHP Opal 25 / 50
+1944,165,Other
+1945,380,Active Choice
+1946,380,Chiropractic Rider
+1947,380,Dental Plan
+1948,380,Copayment Plan A-E
+1949,380,$25 Copayment Plan
+1950,167,Sutter SeniorCare (SSC)
+1951,380,CCHP Jade
+1952,167,Other
+1953,380,CCHP Amber
+1954,168,Suffolk Health Plan Medicaid
+1955,168,Family Health Plan
+1956,45,International Medical Insurance
+1957,45,International Medical Insurance Plus
+1958,168,Child Health Plus
+1959,45,International Dental
+1960,168,Other
+1961,45,CIGNA Medicare Rx (PDP)
+1962,45,CIGNA Medicare Select Plus Rx (HMO)®
+1963,45,Open Access 1000
+1964,45,Open Access 1500
+1965,169,Sterling Premier
+1966,45,Open Access 2000
+1967,45,Open Access 3000
+1968,169,Sterling Medicare Select
+1969,45,Open Access 5000
+1970,45,Open Access 5000/100%
+1971,169,Other
+1972,45,Health Savings 1900
+1973,45,Health Savings 3400
+1974,45,Health Savings 4900
+1975,45,Dental PPO 50
+1976,45,Open Access 1000/80%
+1977,45,Open Access 2000/80%
+1978,45,Open Access 3000/80%
+1979,45,Open Access 5000/80%
+1980,45,Open Access 7500/100%
+1981,45,Open Access 10000/100%
+1982,45,Open Access Value 1500/70%
+1983,45,Open Access Value 2500/70%
+1984,45,Open Access Value 3000/70%
+1985,172,POS Care 15/30/300 PA
+1986,45,Open Access Value 5000/70%
+1987,45,Open Access Value 7500/70%
+1988,172,POS Care 15/30/300 PA 500D
+1989,45,Open Access Value 10000/70%
+1990,45,Health Savings 1500
+1991,172,POS Care 20/40/200 PD
+1992,45,Health Savings 3000
+1993,45,Health Savings 5000
+1994,172,POS Care 20/50/250 PD
+1995,45,    Open Access Value 1500/75% 
+1996,45,Open Access Value 2500/75% 
+1997,172,POS Care 25/50/350 PD
+1998,45,Open Access Value 3500/75% 
+1999,45,Open Access Value 5500/75% 
+2000,172,POS Value 15/30/20
+2001,45,Open Access Value 7500/75%
+2002,45,Open Access Value 10000/75%
+2003,172,POS Value 15/30/20 300D
+2004,45,Health Savings 2500
+2005,45,Health Savings 3500
+2006,172,POS Value 25/50/20 500D
+2007,172,POS Value 25/50/30
+2008,172,POS Value 30/50/20 1000D
+2009,45,International Vision and Dental
+2010,172,SelectAdvantage POS 25-500
+2011,45,Open Access Plus (OAP)
+2012,172,SelectAdvantage POS 30-1000
+2013,45,Health Maintenance Organization (HMO)
+2014,172,HMO Care 15/30/300 PA
+2015,45,In-Network benefits of Point of Service (POS)
+2016,172,HMO Value 20/40/20
+2017,45,In-Network benefits of Open Access POS
+2018,45,Out-of-network benefits of POS and Open Access POS
+2019,172,HMO Standard Plan
+2020,45,"Voluntary, Limited Benefit Plans"
+2021,45,Network*
+2022,172,HMO Essential Plan
+2023,45,Network POS
+2024,45,Network POS Open Access
+2025,45,Preferred Provider Organization (PPO)
+2026,45,Exclusive Provider Organization (EPO)
+2027,45,OAP In-Network*
+2028,172,SelectAdvantage HMO 25-500
+2029,45,Cigna Choice Fund®
+2030,172,SelectAdvantage HMO 30-1000
+2031,45,Cigna Consumer Advantage®
+2032,45,Cigna Dental Care (DHMO)
+2033,172,SelectAdvantage HMO 30-2000
+2034,45,Cigna Traditional (Dental Indemnity)
+2035,45,Cigna Dental PPO**
+2036,172,SelectAdvantage PPO 30-1000
+2037,45,Cigna Dental Care® Value Plans
+2038,45,CignaFlex Advantage®
+2039,172,SelectAdvantage PPO 30-2000
+2040,45,Cigna Vision PPO
+2041,45,CignaPlus Savings®
+2042,172,PPO Care 10/20/0
+2043,45,Dental Health Maintenance Organization (DHMO)
+2044,172,PPO Care 15/30/300 PA
+2045,45,In-Network benefits of POS
+2046,172,PPO Care 25/50/350 PD
+2047,45,Out-of-Network benefits of POS
+2048,172,PPO Care 10/20/0 PA 500D 3500 OPM
+2049,45,Open Access Plus (OAP) and OAP-IN
+2050,172,PPO Care 15/30/300 PA 500D 3500 OPM
+2051,172,PPO Care 15/30/300 PA 1000D 4500 OPM
+2052,172,PPO Value 15/30/20
+2053,399,Other
+2054,172,PPO Value 15/30/20 300D
+2055,399,Total HMO
+2056,399,Plus HMO SNP
+2057,172,PPO Value 20/40/20 400D
+2058,172,PPO Value 25/50/20
+2059,172,PPO Value 25/50/20 10000D
+2060,172,PPO Value 30/50/20 2000D
+2061,172,PPO Value 30/50/30 1500D
+2062,172,CDHP 20 1000D
+2063,172,CDHP 20 1500D
+2064,231,Other
+2065,231,BrightIdea Preferred
+2066,172,CDHP 20 2000D
+2067,231,BrightIdea Value
+2068,172,CDHP 20 2500D
+2069,231,BrightIdea HSA
+2070,172,CDHP 20 3000D
+2071,229,Other
+2072,172,CDHP 20 5000D
+2073,229,Medicare Advantage (HMO)
+2074,172,CDHP POS 1000
+2075,229,Medicare Preferred (PPO)
+2076,229,Medicare Private Fee For Service (PFFS)
+2077,172,CDHP POS 2000
+2078,230,Other
+2079,172,CDHP POS 3000
+2080,172,CDHP POS 5000
+2081,230,Preferred
+2082,230,Value
+2083,172,QHDHP 1500D
+2084,230,Uniform
+2085,230,HSA Qualified
+2086,229,Elect Premiere
+2087,172,QHDPD 20 2000D
+2088,229,Elect Preferred
+2089,229,Elect Value Option
+2090,172,QHDHP 3000D-E
+2091,229,Elect HSA
+2092,172,QHDHP POS 0/3000D-E
+2093,172,QHDHP POS 0/5000-E
+2094,172,QHDHP POS 1500
+2095,172,QHDHP POS 2000
+2096,172,QHDHP PPO 0/5000D-E
+2097,231,Preferred Plan ID 50+3000
+2098,231,Preferred Plan ID 50+5000
+2099,231,Preferred Plan ID 500+20/80%
+2100,231,Preferred Plan ID 500+30/80%
+2101,231,Preferred Plan ID 500+30/70%
+2102,231,Preferred Plan ID 500+40/80%
+2103,231,Preferred Plan ID 500+40/70%
+2104,231,Preferred Plan ID 750+20/80%
+2105,231,Preferred Plan ID 750+30/80%
+2106,231,Preferred Plan ID 750+30/70%
+2107,231,Preferred Plan ID 750+40/80%
+2108,231,Preferred Plan ID 750+40/70%
+2109,231,Preferred Plan ID 1000+20/80%
+2110,231,Preferred Plan ID 1000+30/80%
+2111,231,Preferred Plan ID 1000+30/70%
+2112,231,Preferred Plan ID 1000+40/80%
+2113,172,Care 10/20/0 (PPO)
+2114,231,        Preferred Plan ID 1000+40/70%
+2115,231,Preferred Plan ID 1500+20/80%
+2116,172,Care PPO NATL 10/20/0 PA 500D3500 OPM
+2117,231,Preferred Plan ID 1500+30/80%
+2118,231,Preferred Plan ID 1500+30/70%
+2119,172,Care PPO NATL 15/30/300 PA 500D 3500 OPM
+2120,231,Preferred Plan ID 1500+40/80%
+2121,172,Care PPO NATL 15/30/300 PA 1000D 4500 OPM
+2122,231,Preferred Plan ID 1500+40/70%
+2123,231,Preferred Plan ID 2000+20/80%
+2124,172,Care 15/30/300 PA (PPO)
+2125,231,Preferred Plan ID 2000+30/80%
+2126,231,Preferred Plan ID 2000+30/70%
+2127,231,Preferred Plan ID 2000+40/80%
+2128,231,Preferred Plan ID 2000+40/70%
+2129,231,Preferred Plan ID 3000+20/80%
+2130,231,Preferred Plan ID 3000+30/80%
+2131,172,Care 25/50/350 PD (PPO)
+2132,231,Preferred Plan ID 3000+30/70%
+2133,231,Preferred Plan ID 3000+40/80%
+2134,172,Value 15/30/20 (PPO)
+2135,231,Preferred Plan ID 3000+40/70%
+2136,172,Value 15/30/20 300D (PPO)
+2137,231,Preferred Plan ID 5000+20/80%
+2138,231,Preferred Plan ID 5000+30/80%
+2139,172,Value 20/40/20 400D (PPO)
+2140,231,Preferred Plan ID 5000+30/70%
+2141,172,Value 25/50/20 (PPO)
+2142,231,Preferred Plan ID 5000+40/80%
+2143,231,Preferred Plan ID 5000+40/70%
+2144,172,Value 25/50/20 500D (PPO)
+2145,231,Preferred Plan ID 7500+20/80%
+2146,231,Preferred Plan ID 7500+30/80%
+2147,172,Value 30/50/20 1000D (PPO)
+2148,231,Preferred Plan ID 7500+30/70%
+2149,231,Preferred Plan ID 7500+40/80%
+2150,172,Value 30/50/20 2000D (PPO)
+2151,231,Preferred Plan ID 7500+40/70%
+2152,231,Deductible and Percentage ID 80+500
+2153,172,Value 30/50/30 1500D (PPO)
+2154,231,Deductible and Percentage ID 80+750
+2155,231,Deductible and Percentage ID 80+1000
+2156,172,Value 30/50/30 2500D (PPO)
+2157,231,Deductible and Percentage ID 80+1500
+2158,231,Deductible and Percentage ID 80+2000
+2159,231,Deductible and Percentage ID 80+3000
+2160,231,Deductible and Percentage ID 80+5000
+2161,231,Deductible and Percentage ID 80+7500
+2162,231,Deductible and Percentage ID 70+500
+2163,231,Deductible and Percentage ID 70+750
+2164,231,Deductible and Percentage ID 70+1000
+2165,231,Deductible and Percentage ID 70+1500
+2166,231,Deductible and Percentage ID 70+2000
+2167,231,Deductible and Percentage ID 70+3000
+2168,231,Deductible and Percentage ID 70+5000
+2169,231,Deductible and Percentage ID 70+7500
+2170,231,Deductible and Percentage ID 50+1000
+2171,231,Deductible and Percentage ID 50+2000
+2172,231,Deductible and Percentage ID 50/3500
+2173,172,QHDHP 20 2000D
+2174,231,HSA 80+1500 with Rx
+2175,172,QHDHP PPO NATL 0/5000D-E
+2176,231,HSA 80+2000 with Rx
+2177,231,HSA 80+3000 with Rx
+2178,231,HSA 100+5000 with Rx
+2179,231,HSA 80+1500 without Rx
+2180,173,SIHO (HMO)
+2181,231,HSA 80+2000 without Rx
+2182,173,SIHO Prime Care Choice 500
+2183,231,HSA 80+3000 without Rx
+2184,231,HSA 100-1500 without Rx
+2185,173,SIHO Prime Care Choice 1500
+2186,173,SIHO Prime Care Choice 2500
+2187,173,SIHO Prime Care Choice 5000
+2188,173,SIHO Prime Care Choice 1000
+2189,231,SmarthHealth for Business 1000+30-45/2500
+2190,173,SIHO Prime Care Choice 2000
+2191,231,SmarthHealth for Business 1000+30-45/5000 
+2192,231,SmarthHealth for Business 1000+40-55/2500 
+2193,231,SmarthHealth for Business 1000+40-55/5000 
+2194,231,SmarthHealth for Business HSA 75+3000 
+2195,231,SmarthHealth for Business 2500+30-45/2500
+2196,231,SmarthHealth for Business 2500+30-45/5000 
+2197,231,SmarthHealth for Business 2500+40-55/2500 
+2198,231,SmarthHealth for Business 2500+40-55/5000 
+2199,231,SmarthHealth for Business 5000+30-45/2500
+2200,173,SIHO Prime Care Choice 3500
+2201,231,SmarthHealth for Business 5000+30-45/5000 
+2202,173,SIHO Dental Preferred Plan
+2203,231,SmarthHealth for Business 5000+40-55/2500 
+2204,173,SIHO Dental Standard Plan
+2205,231,SmarthHealth for Business 5000+40-55/5000 
+2206,231,"Dental Preventive $25/$1,000"
+2207,173,SIHO Dental Value Plan
+2208,173,Other
+2209,231,"Dental Preventive $50/$1,000"
+2210,231,"Dental Preventive $25/$1,500"
+2211,231,"Dental Preventive $50/$1,500"
+2212,231,"Dental Comp $25/$1,000"
+2213,231,"Dental Comp $50/$1,000"
+2214,231,"Dental Comp $25/$1,500"
+2215,231,"Dental Comp $50/$1,500"
+2216,231,Dental Orthodontia
+2217,231,Dental Advantage Premier (PPO) 80/80/80/50 25/1000
+2218,231,Dental Advantage Premier (PPO) 80/80/80/50 25/1500
+2219,231,Dental Advantage Premier (PPO) 80/80/80/50 25/2000
+2220,172,Other
+2221,231,Dental Advantage Premier (PPO) 80/80/80/50 50/1000
+2222,231,Dental Advantage Premier (PPO) 80/80/80/50 50/1500
+2223,231,Dental Advantage Premier (PPO) 80/80/80/50 50/2000
+2224,231,Dental Advantage Premier (PPO) 100/80/80/50 25/1000
+2225,174,AbilityCare (HMO SNP)
+2226,231,Dental Advantage Premier (PPO) 100/80/80/50 25/1500
+2227,231,Dental Advantage Premier (PPO) 100/80/80/50 25/2000
+2228,231,Dental Advantage Premier (PPO) 100/80/80/50 50/1000
+2229,174,SeniorCare Complete (HMO SNP)
+2230,231,Dental Advantage Premier (PPO) 100/80/80/50 50/1500
+2231,231,Dental Advantage Premier (PPO) 100/80/80/50 50/2000
+2232,174,Minnesota Senior Care Plus
+2233,231,Dental Advantage (PPO) 80/80/50/50 25/1000
+2234,174,Medical Assistance (PMAP)
+2235,231,Dental Advantage (PPO) 80/80/50/50 25/1500
+2236,231,Dental Advantage (PPO) 80/80/50/50 25/2000
+2237,174,MinnesotaCare
+2238,231,Dental Advantage (PPO) 80/80/50/50 50/1000  
+2239,174,Other
+2240,231,Dental Advantage (PPO) 80/80/50/50 50/1500  
+2241,231,Dental Advantage (PPO) 80/80/50/50 50/2000
+2242,231,Dental Advantage (PPO) 100/80/50/50 25/1000
+2243,231,Dental Advantage (PPO) 100/80/50/50 25/1500
+2244,177,Premier Access HMO 5/5
+2245,231,Dental Advantage (PPO) 100/80/50/50 25/2000
+2246,231,Dental Advantage (PPO) 100/80/50/50 50/1000  
+2247,177,Premier Access HMO 7/10
+2248,231,Dental Advantage (PPO) 100/80/50/50 50/1500  
+2249,231,Dental Advantage (PPO) 100/80/50/50 50/2000
+2250,177,Premier Access HMO
+2251,177,Other
+2252,180,CHIP
+2254,180,STAR
+2255,180,Other
+2256,181,Optima Plus
+2257,229,Preferred CoDeduct OR 300+15
+2258,181,Optima Four Sight
+2259,229,Preferred CoDeduct OR 300+25
+2260,229,Preferred CoDeduct OR 500+15
+2261,181,Optima Equity 100
+2262,229,Preferred CoDeduct OR 500+25
+2263,229,Preferred CoDeduct OR 500+35
+2264,181,Optima Equity 80
+2265,229,Preferred CoDeduct OR 750+15
+2266,181,Other
+2267,229,Preferred CoDeduct OR 750+25
+2268,229,Preferred CoDeduct OR 750+35
+2269,229,Preferred CoDeduct OR 1000+15
+2270,229,Preferred CoDeduct OR 1000+25
+2271,229,Preferred CoDeduct OR 1000+35
+2272,183,Senior Whole Health Plus of NY HMO
+2273,229,Preferred CoDeduct OR 1000+50
+2274,183,Other
+2275,229,Preferred CoDeduct OR 1500+25
+2276,229,Preferred CoDeduct OR 1500+35
+2277,229,Preferred CoDeduct OR 1500+50
+2278,229,Preferred CoDeduct OR 2000+25
+2279,229,Preferred CoDeduct OR 2000+35
+2280,229,Preferred CoDeduct OR 2000+35/70%
+2281,184,Senior Whole Health HMO SNP of Massachusetts
+2282,229,Preferred CoDeduct OR 2000+50
+2283,184,Other
+2284,229,Preferred CoDeduct OR 2500+25
+2285,229,Preferred CoDeduct OR 2500+35
+2286,229,Preferred CoDeduct OR 2500+50
+2287,185,FirstChoice Health Plan
+2288,229,Preferred CoDeduct OR 3000+35/70%
+2289,229,Preferred CoDeduct Value OR CDV 300+35  
+2290,185,Other
+2291,229,Preferred CoDeduct Value OR CDV 300+35/70%  
+2292,229,Preferred CoDeduct Value OR CDV 300+50  
+2293,229,Preferred CoDeduct Value OR CDV 300+50/70%  
+2294,187,Security Health Plan (HMO)
+2295,229,Preferred CoDeduct Value OR CDV 500+35  
+2296,229,Preferred CoDeduct Value OR CDV 500+35/70%  
+2297,187,Other
+2298,229,Preferred CoDeduct Value OR CDV 500+50  
+2299,229,Preferred CoDeduct Value OR CDV 500+50/70%  
+2300,229,Preferred CoDeduct Value OR CDV 750+25  
+2301,189,Traditional HMO 40
+2302,229,Preferred CoDeduct Value OR CDV 750+25/70%  
+2303,229,Preferred CoDeduct Value OR CDV 750+35
+2304,229,Preferred CoDeduct Value OR CDV 750+35/70%
+2305,229,Preferred CoDeduct Value OR CDV 750+50
+2306,189,Consumer Choice 80%
+2307,229,Preferred CoDeduct Value OR CDV 750+50/70%
+2308,189,Consumer Choice 70%
+2309,229,Preferred CoDeduct Value OR CDV 1000+25  
+2310,229,Preferred CoDeduct Value OR CDV 1000+25/70%  
+2311,229,Preferred CoDeduct Value OR CDV 1000+35
+2312,189,Consumer Choice 80% HSA
+2313,229,Preferred CoDeduct Value OR CDV 1000+35/70%
+2314,189,Consumer Choice 100% HSA
+2315,229,Preferred CoDeduct Value OR CDV 1000+50
+2316,229,Preferred CoDeduct Value OR CDV 1000+50/70%
+2317,189,Point of Service 80/60
+2318,229,Preferred CoDeduct Value OR CDV 1500+25  
+2319,229,Preferred CoDeduct Value OR CDV 1500+25/70%  
+2320,189,Point of Service 70/50
+2321,229,Preferred CoDeduct Value OR CDV 1500+35
+2322,229,Preferred CoDeduct Value OR CDV 1500+35/70%
+2323,189,Point of Service 80/50 HSA
+2324,229,Preferred CoDeduct Value OR CDV 1500+50
+2325,229,Preferred CoDeduct Value OR CDV 1500+50/70%
+2326,229,Preferred CoDeduct Value OR CDV 2000+25  
+2327,229,Preferred CoDeduct Value OR CDV 2000+25/70%  
+2328,189,Point of Service 100/50 HSA
+2329,229,Preferred CoDeduct Value OR CDV 2000+35
+2330,189,Basic Dental 100/50/25
+2331,229,Preferred CoDeduct Value OR CDV 2000+35/70%
+2332,229,Preferred CoDeduct Value OR CDV 2000+50
+2333,189,Basic Dental Mid 100/80/50
+2334,229,Preferred CoDeduct Value OR CDV 2000+50/70%
+2335,229,Preferred CoDeduct Value OR  CDV 2500+25   
+2336,229,Preferred CoDeduct Value OR  CDV 2500+25/70%   
+2337,229,Preferred CoDeduct Value OR  CDV 2500+35 
+2338,229,Preferred CoDeduct Value OR  CDV 2500+35/70% 
+2339,229,Preferred CoDeduct Value OR CDV 2500+50
+2340,229,Preferred CoDeduct Value OR CDV 2500+50/70%
+2341,229,Preferred CoDeduct Value OR CDV 3000+25  
+2342,229,Preferred CoDeduct Value OR CDV 3000+25/70%  
+2343,229,Preferred CoDeduct Value OR CDV 3000+35
+2344,229,Preferred CoDeduct Value OR CDV 3000+35/70%
+2345,229,Preferred CoDeduct Value OR CDV 3000+50
+2346,189,Basic Dental High 100/80/70
+2347,229,Preferred CoDeduct Value OR CDV 3000+50/70%
+2348,229,Preferred CoDeduct Value OR CDV 5000+25  
+2349,229,Preferred CoDeduct Value OR CDV 5000+25/70%  
+2350,229,Preferred CoDeduct Value OR CDV 5000+35
+2351,189,Other
+2352,229,Preferred CoDeduct Value OR CDV 5000+35/70%
+2353,229,Preferred CoDeduct Value OR CDV 5000+50
+2354,229,Preferred CoDeduct Value OR CDV 5000+50/70%
+2355,229,Preferred CoDeduct Value OR CDV 7500+25  
+2356,229,Preferred CoDeduct Value OR CDV 7500+25/70%  
+2357,190,Saint Mary's Health Plans: HMO
+2358,229,Preferred CoDeduct Value OR CDV 7500+35
+2359,229,Preferred CoDeduct Value OR CDV 7500+35/70%
+2360,190,Saint Mary's Health Plans: PPO
+2361,229,Preferred CoDeduct Value OR CDV 7500+50
+2362,190,Other
+2363,229,Preferred CoDeduct Value OR CDV 7500+50/70%
+2364,229,Preferred Deductible and Percentage Plan OR 80+300
+2365,229,Preferred Deductible and Percentage Plan OR 80+500
+2366,193,Medicaid-HMO
+2367,229,Preferred Deductible and Percentage Plan OR 80+750
+2368,229,Preferred Deductible and Percentage Plan OR 80+1500
+2369,193,Medicaid-PPO
+2370,229,Preferred Deductible and Percentage Plan OR 80+2000
+2371,229,Preferred Deductible and Percentage Plan OR 80+1000
+2372,229,Preferred Deductible and Percentage Plan OR 80+2500
+2373,229,Preferred Deductible and Percentage Plan OR 50/3750
+2374,229,Preferred Deductible and Percentage Plan OR 50/5000
+2375,229,Preferred Deductible and Percentage Plan OR 70/3500
+2376,229,Preferred CoPay Plan OR 15/200D
+2377,229,Preferred CoPay Plan OR 25/200D
+2378,229,HSA 80+1500 OR No Rx
+2379,229,HSA 80+2000 OR No Rx
+2380,193,Medicaid-EPO
+2381,229,HSA 80+3000 OR No Rx
+2382,229,HSA 5000 OR No Rx
+2383,193,Other
+2384,229,HSA 80+1500+Rx OR
+2385,229,HSA 80+2000+Rx OR
+2386,229,HSA 80+3000+Rx OR
+2387,194,SOLO Outlook-500
+2388,229,HSA 5000+Rx OR
+2389,194,SOLO Outlook-1500
+2390,229,Preferred Basic Health Plan (BHP) OR
+2391,229,Prime Plan 15/200D OR
+2392,229,Prime Plan 25/200D OR
+2393,194,SOLO Outlook-2500
+2394,229,Prime Plan 500+25 OR
+2395,229,Prime Plan 1000+35 OR
+2396,194,SOLO Outlook-4000
+2397,229,Choice Plan 15/200D OR
+2398,194,SOLO Outlook-Active 75
+2399,229,Choice Plan 25/200D OR
+2400,229,BrightIdea
+2401,194,SOLO Outlook-Active 10
+2402,229,SmartHealth
+2403,229,Essentials Rx 14 (HMO)
+2404,194,SOLO Outlook-HSA 2500/100
+2405,229,Essentials Rx 6 (HMO)
+2406,229,Explorer Rx 1 (PPO)
+2407,194,SOLO Outlook-HSA 3250/100
+2408,229,Premier Rx 7 (HMO-POS)
+2409,194,SOLO Outlook-HSA 5000/100
+2410,229,Essentials Rx 15 (HMO)
+2411,229,Explorer Rx 4 (PPO)
+2412,229,Essentials Rx 16 (HMO)
+2413,229,Essentials Rx 2 (PPO)
+2414,229,Preferred Deductible
+2415,229,Preferred CoDeduct
+2416,229,Preferred HSA
+2417,229,SmarthHealth for Business
+2418,229,Traditional
+2419,194,Other
+2420,2,MedAdvantage & Medicare Script
+2421,200,MedAdvantage & Medicare Script
+2422,200,Other
+2423,30,Medigap
+2424,30,MedAdvantage & Medicare Script
+2425,205,MedAdvantage & Medicare Script
+2426,205,Other
+2427,401,Other
+2428,401,Child Health Plan Plus
+2429,401,Colorado Access Advantage (Medicare)
+2430,401,Regional Care Collaborative Organization (RCCO)
+2431,402,Other
+2432,402,Traditional Benefits
+2433,402,Managed Care Benefits
+2434,402,HSA Qualified Benefits
+2435,402,Dental
+2436,402,Colorado Choice Silver Plan (Cost)
+2437,402,Colorado Choice Gold Plan (Cost)
+2438,402,Colorado Choice Platinum Plan (Cost)
+2439,402,Colrado Choice Silver SV Plan (Cost)
+2440,402,Colorado Choice Gold SV Plan (Cost)
+2441,402,Colorado Choice Platinum SV Plan (Cost)
+2442,402,Children Health Plan Plus (CHP+) Plan
+2443,403,Other
+2444,403,Healthy Options/CHIP
+2445,403,Basic Health
+2446,196,Medicare Advantage Plan- Ascent (HMO)
+2447,404,Other
+2448,404,Senior Care Options Program (HMO SNP)
+2449,405,Other
+2450,405,Basic Medicare Rx Option
+2451,405,Enhanced Medicare Rx Option
+2452,405,HOP Medical Plan
+2453,405,HOP Medical Plan with Basic Medicare Rx Option
+2454,405,HOP Medical Plan with Enhanced Medicare Rx Option
+2455,405,HOP Pre-65 Medical Plan without prescription drug coverage
+2456,405,HOP Pre-65 Medical Plan with prescription drug coverage
+2457,405,Medicare Advantage
+2458,405,Managed Care Plan
+2459,407,Other
+2460,407,Program of All-inclusive Care for the Elderly (PACE)
+2461,407,Family Care Partnership Program (HMO SNP)
+2462,407,Family Care
+2463,408,Other
+2464,408,Commercial HMO
+2465,408,STAR Medicaid
+2466,408,University Family Care Plan
+2467,408,CHIP
+2468,409,Other
+2469,409,Medicaid Star of Texas Access Reform (STAR)
+2470,409,Children's Health Insurance Program (CHIP)
+2471,409,CHIP Perinatal program
+2472,409,3-Share Program
+2473,410,other
+2474,410,Medi-Cal
+2475,410,Healthy Families
+2476,410,CommuniCare Advantage (HMO SNP)
+2477,196,Medicare Advantage Plan-Alpine (HMO)
+2478,196,Medicare Advantage Plan-Sound+RX (HMO)
+2479,196,Medicare Advantage Plan-Pinacle+RX (HMO)
+2480,196,Medicare Advantage Plan-Charter+RX (HMO)
+2481,196,Medicare Advantage Plan-Apex+RX (HMO
+2482,196,Other
+2483,411,Other
+2484,411,CHP Health Insurance Plan
+2485,412,Other
+2486,412,Basic Health
+2487,412,Medical Care Services (Disability Lifeline/GA-U)
+2488,412,"Healthy Options, CHIP, and Basic Health Plus"
+2489,412,Medicare Advantage
+2490,412,Washington Health Program
+2491,413,Other
+2492,413,Senior Health Plan Silver
+2493,413,Senior Health Plan Platinum
+2494,413,Senior Health Plan Platinum Plus
+2495,413,CommunityCare65
+2496,413,CommunityCare HMO
+2497,413,CommunityCare Life & Health PPO
+2498,413,Senior Health Plan
+2499,413,CommunityCare HMO Plus POS
+2500,413,CommunityCare Life & Health PPO Plans
+2501,414,Other
+2502,414,PPO HA40
+2503,414,PPO HB40
+2504,414,PPO HC40
+2505,414,PPO HD40
+2506,414,PPO HE40
+2507,414,PPO HF40
+2508,414,PPO HG40
+2509,414,PPO HG45
+2510,414,PPO HH40
+2511,414,PPO HH45
+2512,414,PPO HI40
+2513,414,PPO HR 41
+2514,414,PPO HR 42
+2515,414,PPO HR 43
+2516,414,PPO SO40
+2517,414,PPO PA40
+2518,414,PPO PB40
+2519,414,PPO PB45
+2520,414,PPO PC40
+2521,414,PPO PD40
+2522,414,PPO PD45
+2523,414,PPO PE40
+2524,414,PPO PF40
+2525,414,PPO PG40
+2526,414,PPO PH40
+2527,414,PPO PI40
+2528,414,PPO PJ40
+2529,414,PPO PK40
+2530,414,PPO PL40
+2531,414,PPO PM40
+2532,415,Other
+2533,415,POS Hospital Deductible Plan (Group 1)
+2534,415,POS Upfront Deductible Plan (Group 2)
+2535,415,POS High-Deductible Health Plan (Group 3)
+2536,415,HMO High-Deductible Health Plan (Group 4)
+2537,415,Dental Plan
+2538,416,Other
+2539,416,Traditional 70 Plan
+2540,416,Traditional 90 Plan
+2541,416,Value First Plan
+2542,416,High Deductible Health Plan (HDHP)
+2543,416,Economy Plan
+2544,416,Child Only Coverage
+2545,416,Solutions HMO-POS
+2546,416,Cox DirectCare
+2547,416,Cox DirectCare II
+2548,416,Partners90
+2549,416,Partners80
+2550,416,Partners70
+2551,417,Other
+2552,417,DAKOTACAREONE WHITE
+2553,417,DAKOTACAREONE RED
+2554,417,DAKOTCAREONE BLUE
+2555,417,DAKOTACAREONE GREEN
+2556,417,DAKOTACAREONE BLACK
+2557,417,DAKOTACAREONE SELECT
+2558,417,DAKOTACAREONE CHOICE
+2559,417,DAKOTACAREONE ULTRA
+2560,417,DAKOTRACAREONE RESERVE (HSA)
+2561,417,DAKOTACAREONE ESSENTIAL
+2562,417,DAKOTACARE Flex
+2563,417,DAKOTACARE COBRA
+2564,417,Voluntary Dental
+2565,417,Small Group Dental
+2566,417,True Group Dental
+2567,419,Other
+2568,419,Dean Copay
+2569,419,Dean 500
+2570,419,Dean 1000
+2571,419,Dean 1500
+2572,419,Dean 2000
+2573,419,Dean 3500
+2574,419,Dean 5000
+2575,419,Dean 1500 HSA
+2576,419,Dean 2000 HSA
+2577,419,Dean 3500 HSA
+2578,419,Dean 5000 HSA
+2579,419,Group Plan: HMO
+2580,419,Group Plan: POS
+2581,419,Group Plan: Focus
+2582,419,Group Plan: Consumer Driven
+2583,419,Group Plan for Chamber Members
+2584,419,Group Plan Administrative Services
+2585,419,ChamberOne
+2586,419,Chamber Group
+2587,419,Ameritas Dental Plan
+2588,419,State HMO Plan
+2589,420,Other
+2590,420,DHA Denver Medical Care
+2591,420,DHA Point-of-Service
+2592,420,CSA and DERP Non-Medicare Primary
+2593,420,Medicare Choice (HMO SNP)
+2594,420,Medicare Select (HMO)
+2595,420,Child Health Plan Plus (CHP+)
+2596,208,Providence Medicare Extra- HMO
+2597,208,Providence Medicare Choice (HMO-POS)
+2598,421,Other
+2599,208,Providence Medicare Open (PPO)
+2600,208,Other
+2601,421,STAR
+2602,421,CHIP
+2603,421,CHIP Perinatal
+2604,422,Other
+2605,422,Easy Choice Health Plan (HMO)
+2606,423,Other
+2607,423,CHIP
+2608,423,CHIP Perinatal
+2609,423,Healthcare Options
+2610,423,Premier Plan Star Medicaid
+2611,424,Other
+2612,424,Elderplan Classic Zero Premium (HMO)
+2613,424,Elderplan Extra Help (HMO)
+2614,424,Elderplan for Medicaid Beneficiaries (HMO SNP)
+2615,424,Elderplan Independence Choice (HMO-POS)
+2616,424,Elderplan Medicaid Advantage (HMO SNP)
+2617,424,Elderplan Plus Long-Term Care (HMO SNP)
+2618,424,Elderplan Advantage for Nursing Home Residents (HMO SNP)
+2619,32,Superior Health Plan HMO
+2620,32,Superior Health Plan Direct HMO
+2621,32,Superior Health Plan PPO With In-Network Cost-Sharing
+2622,32,Superior Health Plan Empire PPO
+2623,32,Superior Health Plan EPO with In-Network Cost-Sharing
+2624,32,Superior Health Plan Direct POS
+2625,32,Innovative Health Plans DirectShare POS
+2626,32,Innovative Health Plans Empire Total Blue with HSA
+2627,32,Innovative Health Plan Empire Total Plan Empire Total Blue with HRA
+2628,32,Empire EPO Essential
+2629,32,Prism EPO
+2630,32,Prism PPO
+2631,32,Direct Pay HMO
+2632,32,Direct Pay POS
+2633,475,Individual & Family-Optimum Plus
+2634,475,Individual & Family-Value Plan
+2635,32,TraditionPlus Hospital Progarm
+2636,32,Healthy New York
+2637,475,Individual & Family-Prime Plan
+2638,32,Child Health Plus Plan
+2639,475,Individual & Family-HSA
+2640,32,Empire MediBlue Freedom III (PPO)
+2641,475,Other
+2642,32,Empire MediBlue Freedom II (PPO)
+2643,210,Priority-HSA
+2644,210,Priority-HRA
+2645,32,Empire MediBlue Freedom I (PPO)
+2646,32,Empire MediBlue Plus (HMO)
+2647,210,Priority-FSA Felxible Spending Account
+2648,32,Empire MediBlue Select (HMO)
+2649,32,Empire MediBlue Essential (HMO)
+2650,210,Medicare
+2651,32,MediBlue Plus (PPO)
+2652,210,Medigap
+2653,32,Medicare Part B
+2654,32,Medicare Supplement Plan B
+2655,210,MyPriority
+2656,32,Medicare Supplement Plan A
+2657,32,Medicare Supplement Plan G
+2658,210,Other
+2659,32,Value Dental Plan
+2660,32,Classic Dental Plan
+2661,32,Enhanced Dental Plan
+2662,32,Voluntary Dental Plan
+2663,211,Priority-POS Self Funded
+2664,211,Priority-PPO Self Funded
+2665,211,Other
+2666,426,Other
+2667,80,Priority-HMO
+2668,426,Essence Advantage HMO
+2669,426,Essence Advantage Plus HMO
+2670,80,Priority-POS
+2671,80,Priority-PPO
+2672,427,Other
+2673,427,HMOBlue Option
+2674,427,Blue Choice Option
+2675,427,Family Health Plus
+2676,427,Child Health Plus
+2677,80,Priority-EXO
+2678,427,Healthy NY
+2679,427,ValuMed
+2680,427,ValuMed Plus
+2681,427,Direct Pay HMO
+2682,213,PreferredOne Community Health Plan-HMO
+2683,213,PreferredOne-PPO
+2684,427,Direct Pay POS
+2685,427,Medicare PPO
+2686,427,Medicare HMO
+2687,213,Other
+2688,427,HealthyBlue
+2689,427,SimplyBlue
+2690,427,Excellus BluePPO
+2691,214,Plan A Select
+2692,427,Medicare Advantage Plans
+2693,427,Dental Blue Option
+2694,214,Plan B Select
+2695,427,Dental Blue Classic
+2696,214,Plan A Deluxe
+2697,214,Plan B Deluxe
+2698,214,Plan C Deluxe
+2699,106,Medicare Advantage-Fallon Senior Plan HMO
+2700,106,NaviCare HMO SNP
+2701,214,Plan BRX Deluxe
+2702,106,Summit ElderCare
+2703,106,Medicare Supplement-Fallon Senior Plan
+2704,214,Plan A Premier
+2705,106,MassHealth Covered Services Basic
+2706,214,Plan B Premier
+2707,106,MassHealth Covered Services Standard/CommonHealth
+2708,106,MassHealth Covered Services Family Assistance
+2709,214,Plan C Premier
+2710,106,MassHealth Covered Services Essential
+2711,106,Premium Saver Basic I
+2712,214,Plan BRX Premier
+2713,106,Premium Saver 1000
+2714,106,Premium Saver 2000 with $500 inpatient copay I
+2715,214,Other
+2716,106,Premium Saver 65/35
+2717,106,Care Choice 1250
+2718,106,Fallon Preferred Care
+2719,106,Fallon Senior Plan
+2720,215,HMO
+2721,106,Fallon Companion Care
+2722,215,POS
+2723,215,PPO
+2724,215,HSA
+2725,215,Preferred Senior Supplement (PPS)
+2726,215,Other
+2727,431,Other
+2728,431,PremierCare Choice
+2729,431,PremierCare Choice Rx
+2730,431,PremierCare Value Rx
+2731,431,PremierCare Plus
+2732,431,Dual Eligible (Medicare & Medicaid) Special Needs Plan
+2733,431,Oregon Medicaid
+2734,216,Preferred Choice (HMO)
+2735,432,Other
+2736,216,Preferred Select Care (HMO-SNP)
+2737,432,Child Health Plus
+2738,432,Family Health Plus
+2739,216,Preferred Gold Option (HMO)
+2740,432,Medicaid Managed Care
+2741,432,Fidelis Medicare Advantage
+2742,216,Preferred Complete Care (HMO)
+2743,432,Fidelis Dual Advantage
+2744,216,Prefered Choice (HMO-SNP)
+2745,432,Fidelis Care at Home
+2746,432,Fidelis Medicaid Advantage Plus
+2747,216,Preferred Special Care (HMO-SNP)
+2748,216,Preferred Premium Advantage (HMO-POS)
+2749,216,Preferred Medicare Assist (HMO-POS-SNP)
+2750,472,Other
+2751,472,Fidelis Secure Comfort
+2752,216,Other
+2753,472,Fidelis Secure Comfort Plus
+2754,472,Fidelis Secure Independence
+2755,472,Fidelis Secure Freedom
+2756,217,Piedmont Medicare Advantage (PPO) 
+2757,472,Fidelis SecureHome
+2758,217,Other
+2759,472,Fidelis Secure Liberty
+2760,472,Fidelis Secure Liberty Select
+2761,218,Pup Easy (HMO)
+2762,218,Pup Rewards (HMO)
+2763,218,Pup Simple (HMO) 
+2764,218,Pup Plus (HMO)
+2765,471,Other
+2766,218,Pup Extra (HMO) 
+2767,471,First Choice Health PPO (FCH PPO)
+2768,471,First Health's Dental Plan
+2769,471,First Health PPO
+2770,218,Other
+2771,470,Other
+2772,470,First Health PPO
+2773,469,Other
+2774,219,Meriter Choice Reward Plan (HMO)
+2775,469,Cubierta ELA 95
+2776,469,Cubierta Premium ELA
+2777,219,Health Sahre (HMO)
+2778,469,Cubierta ELA II
+2779,219,High Deductible Health Plan (HSA)
+2780,469,Cubierta ELA 95 Pensionados
+2781,469,Cubierto Premium ELA Pensionados
+2782,219,Other
+2783,469,Cubierto ELA II Pensionados
+2784,468,Other
+2785,220,Copay Plans
+2786,468,FirstCare (HMO)
+2787,468,FirstCare (PPO)
+2788,468,ChoicePlus
+2789,468,SelectHC
+2790,468,myHMO
+2791,468,FirstCare (PPO) Plan
+2792,468,FirstCare Advantage (HMO)
+2793,468,TRS ActiveCare (HMO)
+2794,467,Other
+2795,466,Other
+2796,220,Copay Choice Plans
+2797,466,HMO Plan
+2798,466,Balance Plan
+2799,220,HSA 70/30 Plan
+2800,466,High Deductible Plan
+2801,220,HSA 100% Plan
+2802,466,Point of Service Rider
+2803,466,Triple Option Rider
+2804,220,HSA Choice Plans
+2805,466,FirstChoice Individual Plan
+2806,220,Other
+2807,466,Florida Healthy Kids
+2808,466,Medicare Advantage Plan
+2809,465,Other
+2810,465,Freedom Savings Plan (HMO)
+2811,465,Freedom Savings Plan Rx (HMO)
+2812,465,Freedom VIP Savings (HMO SNP)
+2813,465,Freedom VIP Savings COPD (HMO SNP)
+2814,465,Freedom Medicare Plan Rx (HMO)
+2815,465,Freedom Medi-Medi Partial and Full (HMO SNP)
+2816,465,Freedom VIP Care (HMO SNP)
+2817,465,Freedom VIP Care COPD (HMO SNP)
+2818,464,Other
+2819,464,Fresenius Health Partners (PPO SNP)
+2820,463,Other
+2821,463,Medicare Assured HMO SNP
+2822,462,Other
+2823,462,Gold Classic 1 (HMO)
+2824,462,Gold Classic 3 (HMO)
+2825,462,Gold Classic 4 (HMO)
+2826,462,Gold Preferred Classic 1 (PPO)
+2827,462,Gold Preferred Classic 2 (PPO)
+2828,462,Gold Preferred Classic 3 (PPO)
+2829,462,Gold Secure 1 (HMO SNP)
+2830,462,Gold Secure 2 (HMO SNP)
+2831,462,Gold Reserve (MSA)
+2832,462,Gold Medicare Supplement
+2833,462,Short-Term $500 Deductible-Benefit Plan #1
+2834,462,Short-Term $1000 Deductible-Benefit Plan #2
+2835,462,Short-Term $1500 Deductible-Benefit Plan #3
+2836,462,Pennsylvania's Children's Health Insurance Program (CHIP)
+2837,462,Solutions Plan (HMO)
+2838,462,Geisinger Health Plan Direct
+2839,462,Geisinger Health Plan (POS)
+2840,462,Geisinger Choice (PPO)
+2841,461,Other
+2842,461,HMO Plan 1
+2843,461,HMO Plan 10A
+2844,461,HMO Plan 11
+2845,461,POS OA Plan 11
+2846,461,POS OA Plan 12
+2847,461,POS OA Plan 13
+2848,461,POS OA Plan 14
+2849,461,POS OA Plan 15
+2850,461,POS OA Plan 17
+2851,461,DME Plan 4
+2852,461,DME Plan 8
+2853,460,Other
+2854,460,GVHP Premier
+2855,460,GVHP GrandChoice
+2856,460,GVHP ChooseWell
+2857,459,Other
+2858,459,UnitedHealthcare Dual Complete (HMO SNP)
+2859,458,Other
+2860,458,Arizona Physicians IPA (APIPA) by UnitedHealthcare / AmeriChoice
+2861,458,Arizona Physicians IPA Developmentally Disabled
+2862,458,Evercare Select®
+2863,458,UnitedHealthcare Dual Complete (HMO SNP)
+2864,458,UnitedHealthcare Dual Complete LP (HMO SNP) 
+2865,458,KidsCare 
+2866,458,Arizona Physicians IPA
+2867,458,Arizona Physicians IPA Children's Rehabilitative Services
+2868,457,Other
+2869,457,UnitedHealthcare Dual Complete (LPPO SNP)
+2870,456,Other
+2871,456,UnitedHealthcare Community Plan for Families
+2872,456,UnitedHealthcare Dual Complete (PPO SNP)
+2873,456,Alliance CompleteCare
+2874,455,Other
+2875,455,UnitedHealthcare Community Plan
+2876,455,UnitedHealthcare Community Plan-Long Term Care
+2877,454,Other
+2878,454,Florida Healthy Kids
+2879,454,UnitedHealthcare Dual Complete LP (HMO SNP)
+2880,454,UnitedHealthcare Dual Complete EV (HMO SNP)
+2881,454,Citrus Plus
+2882,454,UnitedHealthcare Dual Complete RP (Regional PPO SNP)
+2883,221,Medicare Advantage Health Plan
+2884,454,UnitedHealthcare Dual Complete (HMO SNP)
+2885,221,Other
+2886,454,UnitedHealthcare At Home
+2887,454,UnitedHealthcare Community Plan M Plus
+2888,454,UnitedHealthcare Health and Home Connection
+2889,222,PBT Preferred Provider Options Plans
+2890,453,Other
+2891,453,UnitedHealthcare Dual Complete (HMO-POS SNP)
+2892,453,UnitedHealthcare Dual Complete (PPO SNP)
+2893,222,PBT Preferred Choice Indemnity
+2894,452,Other
+2895,452,UnitedHealthcare QUEST Expanded Access Program (QExA)
+2896,222,PBT Qualified High Deductible (HSA)
+2897,452,UnitedHealthcare Dual Complete RP (Regional PPO SNP)
+2898,452,UnitedHealth Dual Complete (PPO SNP)
+2899,222,PBT Value Plans (PPO)
+2900,222,PBT Value Health Savings (HSA)
+2901,451,Other
+2902,451,UnitedHealthcare Dual Complete (PPO SNP)
+2903,222,PBT Major Medical High Deductible Plan 
+2904,450,Other
+2905,222,Medicare Supplement (Medigap)
+2906,450,UnitedHealthcare Dual Complete (HMO-POS SNP)
+2907,450,UnitedHealthcare hawk-i
+2908,222,Other
+2909,449,Other
+2910,449,UnitedHealthcare Community Plan
+2911,448,Other
+2912,448,HealthChoice
+2913,448,Primary Adult Care (PAC)
+2914,223,Abrazo Advantage Health Plan (HMO)
+2915,223,Other
+2916,447,Other
+2917,447,UnitedHealthcare Senior Care
+2918,446,Other
+2919,446,UnitedHealthcare Community Plan
+2920,446,UnitedHealthcare Dual Complete (HMO SNP)
+2921,224,Coventry Dental
+2922,446,MIChild
+2923,224,SBP Value 500 90/70-11 90%
+2924,445,Other
+2925,224,SBP Value 1000 90/70-11 90%
+2926,445,MississippiCAN
+2927,445,MS CHIP
+2928,224,SBP Value 1500 90/70-11 90%
+2929,444,Other
+2930,224,SBP Value 2000 90/70-11 90%
+2931,444,UnitedHealthcare Dual Complete (HMO-POS SNP)
+2932,224,SBP Value 2500 90/70-11 90%
+2933,443,Other
+2934,224,SBP Value 3000 90/70-11 90%
+2935,443,Health Plan of Nevada (HPN) SmartChoice/NorthernChoice
+2936,443,Health Plan of Nevada (HPN) Nevada Check Up
+2937,442,Other
+2938,442,NJ FamilyCare
+2939,442,UnitedHealthcare Dual Complete (HMO SNP)
+2940,441,Other
+2941,441,CoLTS
+2942,441,UnitedHealthcare Dual Complete (PPO SNP)
+2943,440,Other
+2944,440,UnitedHealthcare Community Plan for Kids
+2945,440,UnitedHealthcare Community Plan for Adults
+2946,440,UnitedHealthcare Dual Advantage
+2947,440,UnitedHealthcare Dual Complete RP (Regional PPO SNP)
+2948,440,UnitedHealthcare Dual Complete LP (HMO SNP)
+2949,440,UnitedHealthcare Community Plan for Families
+2950,439,Other
+2951,439,UnitedHealthcare Community Plan (CFC)
+2952,439,UnitedHealthcare Community Plan (ABD)
+2953,439,UnitedHealthcare Dual Complete (HMO SNP)
+2954,224,SBP Value 4000 90/70-11 90%
+2955,438,Other
+2956,438,UnitedHealthcare Dual Complete (HMO SNP)
+2957,438,UnitedHealthcare MedicareComplete (HMO)
+2958,224,SBP Value 5000 90/70-11 90%
+2959,438,UnitedHealthcare Community Plan for Kids
+2960,438,UnitedHealthcare Community Plan for Families
+2961,224,SBP Value 500 80/60-11 80%
+2962,438,UnitedHealthcare aB
+2963,224,SBP Value 1000 80/60-11 80%
+2964,224,SBP Value 1500 80/60-11 80%
+2965,437,Other
+2966,224,SBP Value 2000 80/60-11 80%
+2967,437,UnitedHealthcare Rhody Health Partners
+2968,437,UnitedHealthcare RIte Care
+2969,224,SBP Value 2500 80/60-11 80%
+2970,437,Children with Special Health Care Needs
+2971,224,SBP Value 3000 80/60-11 80%
+2972,436,Other
+2973,224,SBP Value 3500 80/60-11 80%
+2974,436,UnitedHealthcare Community Plan
+2975,224,SBP Value 4000 80/60-11 80%
+2976,435,Other
+2977,435,UnitedHealthcare Community Plan for Families
+2978,224,SBP Value 5000 80/60-11 80%
+2979,435,UnitedHealthcare Dual Complete (HMO SNP)
+2980,434,Other
+2981,224,SBP SJ Prime 1000-11
+2982,434,STAR
+2983,434,STAR+PLUS
+2984,434,UnitedHealthcare Dual Complete (HMO SNP)
+2985,224,SBP SJ Prime 2000-11
+2986,434,UnitedHealthcare Dual Complete (PPO SNP)
+2987,224,SBP SJ Prime 3000-11
+2988,434,Physicians Health Choice Select (HMO SNP)
+2989,434,CHIP
+2990,224,SBP SJ Prime 5000-11
+2991,398,Other
+2992,224,SBP QHDHP 1500 100/70-11
+2993,398,BadgerCare Plus
+2994,398,Medicaid SSI
+2995,224,SBP QHDHP 2000 100/70-11
+2996,398,UnitedHealthcare Dual Complete LP (HMO SNP)
+2997,398,UnitedHealthcare Dual Complete (HMO SNP)
+2998,224,SBP QHDHP 2500 100/70-11
+2999,397,Other
+3000,397,Group Health Cooperative
+3001,397,Options POS
+3002,397,Options Select
+3003,397,Options PPO
+3004,397,Alliant Select
+3005,397,Alliant Plus
+3006,397,Group Health Standard Option Plan
+3007,224,SBP QHDHP 3000 100/70-11
+3008,397,Group Health High Option Plan
+3009,224,SBP QHDHP 5000 100/70-11
+3010,397,The Balance 1750 Plan
+3011,397,The Balance 2500 Plan
+3012,224,SBP QHDHP 1500 80/60-11
+3013,397,The Balance 5000 Plan
+3014,397,The Welcome 750 Plan
+3015,224,SBP QHDHP 2500 80/60-11
+3016,397,The Welcome 2000 Plan
+3017,224,SBP QHDHP 2500 100/70 EMB-11
+3018,397,The Welcome 3500 Plan
+3019,397,HealthPays 2000/4000 HSA Plan
+3020,397,HealthPays 2750/5500 HSA Plan
+3021,397,PEBB Value Plan
+3022,397,PEBB CLassic Plan
+3023,224,SBP QHDHP 5000 100/70 EMB-11
+3024,397,PEBB HealthPays Health Savings Account (HSA) Plan
+3025,397,Clear Care Elite PPO
+3026,224,SBP QHDHP 2500 80/60 EMB-11
+3027,397,Clear Care Prestige PPO
+3028,397,Clear Care Optimal HMO
+3029,224,Standard PPO Plans
+3030,397,Clear Care Vital HMO
+3031,397,Clear Care Essential HMO
+3032,224,Economy Plans
+3033,397,Clear Care Basic HMO
+3034,397,Clear Care Sound HMO SNP
+3035,224,Prime Plans
+3036,224,Qualified High Deductible Plan (HSA)
+3037,396,Other
+3038,396,Employer Based Plan
+3039,225,People's Health Choices Plus (HMO-POS)
+3040,396,State of Wisconsin Employee
+3041,396,Dental/Orthodontic Benefit
+3042,225,Other
+3043,396,BadgerCare Plus
+3044,396,Medicaid SSI
+3045,395,Other
+3046,395,HMO Small Group Plan
+3047,395,Deductible Small Group Plan
+3048,395,Consumer Driven Small Group Plan
+3049,395,PPO Small Group Plan
+3050,395,Chamber Small Group Plan
+3051,395,HSA Small Group Plan
+3052,395,Dental Health Small Group Plan
+3053,395,Group Health Cooperative of South Central Wisconsin (GHC-SCW) HMO
+3054,395,HMO
+3055,395,PPO
+3056,395,POS
+3057,395,ChamberCare
+3058,16,GHI HMO Plan
+3068,16,HIP Child Health Plus (CHPlus)
+3069,16,HIP Family Health Plus (FHPlus)
+3072,16,GHI HMO Value Plan $25/$40
+3073,16,GHI HMO Plan $30/$50
+3074,16,GHI HMO Plan $25/$40 A
+3075,16,GHI Healthy NY HMO High Deductible Health Plan
+3076,16,GHI Brooklyn HealthWorks High Deductible Health Plan
+3077,16,GHI Healthy NY EPO High Deductible Health Plan
+3078,16,Alliance Value Plan
+3079,16,GHI Direct Pay HMO
+3080,16,GHI Direct Pay HMO POS
+3081,16,GHI Small Business Advantage Plan
+3096,394,Other
+3097,394,QC2500E-12
+3098,394,A000-12 100%
+3099,394,A500-12 100%
+3100,394,A1000-12 100%
+3101,394,A1500-12 100%
+3102,394,A2000-12 100%
+3103,394,A2500-12 100%
+3104,394,A3000-12 100%
+3105,394,A5000-12 100%
+3106,394,B500-12 90%
+3107,394,B1000-12 90%
+3108,394,B1500-12 90%
+3109,394,C500-12 80%
+3110,394,C1000-12 80%
+3111,394,C1500-12 80%
+3112,394,C2000-12 80%
+3113,394,C2500-12 80%
+3114,394,C3000-12 80%
+3115,394,C5000-12 80%
+3116,394,D1000-12 70%
+3117,394,D2000-12 70%
+3118,394,SJ1000-12
+3119,394,SJ2000-12
+3120,394,SJ3000-12
+3121,394,SJ5000-12
+3122,394,AR1000V
+3123,394,A2000V-12
+3124,394,A2500V-12
+3125,394,A3000V-12
+3126,394,FR000V
+3127,394,VALUER2500
+3128,394,VALUER3000
+3129,394,QAR1500
+3130,394,QAR2000
+3131,394,QAR2500E
+3132,394,QA2500-12
+3133,394,QA5000-12
+3134,394,QAR3000
+3135,394,QAR5000E
+3136,394,QAR5000-20
+3137,394,Coventry Dental
+3138,226,Connections Plus
+3139,393,Other
+3140,226,Medicare Advantage (HMO-SNP)
+3141,393,HMO Straight Copay Plan 100%-15 (1A-WI)
+3142,393,HMO Straight Copay Plan 100%-30 (1C-WI)
+3143,226,Other
+3144,393,HMO Combo Plan 500-15 (4A-WI)
+3145,393,HMO Combo Plan 500-15 (4C-WI)
+3146,393,HMO Combo Plan 1000-30 (4B-WI)
+3147,393,HMO Combo Plan 1000-30 (4D-WI)
+3148,393,HMO Deductible/Coinsurance Plan 250 90 (2A-WI)
+3149,393,HMO Deductible/Coinsurance Plan 250-80 (2B-WI)
+3150,393,HMO Deductible/Coinsurance Plan 250-90 (2C-WI)
+3151,393,HMO Deductible/Coinsurance Plan 250-80 (2D-WI)
+3152,393,HMO Deductible/Coinsurance Plan 500-90 (5A-WI)
+3153,393,HMO Deductible/Coinsurance Plan 500-80 (5B-WI)
+3154,393,HMO Deductible/Coinsurance Plan 500-90 (5C-WI)
+3155,393,HMO Deductible/Coinsurance Plan 500-80 (5D-WI)
+3156,393,HMO Deductible/Coinsurance Plan 750-90 (6A-WI)
+3157,393,HMO Deductible/Coinsurance Plan 750-80 (6H-WI)
+3158,393,HMO Deductible/Coinsurance Plan 1000-90 (0A-WI)
+3159,393,HMO Deductible/Coinsurance Plan 1000-80 (0B-WI)
+3160,393,HMO Deductible/Coinsurance Plan 1000-90 (0C-WI)
+3161,393,HMO Deductible/Coinsurance Plan 1000-80 (0D-WI)
+3162,393,HMO Deductible/Coinsurance Plan 1500-90 (6B-WI)
+3163,393,HMO Deductible/Coinsurance Plan 1500-80 (6I-WI)
+3164,393,HMO Deductible/Coinsurance Plan 2000-90 (6C-WI)
+3165,393,HMO Deductible/Coinsurance Plan 2000-80 (6J-WI)
+3166,393,HMO Deductible/Coinsurance Plan 2500-90 (6D-WI)
+3167,393,HMO Deductible/Coinsurance Plan 2500-80 (6K-WI)
+3168,393,HMO Deductible/Coinsurance Plan 3000-90 (6L-WI)
+3169,393,HMO Deductible/Coinsurance Plan 3000-80 (6L-WI)
+3170,393,HMO Deductible/Coinsurance Plan 4000-90 (6F-WI)
+3171,393,HMO Deductible/Coinsurance Plan 4000-80 (6M-WI)
+3172,393,HMO Deductible/Coinsurance Plan 5000-90 (6G-WI)
+3173,393,HMO Deductible/Coinsurance Plan 5000-80 (6N-WI)
+3174,393,HMO Coinsurance Plan 90-1000 (3A-WI)
+3175,393,HMO Coinsurance Plan 85-1500 (3B-WI)
+3176,393,HMO Coinsurance Plan 80-2000 (3C-WI)
+3177,393,HMO Coinsurance Plan (3D-WI)
+3178,393,HMO Straight Copay Plan 100%-15 (1A-IA)
+3179,393,HMO Straight Copay Plan 100%-30 (1C-IA)
+3180,393,HMO Combo Plan 500-15 (4A-IA)
+3181,393,HMO Combo Plan 500-15 (4C-IA)
+3182,393,HMO Combo Plan 1000-30 (4B-IA)
+3183,393,HMO Combo Plan 1000-30 (4D-IA)
+3184,393,HMO Deductible/Coinsurance Plan 250 90 (2A-IA)
+3185,393,HMO Deductible/Coinsurance Plan 250-80 (2B-IA)
+3186,393,HMO Deductible/Coinsurance Plan 250-90 (2C-IA)
+3187,393,HMO Deductible/Coinsurance Plan 250-80 (2D-IA)
+3188,393,HMO Deductible/Coinsurance Plan 500-90 (5A-IA)
+3189,393,HMO Deductible/Coinsurance Plan 500-80 (5B-IA)
+3190,393,HMO Deductible/Coinsurance Plan 500-90 (5C-IA)
+3191,393,HMO Deductible/Coinsurance Plan 500-80 (5D-IA)
+3192,393,HMO Deductible/Coinsurance Plan 750-90 (6A-IA)
+3193,317,Individual - Blue Advantage
+3194,317,Individual - Blue Advantage Saver
+3195,317,Individual - Blue Options (HSA)
+3196,317,Individual - Blue Assurance
+3197,317,Individual - Dental Blue
+3198,317,Blue Medicare (HMO)
+3199,317,Blue Medicare (PPO)
+3200,228,Paramount Elite Medicare Plan (HMO)
+3201,228,Paramount Advantage Medicaid Plan
+3202,228,Ohio POS High
+3203,228,Ohio POS Low
+3204,228,CDHP Plan 6
+3205,228,CDHP Plan 7
+3206,228,CDHP Plan 8
+3207,228,CDHP Plan 15
+3208,228,CDHP Plan 19
+3209,228,CDHP Plan 22
+3210,228,CDHP 80202500E
+3211,228,CDHP 80203000E
+3212,228,CDHP 80204000E
+3213,228,Chamber/HBA HMO High
+3214,228,Chamber/HBA HMO Std.
+3215,228,Chamber/HBA HMO Base
+3216,228,BBB Association 9U
+3217,393,HMO Deductible/Coinsurance Plan 1000-90 (0A-IA)
+3218,393,HMO Deductible/Coinsurance Plan 1000-80 (0B-IA)
+3219,393,HMO Deductible/Coinsurance Plan 1000-90 (0C-IA)
+3220,393,HMO Deductible/Coinsurance Plan 1000-80 (0D-IA)
+3221,393,HMO Deductible/Coinsurance Plan 1500-90 (6B-IA)
+3222,393,HMO Deductible/Coinsurance Plan 1500-80 (6I-IA)
+3223,393,HMO Deductible/Coinsurance Plan 2000-90 (6C-IA)
+3224,393,HMO Deductible/Coinsurance Plan 2000-80 (6J-IA)
+3225,393,HMO Deductible/Coinsurance Plan 2500-90 (6D-IA)
+3226,393,HMO Deductible/Coinsurance Plan 2500-80 (6K-IA)
+3227,393,HMO Deductible/Coinsurance Plan 3000-90 (6L-IA)
+3228,228,BBB Association 2V
+3229,393,HMO Deductible/Coinsurance Plan 3000-80 (6L-IA)
+3230,393,HMO Deductible/Coinsurance Plan 4000-90 (6F-IA)
+3231,393,HMO Deductible/Coinsurance Plan 4000-80 (6M-IA)
+3232,228,BBB Association 9W
+3233,393,HMO Deductible/Coinsurance Plan 5000-90 (6G-IA)
+3234,393,HMO Deductible/Coinsurance Plan 5000-80 (6N-IA)
+3235,228,BBB Association 2U
+3236,393,HMO Coinsurance Plan 90-1000 (3A-IA)
+3237,228,BBB Association High
+3238,393,HMO Coinsurance Plan 85-1500 (3B-IA)
+3239,393,HMO Coinsurance Plan 80-2000 (3C-IA)
+3240,393,HMO Coinsurance Plan (3D-IA)
+3241,228,BBB Association Std
+3242,393,POS 000-10 (9A-WI)
+3243,393,POS 000-90 (9B-WI)
+3244,228,BBB Association Base
+3245,393,POS 200-90 (9C-WI)
+3246,393,POS 500-90 (9D-WI)
+3247,393,POS 1000-90 (9E-WI)
+3248,393,POS 000-10 (9A-IA)
+3249,393,POS 100-90 (9B-IA)
+3250,228,Michigan HMO Low
+3251,393,POS 200-90 (9C-IA)
+3252,393,POS 500-90 (9D-IA)
+3253,228,Michigan HMO High
+3254,393,POS 1000-90 (9E-IA)
+3255,393,HMO HSA-Qualified Plan 1250-80 (7A-WI)
+3256,393,HMO HSA-Qualified Plan 1500-80 (7B-WI)
+3257,228,Michigan MAP High
+3258,393,HMO HSA-Qualified Plan 1750-80 (7C-WI)
+3259,393,HMO HSA-Qualified Plan 2000-80 (7D-WI)
+3260,228,Michigan MAP Mid
+3261,393,HMO HSA-Qualified Plan 2250-80 (7E-WI)
+3262,393,HMO HSA-Qualified Plan 2500-80 (7F-WI)
+3263,228,Michigan MAP Low
+3264,393,HMO HSA-Qualified Plan 1250-80 (7A-IA)
+3265,393,HMO HSA-Qualified Plan 1500-80 (7B-IA)
+3266,228,Michigan MAP 500
+3267,393,HMO HSA-Qualified Plan 1750-80 (7C-IA)
+3268,228,Michigan MAP HDP01
+3269,393,HMO HSA-Qualified Plan 2000-80 (7D-IA)
+3270,393,HMO HSA-Qualified Plan 2250-80 (7E-IA)
+3271,393,HMO HSA-Qualified Plan 2500-80 (7F-IA)
+3272,228,Michigan MAP HDP02
+3273,393,POS HSA-Qualified Plan 1250-90 (7G-WI)
+3274,228,Michigan MAP HDP03
+3275,393,POS HSA-Qualified Plan 1750-90 (7I-WI)
+3276,228,PPO MCPA Base
+3277,393,POS HSA-Qualified Plan 2000-90 (7J-WI)
+3278,228,PPO MCPA STD
+3279,393,POS HSA-Qualified Plan 2250-90 (7K-WI)
+3280,393,POS HSA-Qualified Plan 2500-90 (7L-WI)
+3281,393,POS HSA-Qualified Plan 1250-90 (7G-IA)
+3282,393,POS HSA-Qualified Plan 1500-90 (7H-IA)
+3283,393,POS HSA-Qualified Plan 1750-90 (7I-IA)
+3284,393,POS HSA-Qualified Plan 2000-90 (7J-IA)
+3285,393,POS HSA-Qualified Plan 2250-90 (7K-IA)
+3286,228,PPO MCPA High
+3287,393,POS HSA-Qualified Plan 2500-90 (7L-IA)
+3288,228,PPO MCP8060 (500)
+3289,228,PPO MCP8060 (750)
+3290,228,PPO MCP9070 (250)
+3291,392,Other
+3292,392,HMO
+3293,228,PPO MCP10070 (1000)
+3294,392,HealthFirst HMO
+3295,228,PPO MCP10080 (2000)
+3296,392,POS
+3297,392,PPO
+3298,392,Best Buy HMO/PPO
+3299,392,ChoiceNet
+3300,392,DirigoChoice PPO
+3301,392,Best Buy HSA PPO
+3302,392,Core Coverage
+3303,392,Pulse Plan
+3304,392,Choice Plus & Options
+3305,228,Other
+3306,392,Focus Network-Central MA
+3307,392,Medicare Enhance
+3308,392,Medicare Supplement Plan
+3309,232,Medicare Advantage (HMO)
+3310,232,Medicare Preferred (PPO)
+3311,391,Other
+3312,232,Medicare Private Fee For Service (PFFS)
+3313,391,HealthFirst HMO
+3314,391,Medicare Enhance
+3315,232,Other
+3316,390,Other
+3317,390,Choice Plus and Options
+3318,390,Core Coverage
+3319,390,DirigoChoice PPO
+3320,390,Focus Network-Central MA
+3321,233,ODS WELL
+3322,389,Other
+3323,233,HSA2800_11A1
+3324,389,PPO 100/50 1500
+3325,389,PPO 100/50 3000
+3326,233,PPO1500_11B1
+3327,389,PPO 100/50 5000
+3328,389,PPO 80/50 5000
+3329,233,PPO1000_11B1
+3330,389,PPO 80/50 1000
+3331,389,PPO 80/50 2000
+3332,233,HSA2000_11A1
+3333,389,PPO 80/50 7500
+3334,389,Short-Term 500
+3335,233,Basic Oregon Plan
+3336,389,Short-Term 1000
+3337,233,HSA1200_11A1
+3338,389,Short-Term 2000
+3339,389,Short-Term 5000
+3340,233,HSA4000_11A1
+3341,389,HSA Compatible Plan
+3342,389,Dental
+3343,233,BEN2500_11A1
+3344,389,HMSA PPO
+3345,389,HMSA HMO
+3346,233,BEN3500_11A1
+3347,233,BEN5000_11A1
+3348,233,BEN7500_11A1
+3349,233,PPO500_11B1
+3350,233,PPO750_11B1
+3351,388,Other
+3352,388,Alliance Medicare Supplement
+3353,388,Alliance Medicare PPO
+3354,388,HPA Senior Plus (HMO) Henry Ford
+3355,388,HAP Senior Plus (HMO-POS) Expanded Network
+3356,388,SOLO PPO 500/1200
+3357,388,SOLO PPO 2500/5000
+3358,388,SOLO HSA 2500/5000
+3359,388,SOLO PPO 1000 RX/1000 NO RX
+3360,388,SOLO PRO 3000 RX/3000 NO RX
+3361,388,HAP HMO
+3362,388,ALLIANCE PPO
+3363,233,PPO1000_11E1
+3364,388,ALLIANCE EPO
+3365,388,HDHP
+3366,233,PPO1500_11A1
+3367,387,Other
+3368,387,Choice PPO $1500+
+3369,387,Choice PPO $2500+
+3370,387,Choice PPO $4000+
+3371,387,Premier PPO $5 $10
+3372,387,Premier PPO $10 $10
+3373,387,Premier PPO $15 $30
+3374,233,PPO1500_11E1
+3375,387,Premier PPO $20 $40
+3376,387,Premier PPO $250
+3377,233,PPO2000_11A1
+3378,387,Premier PPO $500
+3379,233,PPO2000_11B1
+3380,387,Premier PPO $750
+3381,387,Premier PPO $1000
+3382,233,PPO2000_11E1
+3383,387,Premier PPO $1250
+3384,387,Premier PPO $1500
+3385,233,PPO2500_11A1
+3386,387,Premier PPO $2000
+3387,233,PPO3000_11A1
+3388,387,Premier PPO $3000
+3389,387,Premier PPO $5000
+3390,233,PPO4000_11A1
+3391,387,Premier PPO $2500 1x
+3392,387,Premier PPO $3250 1x
+3393,233,PPO1000_11B1_EvBid
+3394,387,Premier PPO $4000 1x
+3395,387,Premier PPO $5000 1x
+3396,233,PPO1500_11B1_EvBid
+3397,387,Premier PPO $6000 1x
+3398,387,Premier PPO $7500 1x
+3399,233,PPO2000_11B1_EvBid
+3400,387,Premier PPO $10000 1x
+3401,387,Classic PPO $250
+3402,387,Classic PPO $500
+3403,233,Medicare ODS Advantage (PPO) 
+3404,387,Classic PPO $1000
+3405,233,Medicare ODS Advantage PPORX Select (PPO)
+3406,387,Value PPO $250
+3407,387,Value PPO $500
+3408,233,Delta Dental Premier
+3409,387,Value PPO $1000
+3410,387,Value PPO $1500
+3411,233,Delta Dental PPO
+3412,387,Value PPO $2000
+3413,387,FlexChoice QHDHP PPO $1250
+3414,233,PERS ODS Advantage PPORX
+3415,387,FlexChoice QHDHP PPO $1250 II
+3416,233,PERS ODS Advantage RX
+3417,387,FlexChoice QHDHP PPO $2500
+3418,387,FlexChoice QHDHP Value PPO $1250
+3419,233,A0D01B ODS Dental
+3420,387,FlexChoice QHDHP PPO $1500
+3421,387,FlexChoice QHDHP PPO $2000
+3422,233,A0D01B DirectOption Dental
+3423,387,FlexChoice QHDHP Value PPO $2500
+3424,387,FlexChoice QHDHP Value PPO $3750
+3425,233,B3X25 D01B ODS Dental
+3426,387,FlexChoice QHDHP PPO $2500 1x
+3427,233,B3X25 D01B DirectOption Dental
+3428,387,FlexChoice QHDHP PPO $5000 1x
+3429,387,OOA Choice PPO $1500+
+3430,233,B3X50 D01B ODS Dental
+3431,387,OOA Choice PPO $2500+
+3432,233,B3X50 D01B DirectOption Dental
+3433,387,OOA Choice PPO $4000+
+3434,233,B3X501 D03B ODS Dental
+3435,387,OOA Premier PPO $10 $10
+3436,233,B3X501 D03B DirectOption Dental
+3437,387,OOA Premier PPO $15 $30
+3438,387,OOA Premier PPO $250
+3439,233,C3X25 D02B ODS Dental
+3440,387,OOA Premier PPO $500
+3441,387,OOA Premier PPO $1000
+3442,387,OOA Premier PPO $1250
+3443,387,OOA Premier PPO $2000
+3444,387,OOA Premier PPO $3000
+3445,387,OOA Premier PPO $2500 1x
+3446,387,OOA Premier PPO $3250 1x
+3447,387,OOA Premier PPO $4000 1x
+3448,387,OOA Premier PPO $5000 1x
+3449,387,OOA Premier PPO $6000 1x
+3450,387,OOA Premier PPO $7500 1x
+3451,387,OOA Premier PPO $10000 1x
+3452,387,OOA Classic PPO $250
+3453,387,OOA Classic PPO $500
+3454,387,OOA Value PPO $250
+3455,387,OOA Value PPO $500
+3456,387,OOA FlexChoice QHDHP PPO $1250
+3457,387,OOA FlexChoice QHDHP PPO $1250 II
+3458,387,OOA FlexCHoice QHDHP PPO $1500
+3459,387,OOA FlexChoice QHDHP PPO $2000
+3460,387,OOA FlexChoice QHDHP PPO $2500
+3461,387,OOA FlexChoice QHDHP PPO $2500 1x
+3462,387,OOA FlexChoice QHDHP PPO $5000 1x
+3463,387,Coventry Dental
+3464,387,Coventry Consumer Choices (C3)
+3465,386,Other
+3466,386,Kids Care
+3467,386,Children's Dental Health Services
+3468,386,Adult Dental Health Services
+3469,386,Health Choice Arizona
+3470,385,Other
+3471,385,HF 24 (HMO)
+3472,385,HF 25 (HMO)
+3473,385,HF 26 (HMO)
+3474,385,HF 27 (HMO)
+3475,385,VALUE 1 (HMO)
+3476,385,VALUE 2 (HMO)
+3477,385,VALUE 4 (HMO)
+3478,385,C 2 (HMO)
+3479,385,C 3 (HMO)
+3480,385,C 4 (HMO)
+3481,385,Basic 1 (HMO)
+3482,385,BASIC 2 (HMO)
+3483,385,BASIC 3 (HMO)
+3484,385,BASIC 4 (HMO)
+3485,385,STANDARD 1 (HMO)
+3486,385,STANDARD 2 (HMO)
+3487,385,STANDARD 3 (HMO)
+3488,385,STANDARD 4 (HMO)
+3489,385,HF 4 (HMO)
+3490,385,HF 5 (HMO)
+3491,385,HF 6 (HMO)
+3492,233,C3X25 DO2B DirectOption Dental
+3493,385,VALUE 5 (HMO)
+3494,385,VALUE 5D (HMO)
+3495,233,C3X50 D02B ODS Dental
+3496,385,VALUE 6 (HMO)
+3497,385,VALUE 6D (HMO)
+3498,385,VALUE 7 (HMO)
+3499,233,C3X50 D02B DirectOption Dental
+3500,385,VALUE 7D (HMO)
+3501,385,VALUE 8 (HMO)
+3502,233,C3X501 D04B ODS Dental
+3503,385,VALUE 8D (HMO)
+3504,385,C 1 (HMO)
+3505,385,VALUE CHOICE 1 (HMO)
+3506,233,C3X501 D04B DirectOption Dental
+3507,385,VALUE CHOICE 2 (HMO)
+3508,385,POS 2
+3509,385,POS 4
+3510,385,VALUE CHOICE 5 (POS)
+3511,385,VALUE CHOICE 5D (POS)
+3512,385,VALUE CHOICE 6 (POS)
+3513,385,VALUE CHOICE 6D (POS)
+3514,385,VALUE 7 (POS)
+3515,385,VALUE 7D (POS)
+3516,385,VALUE 8 (POS)
+3517,385,VALUE 8D (POS)
+3518,385,HDHP HMO 2000 80
+3519,385,HDHP POS 80/60
+3520,385,HDHP HMO 1500/80
+3521,385,HDHP HMO 2500/80
+3522,385,HDHP HMO 5000/80
+3523,385,HDHP POS 1500 80/60
+3524,385,HDHP POS 2500 80/60
+3525,385,HDHP POS 5000 80/60
+3526,385,HDHP HMO 3600 80
+3527,385,HDHP HMO 10000 100
+3528,385,HDHP HMO 5000 85
+3529,385,HDHP POS 10000 100/80
+3530,385,HDHP POS 5000 85/65
+3531,385,MEDICARE MEDICAL + PART D REWARDS PLAN (HMO)
+3532,385,MEDICARE MEDICAL + PART D VALUE PLAN (HMO)
+3533,385,MEDICARE MEDICAL + PART D CLASSIC PLAN (HMO-POS)
+3534,385,MEDICARE MEDICAL SECURE PLAN (HMO)
+3535,384,Other
+3536,384,TRICARE Prime
+3537,384,TRICARE Prime Remote
+3538,384,TRICARE Standard and Extra
+3539,384,TRICARE Reserve Select
+3540,384,TRICARE Retired Reserve
+3541,384,TRICARE Young Adult
+3542,384,TRICARE For Life
+3543,384,TRICARE Prime Overseas
+3544,384,TRICARE Prime Remote Overseas
+3545,384,TRICARE Standard Overseas
+3546,384,Traditional Assistance Management Program
+3547,384,Extended Health Care Option
+3548,384,Continued Health Care Benefit Program
+3549,384,US Family Health Plan
+3550,383,Other
+3551,383,Health Partners Plan
+3552,382,Other
+3553,382,Meridian Advantage Plan of Michigan (HMO SNP)
+3554,233,D3X501 D05B ODS Dental
+3555,233,D3X501 D05B DirectOption Dental
+3556,233,E01 D06B ODS Dental
+3557,233,E01 D06B DirectOption Dental
+3558,233,B3X502 D01B ODS Dental
+3559,233,B3X502 D01B DirectOption Dental
+3560,359,Other
+3561,233,Fortify Option Dental
+3562,359,HMO A5-HCR
+3563,359,HMO B10-HCR
+3564,233,BP3X25 DO3B ODS Dental
+3565,359,HMO C15-HCR
+3566,359,HMO D20-HCR
+3567,233,BP3X25 DO3B Direct Option Dental
+3568,359,HMO E25-HCR
+3569,359,Premium Advantage B10-250-HCR
+3570,233,BP3X50 DO3B ODS Dental
+3571,359,Premium Advantage B10-500-HCR
+3572,359,Premium Advantage B10-1000-HCR
+3573,233,BP3X50 DO3B DirectOption Dental
+3574,359,Premium Advantage B10-1500-HCR
+3575,233,BP3X501 D04B ODS Dental
+3576,359,Premium Advantage B10-2000-HCR
+3577,233,BP3X501 D04B DirectOption Dental
+3578,359,Premium Advantage B10-2500-HCR
+3579,359,Premium Advantage C15-250-HCR
+3580,359,Premium Advantage C15-500-HCR
+3581,233,Other
+3582,359,Premium Advantage C15-1000-HCR
+3583,359,Premium Advantage C15-1500-HCR
+3584,359,Premium Advantage C15-2000-HCR
+3585,234,Premier West- 2500
+3586,359,Premium Advantage C15-2500-HCR
+3587,234,Premier West- 5000
+3588,359,Premium Advantage D20-250-HCR
+3589,359,Premium Advantage D20-500-HCR
+3590,234,Valu-West- 2500
+3591,234,Valu-West- 5000
+3592,359,Premium Advantage D20-1000-HCR
+3593,234,New West Select 5000  (HSA)
+3594,359,Premium Advantage D20-1500-HCR
+3595,359,Premium Advantage D20-2000-HCR
+3596,234,"$2,000 (Single), or $4,000 (Family) - (HSA)"
+3597,359,Premium Advantage D20-2500-HCR
+3598,234,"$3,000 (Single) or $6,000 (Family) - (HSA)"
+3599,359,Premium Advantage E20-250-HCR
+3600,359,Premium Advantage E20-500-HCR
+3601,234,"$5000 (Single) or $10,000 (Family) - (HSA)"
+3602,359,Premium Advantage E20-1000-HCR
+3603,359,Premium Advantage E20-1500-HCR
+3604,234,"$3,000 HDHP W/Embedded Deductible"
+3605,359,Premium Advantage E20-2000-HCR
+3606,234,Other
+3607,359,Premium Advantage E20-2500-HCR
+3608,359,Premium Advantage Plus B10-250-HCR
+3609,359,Premium Advantage Plus B10-500-HCR
+3610,359,Premium Advantage Plus B10-1000-HCR
+3611,235,Network PlatinumSelect PPO
+3612,359,Premium Advantage Plus B10-1500-HCR
+3613,359,Premium Advantage Plus B10-2000-HCR
+3614,359,Premium Advantage Plus B10-2500-HCR
+3615,359,Premium Advantage Plus C15-250-HCR
+3616,235,Network PlatinumPlus Pharmacy PPO
+3617,359,Premium Advantage Plus C15-500-HCR
+3618,359,Premium Advantage Plus C15-1000-HCR
+3619,235,Network PlatinumPremier Pharmacy PPO
+3620,359,Premium Advantage Plus C15-1500-HCR
+3621,359,Premium Advantage Plus C15-2000-HCR
+3622,235,Network PlatinumPlus PPO
+3623,235,Network PlatinumPremier PPO
+3624,359,Premium Advantage Plus C15-2500-HCR
+3625,235,Other
+3626,359,Premium Advantage Plus D20-250-HCR
+3627,359,Premium Advantage Plus D20-500-HCR
+3628,359,Premium Advantage Plus D20-1000-HCR
+3629,359,Premium Advantage Plus D20-1500-HCR
+3630,359,Premium Advantage Plus D20-2000-HCR
+3631,359,Premium Advantage Plus D20-2500-HCR
+3632,359,Premium Advantage Plus E20-250-HCR
+3633,236,Network Health Together (MassHealth)
+3634,359,Premium Advantage Plus E20-500-HCR
+3635,359,Premium Advantage Plus E20-1000-HCR
+3636,236,Network Health Forward (Commonwealth care)
+3637,359,Premium Advantage Plus E20-1500-HCR
+3638,236,Network Health Extend (Medical Security Program)
+3639,359,Premium Advantage Plus E20-2000-HCR
+3640,236,Other
+3641,359,Premium Advantage Plus E20-2500-HCR
+3642,359,POS A-V25-HCR
+3643,359,POS A-V-250 Enhanced-HCR
+3644,359,POS A-V-250-500-HCR
+3645,359,POS A-X-500-HCR
+3646,359,POS C-XV500-HCR
+3647,359,POS C-XV-500-750-HCR
+3648,359,POS D-XV-500-HCR
+3649,359,POS D-XX-750-1000-HCR
+3650,359,POS E-XXV-1000-2000-HCR
+3651,359,POS C-XV-500-1000-HCR
+3652,359,POS C-XV-750-1250-HCR
+3653,359,POS D-XX-1000-1500-HCR
+3654,359,HPN Premium POS Plan X-250-80-60-A-HCR
+3655,359,HPN Premium POS Plan 1 XV-500-1000-A-HCR
+3656,359,HP Premium Pos Plan 3 xx-1000-1500-A-HCR
+3657,359,Sierra 2000 250-1586-HCR
+3658,359,Sierra 2000 500-2085X-HCR
+3659,359,Sierra 2006 250-500-15X-HCR
+3660,359,Sierra 2006 500-1000-25X-HCR
+3661,359,Sierra 2006 1000-2000-30X-HCR
+3662,359,Sierra 2006 1500-3000-35X-HCR
+3663,359,Sierra 2006 2500-10000-35X-HCR
+3664,359,Sierra 2005 5000-10000-35X-HCR
+3665,474,NHP Choice Plus
+3666,359,Sierra 2004 1500-86-HCR
+3667,359,Sierra 2004 2500-97-HCR
+3668,474,NHP Choice Extra
+3669,359,Sierra 2004 5000-97-HCR
+3670,359,Sierra 2004 5000-86-HCR
+3671,474,NHP Choice Extra 500
+3672,359,Consumer Direct 1500-86-HCR
+3673,359,COnsumer Direct 2500-97-HCR
+3674,474,NHP Choice Extra 1000
+3675,359,Consumer Direct 2500-86-HCR
+3676,359,Consumer Direct 5000-86-HCR
+3677,474,NHP Choice Optimum 250
+3678,359,Consumer Direct 5000-107-HCR
+3679,359,Sierra 2010 500-1000-35-80/60-X-HCR
+3680,474,NHP Choice Optimum 2000/4000
+3681,359,Sierra 2010 1000-2000-35-80/60-X-HCR
+3682,359,Sierra 2010 1500-3000-35-80/60-X-HCR
+3683,474,NHP Choice Optimum 2000
+3684,359,Sierra 2010 2000-4000-35-80/60-X-HCR
+3685,359,Sierra 2010 2500-5000-35-80/60-X-HCR
+3686,474,NHP Care One Version 2008
+3687,359,Sierra 2010 3000-6000-35-80/60-X-HCR
+3688,359,Sierra 2010 500-1000-35-70/50-X-HCR
+3689,359,Sierra 2010 1000-2000-35-70/50-X-HCR
+3690,359,Sierra 2010 1500-3000-35-70/50-X-HCR
+3691,474,Other
+3692,359,Sierra 2010 2000-4000-35-70/50-X-HCR
+3693,359,Sierra 2010 2500-5000-35-70/50-X-HCR
+3694,359,Sierra 2010 3000-6000-35-70/50-X-HCR
+3695,359,Sierra 2010 1000-2000-35-70/50-A-HCR
+3696,237,Medicaid Managed Care
+3697,359,Sierra 2010 1500-3000-35-70/50-A-HCR
+3698,359,Sierra 2010 2000-4000-35-70/50-A-HCR
+3699,237,Family Health Plus
+3700,359,Sierra 2010 2500-5000-35-70/50-A-HCR
+3701,359,Sierra 2010 3000-6000-35-70/50-A-HCR
+3702,359,Sierra 2010 3500-7000-35-70/50-A-HCR
+3703,237,Child Health Plus
+3704,237,Other
+3705,359,HSA A 1500/3000/107-HCR
+3706,359,HSA B 1500/3000/86-HCR
+3707,359,HSA C 2500/5000/107-HCR
+3708,359,HSA D 2500/5000/86-HCR
+3709,359,HSA E 5000/10000/107-HCR
+3710,359,HSA F 3000/6000/86-HCR
+3711,359,HSA G 3000/6000/107-HCR
+3712,359,HMO Option 1-HCR
+3713,359,HMO Option 2-HCR
+3714,359,POS Option 3 (HCR) Tier 1
+3715,359,POS Option 3 Expanded Tier II
+3716,359,POS Option 3 Non-Plan Tier III
+3717,359,HMO Option 4
+3718,359,Dental Rider
+3719,359,PPO Plan 1 (HCR)
+3720,359,PPO Plan 2 (HCR)
+3721,359,PPO Plan 3 (HCR)
+3722,359,PPO Plan 4 (HCR)
+3723,359,PPO Plan 5 (HCR)
+3724,359,PPO Plan 6 (HCR)
+3725,359,Plan A-1500 (80/60) (HCR)
+3726,359,Plan C-2500 (80/60) (HCR)
+3727,359,Plan D-5000 (100/70) (HCR)
+3728,359,Premium Advantage E Series Medical Plan-1000/2000 (HCR)
+3729,359,Premium Advantage D Series Medical Plan-500/2000 (HCR)
+3730,359,HMO E25 Medical Plan (HCR)
+3731,359,HMO D20 Medical Plan (HCR)
+3732,359,POS D-XX-1000-1500 Medical Plan (HCR)
+3733,359,POS C-XV-500-750 Medical Plan (HCR)
+3734,359,POS C-XV-500 Medical Plan (HCR)
+3735,359,Sierra SImplicity Nevada HSA Compatible High Deductible Group PPO Plan F Medical PLan (HCR)
+3736,359,PPO 2500-5000-35-80-60-X Medical Plan (HCR)
+3737,359,UHC Dental Plan 1
+3738,359,UCH Dental Plan 2
+3739,358,Other
+3740,358,Medi-Cal
+3741,358,Healthy Families
+3742,358,AIM Program-Access for Infants and Mothers
+3743,357,Other
+3744,238,Rite Care
+3745,357,ACE
+3746,238,Rhody Health Partners
+3747,357,CareAdvantage
+3748,357,HealthWorx
+3749,357,Healthy Families
+3750,357,Healthy Kids
+3751,357,Medi-Cal
+3752,357,MCE
+3753,353,Other
+3754,353,SecureCare HMO
+3755,353,SecureCare PPO
+3756,353,THP Medicare Select (Medicgap)
+3757,238,Other
+3758,353,Health Plan HMO
+3759,353,PEIA A
+3760,353,PEIA B
+3761,353,Point of Service (POS)
+3762,353,Preferred Provider Organization (PPO)
+3763,353,Manged Workers' Compensation
+3764,351,Other
+3765,351,H-154 (HMO)
+3766,351,H-354 (HMO)
+3767,351,H-404 (HMO)
+3768,351,H-505 (HMO)
+3769,351,H-602 (HMO)
+3770,351,H-606 (HMO)
+3771,351,H-611 (HMO)
+3772,351,H-617 (HMO)
+3773,351,H-621 (HMO)
+3774,239,Personal Choice (EPO-PPO)
+3775,239,New Value Plans
+3776,239,Traditional Care Plans (HMO/POS)
+3777,239,AlterNet New Hampshire
+3778,239,Medicare Preferred Gold and Gold Anywhere
+3779,351,H-626 (HMO)
+3780,351,H-701 (HMO)
+3781,351,H-711 (HMO)
+3782,351,H-716 (HMO)
+3783,351,H-721 (HMO)
+3784,351,H-726 (HMO)
+3785,351,H-802 (HMO)
+3786,351,H-806 (HMO)
+3787,351,H-811 (HMO)
+3788,351,H-816 (HMO)
+3789,239,Other
+3790,351,H-821 (HMO)
+3791,351,H-826 (HMO)
+3792,351,H-901 (HMO)
+3793,351,P-154 (POS)
+3794,351,P-254 (POS)
+3795,351,P-354 (POS)
+3796,351,P-605 (POS)
+3797,351,P-701 (POS)
+3798,351,P-711 (POS)
+3799,351,P-721 (POS)
+3800,351,P-726 (POS)
+3801,351,P-802 (POS)
+3802,351,P-806 (POS)
+3803,351,P-811 (POS)
+3804,351,P-816 (POS)
+3805,351,P-821 (POS)
+3806,351,P-826 (POS)
+3807,351,P-901 (POS)
+3808,351,DH01
+3809,351,DH02
+3810,351,DH05
+3811,351,DH20
+3812,351,Standard
+3813,351,Low
+3814,351,Medium
+3815,351,High
+3816,351,High with Orthodontics
+3817,240,Super Blue Plus (PPO)
+3818,240,"HDHP $3,000/$6,000"
+3819,349,Other
+3820,240,"HDHP $5,000/$10,000"
+3821,349,Child Health Plus
+3822,240,Medicare Supplement Plan
+3823,349,Family Health Plus
+3824,349,Health Care Plus
+3825,240,BlueEdge Dental
+3826,349,Health Plus Advantage (MAPD)
+3827,349,Health Plus Elite (HMO SNP)
+3828,240,FreedomBlue PPO
+3829,240,Medifill Medicare Supplement
+3830,348,Other
+3831,348,HMO
+3832,240,Other
+3833,348,POS
+3834,348,PPO
+3835,348,HDHP
+3836,347,Other
+3837,347,Premier
+3838,347,Premier Plus
+3839,347,Premier One
+3840,241,MediGold Essential Care (HMO)
+3841,347,Premier Select
+3842,347,Consumer Choice
+3843,241,MediGold Classic Preferred (HMO)
+3844,347,Community Provider Network Option
+3845,241,MediGold Medical Only (HMO)
+3846,347,Health Tradition BadgerCare Plus Standard
+3847,347,Health Tradition BadgerCare Plus Benchmark
+3848,241,MediGold Network Choice (PPO)
+3849,347,BadgerCare Plus
+3850,241,MediGold Value Choice (PPO) 
+3851,241,Other
+3852,346,Other
+3853,242,STAR
+3854,346,Healthfirst NJ Medicare Plus Plan (HMO)
+3855,346,Healthfirst NJ Increased Benefits Plan (HMO)
+3856,242,CHIP
+3857,346,Healthfirst NJ Maximum Plan (HMO SNP)
+3858,242,CHIP Perinate
+3859,346,Healthfirst NJ Coordinated Benefits Plan (HMO)
+3860,242,STAR+Plus
+3861,242,Other
+3862,346,NJ FamilyCare
+3863,243,Molina Medicare Options (HMO)
+3864,243,Best Buy HSA PPO
+3865,243,Best Buy POS & PPO
+3866,344,Other
+3867,344,Medicaid Managed Care
+3868,243,ChoiceNet
+3869,344,Child Health Plus
+3870,243,POS Plan
+3871,344,Family Health Plus
+3872,243,PPO Plan
+3873,344,Medicare
+3874,243,POS-C 2000
+3875,344,Senior Health Partners
+3876,344,Healthy NY (Commercial)
+3877,243,Other
+3878,344,Life Improvement Plan
+3879,344,Maximum Plan
+3880,344,Increased Benefits Plan
+3881,344,65 Plus Plan
+3882,344,Coordinated Benefits Plan
+3883,344,Jade Benefits Plan
+3884,344,Healthfirst Life Improvement Plan (HMO SNP)
+3885,344,Healthfirst Maximum Plan (HMO SNP)
+3886,344,Healthfirst Increased Benefits Plan (HMO)
+3887,244,QHDHP 100/50 1500
+3888,344,Hearthfirst 65 Plus Plan (HMO)
+3889,344,Healthfirst Coordinated Benefits Plan
+3890,244,POS-C 1000
+3891,244,POS-C 500
+3892,341,Other
+3893,244,Other
+3894,341,HealthNow HMO
+3895,341,HealthNow HMO 299/299+
+3896,341,HealthNow POS
+3897,341,HealthNow EPO
+3898,341,HealthNow PPO
+3899,341,HealthNow Traditional & Comprehensive
+3900,341,Healthy NY
+3901,336,Other
+3902,336,Open Access Plan
+3903,336,NationalOne Plan
+3904,336,Primary-Specialty Plan
+3905,336,Primary Plan
+3906,336,Classic Plan
+3907,336,Select Choice Plan 
+3908,336,Three for Free Plan
+3909,336,Three for Copay Plan
+3910,336,Empower FSA
+3911,336,Empower HSA
+3912,336,Empower HRA
+3913,336,Distinctions II Plan
+3914,336,Distinctions III Plan
+3915,336,Primary Clinic Plan
+3916,336,HealthPartners Select Choice Plan
+3917,336,HealthPartners Classic
+3918,336,Group Dental
+3919,336,Freedom Basic
+3920,336,Freedom Vital
+3921,336,Freedom Balance
+3922,336,Freedom Ultimate
+3923,336,Freedom Wisconsin Basic
+3924,336,Freedom Wisconsin Ultimate
+3925,336,HealthPartners MSHO
+3926,335,Other
+3927,335,Signature One
+3928,335,Signature Network
+3929,335,Signature Savings
+3930,335,Signature Select
+3931,335,HealthPlus HMO
+3932,335,HealthPlus HMO High Deductible Plans
+3933,335,HealthPlus Options Self-Funded-TPA
+3934,335,HealthPlus POS
+3935,335,HealthPlus PPO
+3936,335,HealthPlus PPO High Deductible Plans
+3937,335,HealthySolutions
+3938,335,MedicarePlus Advantage
+3939,335,MIChild
+3940,333,Other
+3941,333,HealthSpring HMO Plan
+3942,325,Other
+3943,325,HealthSpring HMO Plan
+3944,322,Other
+3945,322,SunPlus Advantage Plan Miami Dade County Plan 001
+3946,322,SunPlus Advantage Plan Broward County Plan 002
+3947,322,Healthy Advantage Miami Dade County Plan 005
+3948,321,Other
+3949,321,Personal Health Plan
+3950,321,Vita Health
+3951,282,Other
+3952,282,High Option Plan
+3953,282,Low Option Plan
+3954,282,Share Option Plan
+3955,282,Elite Option Plan
+3956,282,Assurance Option Plan
+3957,282,Preferred Option Plan
+3958,282,Federal Employees Health Benefits
+3959,282,Medicare Cost Plan
+3960,35,FreedomBlue PPO
+3961,35,MedigapBlue Medicare Supplement
+3962,35,SecurityBlue HMO
+3963,35,Simply Blue
+3964,35,PPO Blue
+3965,35,Advance Blue
+3966,35,Direct Blue
+3967,35,Preferred Blue
+3968,35,Preferred Blue HCTC
+3969,35,Preferred Blue HIPAA
+3970,35,PPO Blue Guaranteed Issue
+3971,35,Short Term Blue
+3995,284,Other
+3996,284,HM Care Advantage
+3997,285,Other
+3998,285,HMO
+3999,285,PPO 
+4000,286,Other
+4001,286,HMO
+4002,42,Direct Access Plan A/50 70/50
+4003,42,Direct Access Plan C 80/70
+4004,42,Direct Access Plan C 100/70
+4005,42,NJ Protect
+4006,42,Horizon Centurion Dental
+4007,42,Horizon Individual Dental
+4008,42,Medicaid Family Care
+4009,42,Horizon Medicare Advantage Plan
+4010,42,Medigap Supplemental Plan
+4011,42,Horizon Advantage Direct Access
+4012,42,Horizon Advantage EPO
+4013,42,Horizon HMO Access HSA
+4014,42,Horizon HSA Compatible
+4015,42,Basic Health Plan A
+4016,42,Horizon HMO Access
+4017,42,Horizon HMO Access Coinsurance
+4018,42,Horizon PPO
+4019,42,Horizon POS
+4020,42,Horizon Dental PPO Plan
+4021,42,Horizon Dental Option Plan
+4022,42,Horizon Dental PPO Access Plan
+4023,42,Horizon Dental PPO Access 1050 Plan
+4024,42,Horizon Dental Companion Plan
+4025,42,Horizon Dental Choice
+4026,42,Horizon Traditional
+4027,42,Horizon MyWay HRA Consumer-Driven Health Plan (CDH)
+4028,42,Horizon Direct Access
+4029,42,Medicaid Managed Care
+4030,42,NJ FamilyCare
+4031,42,NJ FamilyCare Advantage
+4032,42,Horizon Blue TotalCare (HMO SNP)
+4033,288,Other
+4034,288,Medicaid Managed Care
+4035,288,Child Health Plus
+4036,288,Family Health Plus
+4037,288,High Deductible Health Plan (HDHP)
+4038,288,PCA Plan
+4039,288,CoverageFirst
+4040,288,Preferred Provider Organization (PPO)
+4041,288,Traditional HMO
+4042,288,Open Access HMO
+4043,288,Regional POS
+4044,288,National POS-Open Access
+4045,288,Humana Classic
+4046,288,Loyalty Plus Dental Insurance
+4047,288,Dental Preventive Plus (PPO)
+4048,288,Dental C550
+4049,288,Dental Discount
+4050,288,Humana Gold Choice (PFFS)
+4051,288,Humana Gold Plus (HMO)
+4052,288,HumanaChoice (PPO)
+4053,288,Traditional Preferred HMO
+4054,288,HumanaDental PPO
+4055,288,HumanaDental Preventive Plus
+4056,288,HumanaDental Advantage Plus
+4057,288,HumanaDental DHMO/Prepaid
+4058,9,Enhanced Copay 80% Plan
+4059,9,Copay 80% Plan
+4060,9,Copay 70% Plan
+4061,9,Value 100% Plan
+4062,9,Enhanced HSA 100% Plan
+4063,9,HSA 100% Plan
+4064,9,Short Term 100/75
+4065,9,Short Term 80/60
+4066,289,Other
+4067,289,Portrait Share 80
+4068,289,Autograph Share 80 Plus Rx/Copay
+4069,289,Monogram
+4070,289,Autograph Total Plus RX/HSA
+4071,289,Autograph Total HSA
+4072,289,Short Term 100/75
+4073,289,Short Term 80/60
+4074,289,Enhanced Copay 80% Plan
+4075,289,Copay 80% Plan
+4076,289,Copay 70% Plan
+4077,289,Value 100% Plan
+4078,289,Enhanced HSA 100% Plan
+4079,289,HSA 100% Plan
+4080,34,Personal Choice 65 PPO
+4081,34,MedigapSecurity-Medigap
+4082,34,BlueExtra
+4083,34,Keystone 65 HMO
+4084,34,Keystone 65 Select and Preferred HMO
+4085,34,Keystone HMO
+4086,34,Personal Choice
+4087,34,Concordia Plus Dental
+4088,34,Concordia Preferred Dental
+4089,34,Concordia Flex Dental
+4090,34,PPO Plus
+4091,34,HDHP Plus
+4092,34,Personal Choice PPO
+4093,34,POS Plus
+4094,34,IBC Student PPO
+4095,281,Other
+4096,281,iCare Medicaid SSI Services
+4097,281,BadgerCare Plus Program
+4098,281,iCare Medicare Plan
+4099,281,FamilyCare
+4100,280,Other
+4101,280,Empower
+4102,280,Evolve
+4103,280,Easy Access
+4104,280,iDirect
+4105,280,Encompass Plus
+4106,280,FlexFit
+4107,280,FlexFit Select
+4108,280,Encompass
+4109,280,Encompass Essential
+4110,280,Passport Plan
+4111,280,Passport Plan Select
+4112,280,Traditional
+4113,280,Encompass I2
+4114,280,Encompass I2 Plus
+4115,280,Healthy New York Select-Group
+4116,280,Healthy New York Select-Individual
+4117,280,MediSource
+4118,280,Child Health Plus
+4119,280,Family Health Plus
+4120,279,Other
+4121,279,Medi-cal
+4122,279,Healthy Families Program
+4123,279,Healthy Kids Program
+4124,279,IEHP Medicare DualChoice (HMO SNP)
+4125,279,PPO
+4126,278,Other
+4127,278,Service to Seniors (HMO)
+4128,278,Total Fit (HMO)
+4129,278,Desert Preferred (HMO)
+4130,277,Other
+4131,277,PPO
+4132,277,Inter-County Student Health Plan
+4133,276,Other
+4134,276,HMO
+4135,275,Other
+4136,275,KP Deductible HMO 1000/20/Rx
+4137,275,KP Deductible HMO 1500/30/Rx
+4138,275,KP Deductible HMO 2000/30/Rx
+4139,275,KP Deductible HMO 3000/30/Rx
+4140,275,KP 3500/0/HSA/Rx
+4141,275,KP 4500/0/HSA/Rx
+4142,275,KP 5500/0/HSA/Rx
+4143,275,Traditional HMO Plan
+4144,275,Deductible/Coinsurance HMO Plan
+4145,275,HMO Plus
+4146,275,Kaiser Permanente Deductible HMO Plan with HRA
+4147,275,Kaiser Permanente HSA-Qualified Deductible HMO Plan
+4148,275,PPO Plan
+4149,275,HSA-Qualified PPO Plan
+4150,275,Added Choice 2-Tier POS Plan
+4151,275,Multi-Choice POS Plan
+4152,275,Kaiser Permanente Senior Advantage Core Plan
+4153,275,Kaiser Permanente Senior Advantage Silver Plan
+4154,275,Kaiser Permanente Senior Advantage Gold Plan
+4155,275,Kaiser Permanente Senior Advantage Plus Choice Plan
+4156,275,Senior Advantage Medicaid Plan
+4157,274,Other
+4158,274,Classic 1500
+4159,274,Classic 2500
+4160,274,Classic 3500
+4161,274,Classic 5000
+4162,274,HSA 5000
+4163,274,Advantage 2500
+4164,274,Advantage 3500
+4165,274,Advantage 5000
+4166,274,Advantage 7500
+4167,274,Essential 1500
+4168,274,Essential 3000
+4169,274,Essential 5000
+4170,274,Essential 7500
+4171,274,Kaiser Permanente Senior Advantage (HMO) Individual Basic Plan
+4172,274,Kaiser Permanente Senior Advantage (HMO) Individual Enhanced Plan
+4173,274,Senior Advantage Medicaid Plan
+4174,274,Multi-Choice Plan
+4175,274,Out-of-area PPO Plan
+4176,274,Kaiser Permanente HSA qualified deductible HMO Plan
+4177,274,Kaiser Permanente Deductible HMO Plan with HRA
+4178,274,Kaiser Permanente FEHB High Option
+4179,274,Kaiser Permanente FEHB Standard Option
+4180,274,Kaiser Permanente Medicare Plus (Cost) for MEdicare Eligible FEHB Members
+4181,274,KP 20/Rx Plan
+4182,274,KP 30/Rx Plan
+4183,274,KP Basic Plan
+4184,274,KP for Children Plan
+4185,274,Quest
+4186,274,Senior Advantage (HMO) Medicare Essential Plan
+4187,274,Senior Advantage (HMO) Medicare Enhanced Plan
+4188,274,Added Choice POS Plan
+4189,273,Other
+4190,273,HMO Plan
+4191,273,Vista Deductible Plan
+4192,273,Preventive Care Services Deductible HMO Plan
+4193,273,Hospital Services Deductible Plan
+4194,273,Deductible HMO Plan with HRA
+4195,273,Health Savings Account (HSA)-qualified Deductible HMO Plan
+4196,273,Preferred Provider Organization (PPO) Plan
+4197,273,Point-of-Service (POS) Plan
+4198,273,Out-of-area Indemnity Plan
+4199,273,Kaiser Permanente Student Health Plan
+4200,273,Copayment 25
+4201,273,Copayment 40
+4202,273,Copayment 50
+4203,273,Deductible 20/500
+4204,273,Deductible 25/1000
+4205,273,Deductible 30/1500
+4206,273,Deductible 50/5000 NM
+4207,273,0/1500 with HSA
+4208,273,0/2700 with HSA
+4209,273,30/2700 with HSA
+4210,273,40/4000 NM with HSA
+4211,273,0/5000 WM with HSA
+4212,273,HIPAA Plan
+4213,273,Child Health Plan
+4214,273,Kaiser Permanente Senior Advantage (HMO) Basic
+4215,273,Kaiser Permanente Senior Advantage (HMO) Enhanced
+4216,273,Senior Advantage Medicare Medi-cal (HMO SNP)
+4217,272,Plan 1500/3000
+4218,272,Plan 2000/4000
+4219,272,Plan 3000/6000
+4220,272,Plan 5000/10000
+4221,272,State Qualified HCTC Health Plan
+4222,272,Kaiser Permanente Senior Advantage Core Plan
+4223,272,Kaiser Permanente Senior Advantage Silver Plan
+4224,272,Signature HMO Plan
+4225,272,HMO Plan
+4226,272,Deductible Plan
+4227,272,HSA-qualified deductible HMO Plan
+4228,272,Signature POS Plan
+4229,272,Added Choice
+4230,272,Out-of-area PPO Plan
+4231,272,Kaiser Permanente FEHB High Option
+4232,272,Kaiser Permanente FEHB Standard Option
+4233,272,Kaiser Permanente Medicare Plus (Cost) for MEdicare Eligible FEHB Members
+4234,272,Copayment 25
+4235,272,Copayment 40
+4236,272,Copayment 50
+4237,272,20/500
+4238,272,25/1000
+4239,272,30/15000
+4240,272,40/2000
+4241,272,40/3000 NM
+4242,272,50/5000 NM
+4243,272,40/4000 NM With HSA
+4244,272,0/5000 WM With HSA
+4245,272,Kaiser Permanente HIPAA Plan
+4246,272,Child Health Plan
+4247,272,Kaiser Permanente Senior Advantage (HMO) Basic
+4248,272,Kaiser Permanente Senior Advantage (HMO) Enhanced
+4249,272,Medi-Cal
+4250,272,Senior Advantage Medicare Medi-cal (HMO SNP)
+4251,272,Deductible/Coinsurance HMO Plan
+4252,272,Preventive Care Services and Doctor's Office Deductible Plan
+4253,272,Preventive Care Services Deductible HMO Plan
+4254,272,Hospital Services Deductible Plan
+4255,272,Kaiser Permanente health savings account (HSA)-qualified deductible HMO Plan
+4256,272,Out-of-area indemnity Plan
+4257,272,Student Health Plan
+4258,271,Other
+4259,271,KP 0/25/Rx
+4260,271,KP 0/35/Rx
+4261,271,KP 750/30/Rx
+4262,271,KP 1500/30
+4263,271,KP 200/30/Rx
+4264,271,KP 1000/30/Rx
+4265,271,KP 4500/20%/Rx
+4266,271,KP 8000/0%/Rx
+4267,271,KP 1250/20/HSA/Rx
+4268,271,KP 2500/30/HSA/Rx
+4269,271,Kaiser Permanente Senior Advantage (HMO) Basic
+4270,271,Kaiser Permanente Senior Advantage (HMO) Enhanced
+4271,271,Added Choice POS Plans
+4272,271,Copayment HMO
+4273,271,Deductible HMO
+4274,271,HSA-Qualified Deductible HMO Plan
+4275,271,Kaiser Permanente Signature
+4276,271,Kaiser Permanente Select
+4277,271,Kaiser Permanente Flexible Choice
+4278,271,Kaiser Permanente Out-of-Area PPO
+4279,271,Kaiser Permanente FEHB High Option
+4280,271,Kaiser Permanente FEHB Standard Option
+4281,271,Kaiser Permanente Medicare Plus (Cost) for MEdicare Eligible FEHB Members
+4282,271,Kaiser Permanente Medicare Plus Standard Option with Pard D A&B
+4283,271,"Kaiser Permanente Medicare Plus High Option with Part D, A&B"
+4284,271,Kaiser Permanente Deductible HMO Plan with HRA
+4285,270,Other
+4286,270,KP 0/25/Rx
+4287,270,KP 500/25/Rx
+4288,270,KP 1000/25/Rx
+4289,270,KP 1500/30/Rx
+4290,270,KP 2500/30/Rx
+4291,270,KP 3500/30/Rx
+4292,270,KP 5000/35
+4293,270,KP 7500/35
+4294,270,KP 2000/20%/HSA/Rx
+4295,270,KP 3000/20%/HSA
+4296,270,Added Choice Plan
+4297,270,Out-of-Area Plans
+4298,270,Kaiser Permanente Deductible Plan with HRA
+4299,270,Kaiser Permanente health savings account (HSA)-qualified deductible HMO Plan
+4300,270,Kaiser Permanente Senior Advantage (HMO) Individual Basic Plan
+4301,270,Kaiser Permanente FEHB High Option
+4302,270,Kaiser Permanente FEHB Standard Option
+4303,270,Kaiser Permanente Medicare Plus (Cost) for MEdicare Eligible FEHB Members
+4304,270,Kaiser Permanente Dental Care Program
+4305,269,Other
+4306,269,KelseyCare Advantage
+4307,269,Medi-Cal
+4308,268,Other
+4309,268,Medicare Plan A
+4310,268,Medicare Plan F
+4311,268,Chamber of Commerce Gold Plan
+4312,268,HSA
+4313,268,Centric 2000
+4314,268,Centric 3000
+4315,268,Centric 5000
+4316,268,Centric Enhanced 1000
+4317,268,"The Healthy Investor $2,000"
+4318,268,"The Healthy Investor $3,000"
+4319,267,Other
+4320,267,Medi-Cal
+4321,267,Healthy Families Program
+4322,267,L.A. Care's Healthy Kids
+4323,267,L.A. Care Health Plan Medicare Advantage HMO
+4324,267,IHSS Workers
+4325,266,Other
+4326,266,Leon Cares HMO
+4327,265,Other
+4328,265,Liberty Dual Power Plan
+4329,265,Liberty Preferred Choice Plan
+4330,264,Other
+4331,264,Essentials Plan
+4332,264,Prime Plan
+4333,264,HSA-qualified deductible HMO Plan
+4334,264,WiseOptimum Plan
+4335,264,WiseValue Plus Plan
+4336,264,WiseValue Plus Rx Plan
+4337,264,WiseHSA Plan
+4338,264,Frontline
+4339,264,LIfeWise HSA
+4340,264,Plan A
+4341,264,Plan F
+4342,264,High Deductible Plan F
+4343,264,Plan N
+4344,264,Horizon Dental Companion Plan
+4345,264,Passport
+4346,264,LifeWise HSA
+4347,264,Universal
+4348,263,Other
+4349,263,WiseSimplicity Plan
+4350,263,WiseEssentials Copay
+4351,263,WiseEssentials Rx Plan
+4352,263,WiseSavings Plan
+4353,263,WiseAdvantage Plan
+4354,263,Individual Dental Copay Plan
+4355,245,Molina Medicare Options Plus (HMO SNP)
+4356,263,LifeWise Dental Plan
+4357,245,Molina Medicare Options (HMO)
+4358,263,PPO
+4359,263,PPO6
+4360,245,Healthy Advantage (HMO SNP)
+4361,263,PPO HSA
+4362,263,Traditional
+4363,263,Dental Classic
+4364,245,Other
+4365,263,Dental Vantage
+4366,263,Dental Charter
+4367,246,"Midwest Health Plan, Inc."
+4368,246,Other
+4369,247,Mid Rogue Oregon Health Plan
+4370,247,CareSource Medicare Advantage Plan
+4371,247,Other
+4372,248,Medical Assitance
+4373,248,Hennepin Health
+4374,248,Minnesota Care Plus (MSC+)
+4375,248,Minnesota Senior Health Options (MSHO)
+4376,248,Cornerstone Solutions
+4377,248,Other
+4378,249,Medicaid Managed Care Plan
+4379,262,Other
+4380,249,Child Health Plan
+4381,262,Lovelace HMO Medicare
+4382,249,Family Health Plus Plan
+4383,262,Lovelace HMO-POS Medicare
+4384,249,Medicaid HIV Special Needs Plan
+4385,262,Salud! (Medicaid)
+4386,262,Lovelace iPlan
+4387,249,MetroPlus Medicare Plus
+4388,262,Lovelace Health Plan
+4389,249,MetroPlus Gold Plan
+4390,262,SCI
+4391,261,Other
+4392,249,Other
+4393,261,MaineCare
+4394,260,Other
+4395,260,BadgerCare Plus Standard
+4396,250,HMO Full Pay $15
+4397,260,BadgerCare Plus Benchmark
+4398,260,BadgerCare Plus Core
+4399,250,HMO Co70
+4400,250,HMO Co70 $1250
+4401,259,Other
+4402,259,US Family Health Plan
+4403,250,HMO Co70 $2000
+4404,259,Generations Advantage Prime (HMO-POS)
+4405,259,Generations Advantage Select (PPO)
+4406,250,HMO Co80
+4407,259,Generations Advantage Value (HMO)
+4408,250,HMO Co80 $250
+4409,250,HMO Co80 $1250
+4410,258,Other
+4411,258,MD Care Advantage I MAPD (HMO)
+4412,250,HMO Co80 $2000
+4413,258,MD Care Advantage Select MA (HMO)
+4414,258,Preferred Dual SNP (HMO SNP)
+4415,250,HMO Co90
+4416,257,Other
+4417,250,HMO Co90$1250
+4418,257,Hoosier Healthwise
+4419,250,HMO Co90 $2000
+4420,257,Healthy Indiana Plan
+4421,257,Indiana Care Select
+4422,250,EPO Full Pay $15
+4423,250,EPO Co80
+4424,256,Other
+4425,256,Medica Symphony
+4426,250,EPO Co80 $750
+4427,256,Medica Encore
+4428,256,Medica Solo
+4429,250,EPO Co90
+4430,256,Medica Symphony for HSA
+4431,250,EPO Co90 $500
+4432,256,Medica Prelude
+4433,256,Medica Direct Dental
+4434,250,EPO Co90 $2000
+4435,256,Medica Direct HSA
+4436,250,HSA Co80 $3800
+4437,256,Medica Prime Solution Cost Plan
+4438,256,Medica Dual Solution Special Needs Plan (HMO SNP)
+4440,256,Medica Complete Solution Special Needs Plan (HMO SNP)
+4441,256,Medica Clear Solution (PPO)
+4442,250,HSA $3800
+4443,256,Medica Choice Passport
+4444,256,Medical Elect
+4445,250,HSA Co80 $1200
+4446,256,Medica Essential
+4447,256,Patient Choice Insights
+4448,250,HSA Co80 $1800
+4449,256,Medica Focus
+4450,256,Minnesota Senior Health Care Options (MSHO)
+4451,250,HSA Co80 $2600
+4452,256,Minnesota Special Needs Basic Care
+4453,256,Medical Assistance
+4455,256,MinnesotaCare
+4456,256,Minnesota Senior Care (MSC) Plus
+4457,250,HSA $2600
+4458,250,HSA $1200
+4459,255,Other
+4460,250,HSA $1800
+4461,255,Medica HealthCare Plans MedicareMax Chronic Care (PSO SNP)
+4462,255,Medica HealthCare Plans MedicareMax Value (PSO)-Broward County
+4463,250,PPO FP 20
+4464,255,Medica HealthCare Plans MedicareMax Value (PSO)-Miami-Dade County
+4465,255,Medica HealthCare Plans MedicareMax Plus (PSO SNP)
+4466,250,PPO FP 20 $500
+4467,255,Medica HealthCare Plans MedicareMax ValueRX (PSO)
+4468,250,PPO FP 20 $1000
+4469,255,Medica HealthCare Plans MedicareMax (PSO)
+4470,250,PPO 90/70
+4471,250,PPO 90/70 $500
+4472,250,PPO 90/70 $1000
+4473,254,Other
+4474,254,Preferred Plan (HMO)
+4475,250,PPO 90/70 $2000
+4476,254,Fully Insured Point of Service (POS) Plan
+4477,254,Self-Funded HMO Style Benefit Plan (EPO-Exclusive Provider Organization)
+4478,250,PPO 90/70 $5000
+4479,254,Medical Associates SmartPlan (Cost)
+4480,250,PPO 80/60
+4481,254,Medical Associates Community Plan (Cost)
+4482,254,Medical Associates Freedom Plan (Cost)
+4483,254,Medical Associates HMO Plan
+4484,254,Standard PPO
+4485,250,PPO 80/60 $500
+4486,254,Value PPO
+4487,254,HSA-Compatible PPO
+4488,250,PPO 80/60 $1000
+4489,254,Wellness HSA-Compatible
+4490,250,PPO 80/60 $2000
+4491,254,Short-Term
+4492,254,Indiana Dental
+4493,250,PPO 80/60 $5000
+4494,254,Standard Health Plan with Office Copay
+4495,254,Standard Health Plan without Office Copay
+4496,250,PPO 70/50
+4497,254,HDHP
+4498,254,3080
+4499,250,PPO 70/50 $500
+4500,254,4080
+4501,254,4070
+4502,250,PPO 70/50 $1000
+4503,254,4070 Value
+4504,254,HSA-Compatible
+4505,250,PPO 70/50 $2000
+4506,254,Elite Plans with Office Copay (PPO)
+4507,254,Premium Plans with Office Copay (PPO)
+4508,250,PPO 70/50 $5000
+4509,254,Elite Plans without Office Copay (PPO)
+4510,254,Wellness HSA Plans (PPO)
+4511,254,Value Plans (PPO)
+4512,254,90% Standard Plans (PPO)
+4513,254,80% Standard Plans (PPO)
+4514,254,High Deductible Plans (PPO)
+4515,250,Other
+4516,253,Other
+4517,253,MedStar Family Choice
+4518,252,Elite 30 HMO
+4519,252,Elite 20 HMO
+4520,252,Premier Special Needs Plan (SNP) HMO
+4521,251,Other
+4522,251,Fully-Insured Group Coverage (PPO)
+4523,251,HMO
+4524,251,PPO Silver
+4525,251,PPO Gold
+4526,251,Fully-Insured Group Coverage (HMO)
+4527,251,Fully-Insured Group Coverage (POS)
+4528,251,Self-Insured Gropu Coverage-Administrative Services Only (ASO)
+4529,251,Consumer-Directed Health Plans
+4530,251,MyChoice
+4531,251,MercyOne 100/70
+4532,251,MercyOne 80/60
+4533,251,MercyOne HDHP
+4534,297,Medicare Suppliment Plan N
+4535,477,OHP Plus Plan
+4536,477,OHP Standard Plan
+4537,477,Other
+4538,478,Premium
+4539,478,Value
+4540,280,Consumer Directed Health Plan: iDirect
+4541,280,EPO: Easy Access
+4542,280,Healthy New York/Healthy New York Select - Group
+4543,280,HMO Lifestyle: FlexFit/FlexFit Select
+4544,280,HMO: Encompass/Encompass Essential
+4545,280,Indemnity: Traditional 
+4546,280,POS: Encompass Plus
+4547,280,PPO: Passport Plan/Passport Plan Select
+4548,50,Individual & Family - HSA
+4549,50,Individual & Family - Optimum Plus
+4550,50,Individual & Family - Prime Plan
+4551,50,Individual & Family - Value Plan
+4552,283,VIP Essential (HMO)
+4553,283,VIP (HMO)
+4554,283,VIP High Option (HMO)
+4555,283,PPO I
+4556,283,PPO II
+4557,283,PPO III
+4558,283,PPO High Option
+4559,283,Dual Eligible (PPO SNP)
+4560,283,Dual Eligible (HMO SNP)
+4561,283,Supplement Plan A
+4562,283,Supplement Plan B
+4563,283,Supplement Plan C
+4564,283,Supplement Plan F
+4565,16,HIP Healthy NY HMO High Deductible Health Plan
+4566,16,HIP Select PPO Plan
+4567,16,EmblemHealth EPO
+4568,16,HIP Select EPO Plan
+4569,16,HIP Prime HMO Plan
+4570,16,HIPaccess I Plan
+4571,16,HIPaccess II Plan
+4572,16,HIP Choice Plus Direct Pay Governor's Bill
+4573,16,HIP HMO Direct Pay Governor's Bill
+4574,285,Senior Care Plus HMO
+4575,285,Senior Care Plus Freedom PPO
+4576,67,TRICARE Prime Remote
+4579,67,TRICARE Standard and Extra
+4580,67,US Family Health Plan
+4581,67,TRICARE For Life
+4582,67,TRICARE Reserve Select
+4583,67,TRICARE Retired Reserve
+4584,67,TRICARE Young Adult
+4585,68,TRICARE Prime
+4586,68,TRICARE Prime Remote
+4587,68,TRICARE Standard and Extra
+4588,68,US Family Health Plan
+4589,68,TRICARE Young Adult
+4590,68,TRICARE Retired Reserve
+4591,68,TRICARE Reserve Select
+4592,69,TRICARE Young Adult
+4593,69,US Family Health Plan
+4594,252,Classic HMO
+4595,235,HMO Plan
+4596,235,POS Plan
+4597,235,BadgerCare Plus
+4598,235,Medicaid SSI
+4599,41,Healthy NY High Deductible HMO Plan
+4600,41,Vermont Individual Indemnity Plan (ViiP)
+4601,41,Catamount Choice
+4602,41,MVP Option (Managed Medicaid)
+4603,41,MVP Option Family (Family Health Plus)
+4604,41,MVP Option Child (Child Health Plus)
+4605,41,MVP LocalNet High Deductible EPO
+4606,41,AlterNet New Hampshire EPO
+4607,41,VT First High Deductible EPO
+4608,51,Federal Employee Program
+4609,479,National Benefit Fund
+4610,480,Greater New York Benefit Fund
+4611,480,Home Health Aide Benefit Fund
+4612,480,Greater New York Benefit Fund for NJ Members
+4613,481,Other
+4614,481,Premier Plus
+4615,481,SmartSense Plus
+4616,481,FowardFocus HSA
+4617,481,Tonik® 
+4618,481,BlueChoice Dental
+4619,482,Other
+4620,482,Medicare Supplement Insurance
+4621,482,Medicare Advantage (Plan C)
+4622,483,Advantage HMO
+4623,483,Advantage POS
+4624,483,Advantage 360
+4625,483,Advantage Choice PPO
+4626,483,Advantage Choice HMO
+4627,484,Medicare PPO
+4628,484,Medicare HMO
+4629,484,Medicare SNP
+4630,485,Other
+4631,486,Other
+4632,486,Paramount Elite
+4633,486,Paramount Advantage
+4634,487,Other
+4635,487,Medicare Advantage
+4636,487,Triple-S Directo
+4637,487,Medicare Optimo
+4638,487,ELA
+4639,487,Triple-S Medicare Óptimo ELA
+4640,487,Care Plus ELA
+4641,487,Plus 2
+4642,487,Plus
+4643,427,Indemnity
+4644,488,Other
+4645,488,UPMC for Life HMO
+4646,488,UPMC for Life HMO Rx (HMO)
+4647,488,UPMC for Life Rx Enhanced (HMO)
+4648,488,UPMC for Life PPO High Deductible with Rx (PPO)
+4649,488,UPMC for Life PPO Rx (PPO)
+4650,488,UPMC Individual Advantage Short Term Plan
+4651,488,UPMC Individual Advantage Guaranteed Renewable Plan EPO
+4652,488,UPMC Individual Advantage Guaranteed Renewable Plan HSA
+4653,488,UPMC for You Advantage (HMO SNP)
+4654,488,UPMC for Life Specialty Plan (HMO SNP)
+4655,488,UPMC for Life Options (HMO SNP)
+4656,488,UPMC for Kids
+4657,488,UPMC for Kids Free CHIP
+4658,488,UPMC for Kids Low-Cost 1 CHIP
+4659,488,UPMC for Kids Low Cost 2 CHIP
+4660,488,UPMC for Kids Low-Cost 3 CHIP
+4661,488,UPMC for Kids Full-Cost CHIP
+4662,33,Aetna - All Plans
+4663,33,Aetna- Sub-Contracted Plan
+4664,489,AmeriPlan 
+4665,490,Anthem BCBS - Medicare Advantage (HMO & PPO)
+4666,490,Anthem BCBS PPO
+4667,490,Anthem HMO Colorado Basic HMO
+4668,490,Anthem HMO Colorado BlueAdvantage HMO
+4669,490,Anthem Lumenos
+4670,491,Assist Card
+4671,212,Assurant Health
+4672,212,Assurant Health - Health Access
+4673,492,Banner Choice Plus & Banner Select
+4674,493,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+4675,493,BCBS Federal Employee Program
+4676,298,Beech Street
+4677,494,"Caprock HealthPlans, Inc. (All States Exc. TX)"
+4678,495,Care Improvement Plus
+4679,496,"CBCA Administrators, Inc. (All States Exc. TX)"
+4680,497,Child Health Plan Plus (CHP+)
+4681,45,Cigna
+4682,498,CIGNA- Harrahs/Caesars
+4683,45,Cigna- Sub-Contracted Plan
+4684,499,Cofinity
+4685,15,Colorado Medicaid (Traditional) Ages 0-8
+4686,15,Colorado Medicaid (Traditional) Ages 21-26
+4687,15,Colorado Medicaid (Traditional) Ages 27+
+4688,15,Colorado Medicaid (Traditional) Ages 9-20
+4689,500,Consulate General of Chile
+4690,501,Consulate General of Ecuador
+4691,502,Consulate General of El Salvador
+4692,502,Consulate General of Guatemala
+4693,502,Consulate General of Honduras
+4694,502,Consulate General of Uruguay
+4695,503,Consulate General of Venezuela
+4696,504,Core Health Insurance & Realtors Core Health
+4697,505,Coventry - Commercial (Coventry HC of FL & Coventry One)
+4698,505,Coventry - Medicaid (Buena Vista & Vista Healthy Kids) (Ages 19-20)
+4699,505,Coventry - Medicaid (Buena Vista & Vista Healthy Kids) (Ages 21+)
+4700,505,"Coventry - Medicare (Summit, Vista, & Advantra)"
+4701,505,Coventry - Medicare Advantage
+4702,505,Coventry ASO (f.k.a. Coventry GHP-ASO)
+4703,505,Coventry Cares of Kentucky (Ages 0-18)
+4704,505,Coventry Cares of Kentucky (Ages 19+)
+4705,505,Coventry Cares of Pennsylvania (Ages 0-18)
+4706,505,Coventry Cares of Pennsylvania (Ages 19+)
+4707,505,Coventry Carpenters Health & Welfare Fund
+4708,505,Coventry CMR
+4709,505,Coventry Health America
+4710,505,Coventry Health America Advantra
+4711,505,Coventry Health Assurance
+4712,505,Coventry Health Care of Delaware
+4713,505,"Coventry Health Care of Georgia, Inc."
+4714,505,Coventry Health Care of Illinois (f.k.a. PersonalCare)
+4715,505,"Coventry Health Care of Kansas, Inc."
+4716,505,"Coventry Health Care of Louisiana, Inc."
+4717,505,Coventry Health Care of Missouri (f.k.a. Coventry Group Health Plan)
+4718,505,Coventry Health Care of Nevada
+4719,505,Coventry Health Care of Tennessee
+4720,505,Coventry Mail Handlers Benefit Plan
+4721,505,Coventry Medicaid (Buena Vista & Vista Healthy Kids) (Ages 0-18)
+4722,505,Coventry Medicare (f.k.a. Coventry GHP Medicare)
+4723,505,Coventry National Network
+4724,505,Coventry University of MO
+4725,506,EBMC - Employee Benefits Management Corp. (All States Exc. TX)
+4726,507,ECOM PPO Advisors (All States Exc. TX)
+4727,508,Encore PPO/ Encircle EPO Networks
+4728,49,Evercare (All Medicare Products)
+4729,509,"Evolutions Health Care Systems, LLC"
+4730,510,"First Access, Inc. - Commercial Plan"
+4731,510,"First Access, Inc. - Discount Plan"
+4732,511,First Health Group Corp.
+4733,512,First Medical
+4734,505,Florida Firefighters Insurance Trust Fund
+4735,513,Galaxy Health Network
+4736,514,"GMMI, Inc"
+4737,49,Golden Rule
+4738,29,Goodyear Tire & Rubber- SummaCare (Excl. TX)
+4739,515,GWH - CIGNA (formerly Great West)
+4740,505,Health Care Preferred
+4741,516,"HealthCare USA of Missouri, LLC (Ages 0-18)"
+4742,505,"HealthCare USA of Missouri, LLC (Ages 19+)"
+4743,517,HealthLink - HMO
+4744,517,HealthLink - PPO
+4745,518,HealthMarkets
+4746,519,HealthScope Benefits
+4747,65,HealthSmart Accel (All States Excl. TX)
+4748,65,HealthSmart Benefit Solutions (All States Excl TX)
+4749,520,HMN (Health Management Network)
+4750,490,HMO Colorado HMO Select
+4751,9,"Humana  PPO, Classic, POS, EPO, HMO Premier"
+4752,9,"Humana Medicare  Gold PFFS, HumanaChoice PPO"
+4753,521,IAC - Insurers Administrative Corporation (All States Exc. TX)
+4754,522,"Innova College Virtual Campus, Inc."
+4755,523,Integrated Health Plan
+4756,523,"Integrated Health Solutions, Inc."
+4757,524,Lewer Agency
+4758,525,McDonalds Insurance Program
+4759,24,Medicare - Part B
+4760,24,Medicare  Railroad
+4761,24,Medicare Private Fee-For-Service (PFFS)  All Plans
+4762,526,Mercy Health Plans- Commercial
+4763,526,Mercy Health Plans- Medicare
+4764,527,Multiplan
+4765,528,NetCard Systems
+4766,529,NPPN - National Preferred Provider Network 
+4767,530,PayerFusion
+4768,531,Peoples Health Plan
+4769,532,PHCS
+4770,531,PHN Employee Plan
+4771,533,POMCO
+4772,534,Preferred Benefit Administrators Inc
+4773,505,"Preferred Health Systems, Inc."
+4774,535,Premium Medical Service
+4775,536,ProMedical Plan
+4776,537,S & S Healthcare (All States Exc. TX)
+4777,49,SecureHorizons (Medicare) Complete (HMO)
+4778,49,SecureHorizons (Medicare) Complete Choice
+4779,49,SecureHorizons (Medicare) Complete Plus
+4780,49,SecureHorizons (Medicare) Direct PFFS
+4781,505,"SouthCare PPO, Inc."
+4782,538,Star Healthcare Network
+4783,539,Student Assurance Services
+4784,29,SummaCare - Commercial *** Limited Vaccines Only
+4785,29,SummaCare Secure (Medicare Advantage) *** Limited Vaccines Only
+4786,540,The Alliance
+4787,541,Three Rivers Provider Network
+4788,542,Travel Care Services 
+4789,543,TRICARE For Life (65+)
+4790,544,UMWA Health & Retirement Funds
+4791,545,UNICARE PPO
+4792,49,United Healthcare - commercial plans
+4793,49,United HealthCare- Sub-Contracted Plan
+4794,546,Universal Assistance
+4795,547,"Universal Health Care Group Medicare Advantage PFFS, PPO"
+4796,548,University Hospital Health System
+4797,29,University of Akron (Excl. TX)
+4798,549,USA MCO
+4799,550,Walgreens Prescription Savings Club
+4800,551,World Assist Corporation
+4801,493,"BCBS  PPO, POS, Traditional"
+4802,493,BCBS of Illinois - HMO Illinois (Discount Payment Due)
+4803,493,BlueAdvantage HMO (Discount Payment Due)
+4804,552,HFN
+4805,493,ICHIP - BCBSIL
+4806,553,Matcor Metal Fabrication
+4807,554,Medicaid - Illinois [AllKids/MediPlan/FamilyCare) (Ages 0-8)]
+4808,554,Medicaid - Illinois [AllKids/MediPlan/FamilyCare) (Ages 19+)]
+4809,554,Medicaid - Illinois [AllKids/MediPlan/FamilyCare) (Ages 9-18)]
+4810,103,Sagamore Health Network
+4811,543,TRICARE
+4812,49,United Healthcare of the River Valley
+4813,550,WAG/OC/TCH Uninsured Employee Plan
+4814,555,Caterpillar Inc
+4815,493,BCBSKC - All Commercial Plans
+4816,493,BCBSKC / Blue-Advantage & Blue Care (HMO)
+4817,493,BCBSKC / Blue-Advantage Plus (Ages 0-18)
+4818,493,BCBSKC / Blue-Advantage Plus (Ages 19+)
+4819,556,Century Health Solutions
+4820,505,Coventry HC of KS-Health Wave (fka Family HP) 0-18
+4821,505,Coventry HC of KS-Health Wave (fka Family HP) 19+
+4822,557,Emerald Health Network
+4823,558,Freedom Network
+4824,558,Freedom Network/Freedom Network Select
+4825,557,HealthSmart ACCEL Network
+4826,557,HealthSmart Preferred Care
+4827,15,Medicaid - Kansas (KMAP (Ages 0-18))
+4828,15,Medicaid - Kansas (KMAP (Ages 19+))
+4829,245,Molina Healthcare (Formerly Mercy Care Plus)
+4830,15,UniCare Health Plans of Kansas (Medicaid HMO)
+4831,502,Consulate General of Mexico
+4832,45,Starbridge Medical
+4833,45,Starbridge Dental
+4834,559,MassHealth CarePlus
+4835,559,MassHealth Standard
+4837,559,MassHealth Family Assistance
+4840,559,MassHealth Prenatal
+4841,559,MassHealth Limited
+4842,559,MassHealth Senior Buy-In
+4843,559,MassHealth Buy-In
+4844,9,"Advocate Health Care - Humana EPO, PPO, HMO"
+4845,45,GWH - CIGNA (formerly Great West)
+4846,505,"HealthCare USA of Missouri, LLC (Ages 0-18)"
+4847,505,Mercy Health Plans- Commercial
+4848,505,Mercy Health Plans- Medicare
+4849,522,My Community Care
+4850,9,Ochsner - Humana HMO 
+4851,560,South Lake Health Plans
+4852,49,UnitedHealthcare  Golden Rule
+4853,77,WellCare Medicare Advantage
+4854,561,Access Health Benefit Solutions
+4855,561,Colorado Access Advantage (Medicare) 
+4856,561,Colorado Access Child Health Plan Plus
+4857,502,Consulate General of Bolivia
+4858,502,Consulate of Colombia
+4859,493,"BCBS of IL HMO - Fox Valley Medicine, Ltd. (#199)"
+4860,563,UMP Classic
+4861,563,UMP CDHP
+4862,564,TexanPlus HMO-Houston/Beaumont Area
+4863,564,TexanPlus HMO-Dallas Metroplex Area
+4864,564,Today's Options PPO
+4865,564,Today's Options Network PFFS
+4866,564,Generations Healthcare HMO
+4867,24,Medicare - Part A
+4868,565,PPO
+4869,565,HMO
+4870,565,POS
+4871,490,Anthem Blue Cross- California Health Plans
+4873,566,Premier Plus- PPO
+4874,566,SmartSense Plus
+4875,566,CoreGuard Plus
+4876,566,ClearProtection Plus
+4877,566,Lumenos HSA Plus
+4878,566,PPO Share
+4879,566,Select HMO
+4880,566,HMO Saver
+4881,566,Individual HMO
+4882,566,Tonik- PPO
+4883,566,Prudent Buyer- PPO
+4884,568,PEIA PPB- PLAN A
+4885,568,PEIA PPB- PLAN B
+4886,568,PEIA PPB- PLAN C
+4887,568,PEIA PPB- PLAN D
+4888,569,CHS 
+4889,570,iTriage Health
+4890,571,Health savings Account- HSA
+4891,571,Health Reimbursement Account- HRA
+4892,571,Flexible Spending Account- FSA
+4893,572,Horizon Direct Access Plan A 50/70/50
+4894,572,Horizon Direct Access Plan C 80/70
+4895,572,Horizon Direct Access Plan C 100/70
+4896,572,Horizon Basic And Essential- EPO
+4897,572,Horizon Basic And Essential- EPO Plus
+4898,572,Hoizon- HMO
+4899,572,Horizon- HMO Coinsurance
+4900,572,NJ Protect 80/70
+4901,572,NJ Protect 100/70
+4902,572,Horizon Medicare Advantage
+4903,572,Horizon Medicare Blue TotalCare
+4904,572,Horizon Medicare Prescription Drug Plan
+4905,572,Horizon Medicare Supplement
+4906,572,Medicaid Managed Care
+4907,572,NJ Family Care
+4908,572,NJ Family Care Advantage
+4909,572,Horizon Centurion Dental
+4910,572,Horizon Individual Dental 
+4911,573,Aetna DPO
+4912,573,Dental Expense Plan  PPO
+4913,572,Horizon Direct Access Plan  280/780
+4914,574,HUSKY A
+4915,574,HUSKY B
+4916,574,HUSKY C
+4917,574,HUSKY D
+4918,574,Charter Oak
+4919,574,Limited Benefit
+4921,575,Colorado Accountable Care
+4923,577,Health Reimbursement Account- HRA
+4925,577,Health Savings Account- HSA
+4927,577,High Deductible Health Care Plans- HDHP
+4929,577,Flexible Spending Account- FSA
+4931,577,Cobra
+4933,579,HMO
+4939,583,PFFS
+4941,585,WorkCOMP
+4943,505,Advantra Freedom
+4945,495,Silver Open Access
+4947,33,Aetna Affordable Health Choice - SRC
+4949,17,Blue Choice HMO
+4951,17,Blue Choice POS
+4953,17,Blue Choice PPO
+4955,629,PPO
+4957,629,EPO
+4959,532,Open
+4961,532,PPO
+4963,470,SouthCare PPO
+4965,589,other
+4967,562,other
+4969,527,Other
+4971,635,other
+4973,33,Aetna Medicare Advantage Plan MA
+4975,33,Aetna  Medicare Advantage Plan MAPD
+4977,408,PPO
+4979,65,HealthSmart Preferred Care
+4981,649,AmeriCard Health Network
+4983,489,AmeriPlan Health
+4985,651,Av-Med Health Plan
+4987,653,"AvaHealth, Inc., d/b/a Key Insurance Plan"
+4989,493,BCBS Florida - Federal Plans
+4991,493,BCBS Florida d.b.a. Florida Blue
+4993,494,"Caprock HealthPlans, Inc."
+4995,496,"CBCA Administrators, Inc."
+4997,655,Circana Health Passport
+4999,657,Consulate General of Brazil
+5001,505,Coventry -ASO (f.k.a. Coventry GHP-ASO)
+5003,659,"Darden Restaurants (All States Exluding: TX, DE, MO)"
+5005,661,Dimensions PPO Network
+5007,506,EBMC - Employee Benefits Management Corp
+5009,507,ECOM PPO Advisors
+5011,663,Florida Health Solution
+5013,15,Florida Medicaid (Ages 0-18)
+5015,15,Florida Medicaid (Ages 19-20)
+5017,15,Florida Medicaid (Ages 21 & Up)
+5019,665,Freedom 1st (Ages 0-18)
+5021,665,Freedom 1st (Ages 19-20)
+5023,665,Freedom 1st (Ages 20+)
+5025,667,GEHA
+5027,669,Health Choices - FL
+5029,671,Health Network 1 - Care Access Health Plan
+5031,77,HealthEase/Staywell/Healthy Kids (Ages 0-18)
+5033,77,HealthEase/Staywell/Healthy Kids (Ages 19-20)
+5035,77,HealthEase/Staywell/Healthy Kids (Ages 21+)
+5037,65,HealthSmart ACS- Accel
+5039,65,HealthSmart Benefit Solutions
+5041,9,"Humana - PPO, Classic, POS, EPO, HMO Premier"
+5043,9,"Humana Medicare - Gold PFFS, HumanaChoice PPO"
+5045,521,IAC - Insurers Administrative Corporation
+5047,673,Integral Quality Care (Ages 0-18)
+5049,673,Integral Quality Care (Ages 21+)
+5051,673,Integral Quality Care Ages 19-20)
+5053,675,"InterGroup Services Corporation (All States excl. TX, DE, MO)"
+5055,525,McDonald's Insurance Program
+5057,677,MDI Healthcare Solutions
+5059,24,Medicare - Railroad
+5061,24,Medicare Private Fee-For-Service (PFFS) - All Plans
+5063,24,Medicare Supplement - Non-Contracted
+5065,527,MultiPlan - UMR
+5067,679,"NovaNet, Inc."
+5069,667,PCIP
+5071,531,Peoples Health Choices 65
+5073,531,Peoples Health Choices Plus
+5075,531,Peoples Health Choices Select
+5077,531,Peoples Health Group Medicare
+5079,531,Peoples Health Secure Choice
+5081,531,Peoples Health Secure Health
+5083,537,S & S Healthcare
+5085,681,Stratose (f.k.a. NPPN- National Preferred Provider Network)
+5087,49,UHC - Cover Florida (sun logo ONLY)
+5089,49,United HealthCare Community Plan (Ages 0-19) (M*Plus & FL Healthy Kids)
+5091,49,United Healthcare Community Plan (M*Plus & FL Healthy Kids) (Age 20)
+5093,49,United HealthCare Community Plan (M*Plus & FL Healthy Kids) (Ages 21+)
+5095,49,UnitedHealthcare - Golden Rule
+5097,550,Walgreens/OptionCare/Healthcare Clinic Uninsured Employee Plan
+5099,683,WPS - Wisconsin Physician Services
+5101,493,BCBS- TN Medicare (Blue Advantage Plans)
+5103,493,BCBST BlueCare Select (Ages 18 & Under)
+5105,493,BCBST BlueCare Select (Ages 19 & Up)
+5107,493,BCBST Network P / BluePreferred
+5109,493,BCBST Network S / BlueSelect
+5111,493,BCBST Network V / CoverTN
+5113,493,BCBST TennCare Select (Ages 18 & Under)
+5115,493,BCBST TennCare Select (Ages 19 & Up)
+5117,355,BlueGrass Family Health
+5119,685,Signature Health Alliance in Tennessee
+5121,493,Smart Health
+5123,49,United HealthCare Community Plan (Ages 0-18) (TennCare)
+5125,49,United HealthCare Community Plan (Ages 19+) (TennCare)
+5127,687,Windsor Health Plan
+5129,689,Amerigroup Louisiana [Ages 0-15]
+5131,689,Amerigroup Louisiana [Ages 16-18]
+5133,689,Amerigroup Louisiana [Ages 19-20]
+5135,689,Amerigroup Louisiana [Ages 21+]
+5137,691,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+5139,691,BCBS Federal Employee Program
+5141,691,BCBSLA Blue Connect
+5143,691,BCBSLA HMO
+5145,691,BCBSLA PPO
+5147,693,LACare Louisiana (Ages 0-15)
+5149,693,LACare Louisiana (Ages 16-18)
+5151,693,LACare Louisiana (Ages 19-20)
+5153,693,LACare Louisiana (Ages 21+)
+5155,15,Louisiana Healthcare Connections (Ages 0-15)
+5157,15,Louisiana Healthcare Connections (Ages 16-18)
+5159,15,Louisiana Healthcare Connections (Ages 19-20)
+5161,15,Louisiana Healthcare Connections (Ages 21+)
+5163,15,Louisiana Medicaid/ Health Network for LA (Ages 0-15)
+5165,15,Louisiana Medicaid/ Health Network for LA (Ages 16-18)
+5167,15,Louisiana Medicaid/ Health Network for LA (Ages 19-20)
+5169,15,Louisiana Medicaid/ Health Network for LA (Ages 21 & Up)
+5171,49,United HealthCare Community Plan (State of LA MA) (Age 0-18)
+5173,49,United HealthCare Community Plan (State of LA MA) (Age 19-20)
+5175,49,United HealthCare Community Plan (State of LA MA) (Age 21+)
+5177,558,Freedom Network Select
+5179,49,United HealthCare Community Plan- KanCare (Ages 0-18)
+5181,49,United HealthCare Community Plan- KanCare (Ages 19+)
+5183,496,CBCA Administrators
+5185,502,Consulate General of Costa Rica
+5187,659,Darden Restaurants (MO Only)
+5189,506,EBMC - Employee Benefits Management Corp.
+5191,77,Harmony Health Plan (Ages 0-18)
+5193,77,Harmony Health Plan (Ages 19+)
+5195,520,Health Management Network (HMN)
+5197,65,HealthSmart Benefits Solutions
+5199,695,Home State Health Plan (Ages 0-18)
+5201,695,Home State Health Plan (Ages 19+)
+5203,523,Integrated Health Solutions
+5205,675,InterGroup Services Corporation (MO)
+5207,15,Medicaid - Missouri (MO Healthnet) Ages 0-18
+5209,15,Medicaid - Missouri (MO Healthnet) Ages 19+
+5211,697,Missouri Care (Ages 0-18)
+5213,697,Missouri Care (Ages 19+)
+5215,536,ProMedical Services
+5217,560,South Lake Hospital Plans
+5219,490,Anthem Blue Access Choice PPO (formerly Alliance Choice)
+5221,490,Anthem Blue Access PPO (formerly Alliance)
+5223,490,Anthem Blue Preferred (formerly Blue Choice)
+5225,490,Anthem Blue Traditional
+5227,490,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+5229,490,BCBS Federal Employee Program
+5231,493,"BCBS - PPO, POS, Traditional"
+5233,77,Harmony Health Plan (Ages 0-8)
+5235,77,Harmony Health Plan (Ages 9-18)
+5237,382,Meridian Advantage Plan (Medicare)
+5239,382,Meridian HP (Medicaid Ages 0-18)
+5241,382,Meridian HP (Medicaid Ages 19+)
+5243,260,Advantage by Managed Health Services
+5245,490,Anthem BCBS - Blue Access (PPO)
+5247,490,Anthem BCBS - Comprehensive Major Medical
+5249,490,Anthem Blue Preferred
+5251,490,Anthem Medicare Advantage
+5253,15,CCHP- Wisconsin (Childrens Community Health Plan) (Ages 0-18)
+5255,15,CCHP- Wisconsin (Childrens Community Health Plan) (Ages 19+)
+5257,699,Health Insurance Risk-Sharing Plan (HIRSP)
+5259,701,iCare Medicaid (Ages 0-18)
+5261,701,iCare Medicaid (Ages 19+)
+5263,701,iCare Medicare
+5265,490,Lumenos
+5267,260,Managed Health Services [Medicaid Ages 0-18]
+5269,260,Managed Health Services [Medicaid Ages 19+]
+5271,15,Medicaid - Wisconsin (Badger Care Ages 0-18))
+5273,15,Medicaid - Wisconsin (Badger Care Ages 19+))
+5275,703,Trilogy Assurant Health
+5277,703,Trilogy Health Networks
+5279,703,Trilogy- UMR
+5281,49,United HealthCare Community Plan (Ages 0-18) (ForwardHealth/BadgerCare/MA)
+5283,49,United HealthCare Community Plan (Ages 19+) (ForwardHealth/BadgerCare/MA)
+5285,705,WEA Trust
+5287,33,Aetna Better Health - CHIP
+5289,33,Aetna Better Health - Texas Star
+5291,493,BCBS of Texas (Traditional / Indemnity)
+5293,493,"BCBS of Texas - PPO, POS"
+5295,498,CIGNA - Harrahs/Caesars
+5297,659,Darden Restaurants (TX Only)
+5299,507,ECOM PPO Advisors (TX ONLY)
+5301,29,Goodyear Tire & Rubber - SummaCare (TX Only)
+5303,675,InterGroup Services Corporation (TX)
+5305,15,Medicaid - Texas (Ages 0-18)
+5307,15,Medicaid - Texas (Ages 19-20)
+5309,15,Medicaid - Texas (Ages 21+)
+5311,707,MHealth
+5313,245,Molina HC of Texas (0-20)
+5315,245,Molina HC of Texas (21+)
+5317,245,Molina HealthCare of TX - Medicare Options
+5319,245,Molina HealthCare of TX - Medicare Options Plus
+5321,49,United HealthCare Community Plan (EverCare Star+Plus MA) (Age 0-18)
+5323,49,United HealthCare Community Plan (EverCare Star+Plus MA) (Age 19-20)
+5325,49,United HealthCare Community Plan (EverCare Star+Plus MA) (Age 21+)
+5327,49,United HealthCare Community Plan (EverCare-TX Star MA) (Age 0-18)
+5329,49,United HealthCare Community Plan (EverCare-TX Star MA) (Age 19-20)
+5331,49,United HealthCare Community Plan (EverCare-TX Star MA) (Age 21+)
+5333,547,Universal Health Care Group (Medicare Only)
+5335,29,University of Akron (TX Only)
+5337,490,Anthem BCBS - Medicare Advantage (PPO)
+5339,490,Anthem BlueCross BlueShield of Nevada
+5341,8,Kaiser Permanente Hawaii- Commercial
+5343,8,Kaiser Permanente Hawaii- Medicaid
+5345,8,Kaiser Permanente Hawaii- Medicare
+5347,709,"Managed Care Consultants, LLC"
+5349,15,Medicaid - Nevada (Magellan Medicaid (Ages 0-18))
+5351,15,Medicaid - Nevada (Magellan Medicaid (Ages 19+))
+5353,711,MGM Resorts Health Plan (PPO)
+5355,490,Anthem BCBS - Anthem Medicare Preferred (PPO)
+5357,490,Anthem BCBS - Anthem Senior Advantage (HMO)
+5359,490,Anthem BCBS - Blue Preferred Primary (HMO)
+5361,490,Anthem BCBS - Blue Preferred Primary Plus (POS)
+5363,490,Anthem BCBS - Blue Priority (HMO)
+5365,713,HealthSpan
+5367,62,"Medical Mutual PPO, POS, HMO"
+5369,15,Ohio Medicaid (Ages 17 & Under)
+5371,15,Ohio Medicaid (Ages 18 & Up)
+5373,49,United HealthCare Community Plan (Ages 0-18)
+5375,49,United HealthCare Community Plan (Ages 19+)
+5377,77,WellCare of Ohio (Ages 0-18)
+5379,77,WellCare of Ohio (Ages 19+)
+5381,490,Anthem BCBS - Blue Access
+5383,490,Anthem BCBS - Blue Traditional
+5385,490,Anthem BCBS - Lumenos
+5387,490,Anthem BCBS - Medicare Advantage
+5389,490,Anthem Medicare Preferred PPO
+5391,490,Blue Medicare Access
+5393,490,BluePreferred
+5395,15,Medicaid - Kentucky (KY Health Choices Ages 19+))
+5397,15,Medicaid - Kentucky (KY Health Choices) (Ages 0-18))
+5399,715,Preferred Health Plan
+5401,717,SIHO
+5403,77,WellCare of Kentucky (Ages 0-18)
+5405,77,WellCare of Kentucky (Ages 19+)
+5407,520,AMN (Arizona Medical Network)
+5409,719,AZ Foundation for Medical Care
+5411,493,BCBS of Arizona
+5413,493,BCBS-AZ Corporate Health Services (CHS)
+5415,493,BlueCross BlueShield AZ - Blue Alliance
+5417,493,BlueCross BlueShield AZ - Blue Value
+5419,721,HealthChoice AHCCCS Medicaid
+5421,723,HealthNet - AZ (Commercial)
+5423,723,HealthNet - AZ (Medicare 65+)
+5425,725,Pima Community Access Program (PCAP)
+5427,520,RAN
+5429,520,RAN + AMN
+5431,727,"United HealthCare Community Plan (Ages 0-18) (AZ SCHIP, EverCare, APIPA MA)"
+5433,727,"United HealthCare Community Plan (Ages 19+) (AZ SCHIP, EverCare, APIPA MA)"
+5435,727,UnitedHealthcare Arizona Physicians IPA - MEDICARE (APIPA Medicare)
+5437,49,Neighborhood Health Partnership (NHP)
+5439,33,Aetna Better Health - Health Choices (Ages 0-18)
+5441,33,Aetna Better Health - Health Choices (Ages 19+)
+5443,729,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+5445,731,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+5447,729,BCBS Federal Employee Program
+5449,731,BCBS Federal Employee Program
+5451,729,Highmark Advance Blue
+5453,729,Highmark Blue Shield (Premier Blue)
+5455,729,Highmark Blue Shield Major Medical
+5457,729,Highmark Blue Shield Medical-Surgical
+5459,729,Highmark ClassicBlue
+5461,729,Highmark CompleteCare
+5463,729,Highmark Comprehensive Major Medical
+5465,729,Highmark DirectBlue
+5467,729,Highmark EPOBlue
+5469,729,Highmark FreedomBlue
+5471,729,Highmark KeystoneBlue 
+5473,729,Highmark Medicare (Security Blue)
+5475,729,Highmark Medigap Blue
+5477,729,Highmark PPOBlue
+5479,729,Highmark PreferredBlue
+5481,729,Highmark SelectBlue
+5483,729,Highmark Short Term Blue
+5485,729,Highmark Signature 65
+5487,729,Highmark SpecialCare
+5489,15,Medicaid - Pennsylvania (Access) (Ages 0-18)
+5491,15,Medicaid - Pennsylvania (Access) (Ages 19+)
+5493,49,United HealthCare Community Plan (Ages 0-19) (CHIP)
+5495,49,United Healthcare Community Plan (Unison) (Ages 0-18)
+5497,49,United Healthcare Community Plan (Unison) (Ages 19+)
+5499,490,BCBS of Georgia PPO
+5501,490,BCBS of Georgia TONIK
+5503,490,BCBS of Georgia Traditional Indemnity
+5505,493,"BlueChoice (HMO, POS)"
+5507,493,BlueDirect
+5509,493,BlueOpen Access
+5511,15,Medicaid - Georgia (GA Dept. of Community Health)
+5513,733,Peach State Health Plan (Medicaid Ages 0-18)
+5515,733,Peach State Health Plan (Medicaid Ages 19+)
+5517,733,Peach State Health Plan (Medicare)
+5519,77,WellCare of Georgia (Ages 0-18)
+5521,77,WellCare of Georgia (Ages 19-21)
+5523,77,WellCare of Georgia (Ages 22+)
+5525,11,AmeriHealth - DE/PA
+5527,11,AmeriHealth - NJ
+5529,11,AmeriHealth Admin - DE/PA
+5531,11,AmeriHealth Admin - NJ
+5533,731,BCBS Federal Employee Plan
+5535,643,Health Partners - KidzPartners (CHIP)
+5537,643,Health Partners - MA (18 & Under)
+5539,643,Health Partners - MA (19+)
+5541,731,IBC- Independence Admin
+5543,731,IBC- Personal Choice
+5545,731,IBC- Personal Choice 65
+5547,731,IBC- Select Advantage
+5549,735,Keystone 65
+5551,737,Keystone First
+5553,735,Keystone Health Plan East
+5555,493,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"" - Walgreens employee plan only)"
+5557,493,Federal Employee Program
+5559,493,Horizon commercial HMO/POS/EPO
+5561,493,Horizon commercial PPO/Indemnity/CDH
+5563,493,Horizon Medicare Blue PPO
+5565,493,Horizon Medicare HMO
+5567,15,Medicaid - New Jersey (Unysis) (Ages 0-18)
+5569,15,Medicaid - New Jersey (Unysis) (Ages 19+)
+5571,49,United HealthCare Community Plan (Ages 0-18) (MA & NJ Family Care)
+5573,49,United HealthCare Community Plan (Ages 19+) (MA & NJ Family Care)
+5575,739,Viking Yacht Company
+5577,729,BCBS of DE (Highmark Delaware)
+5579,659,Darden Restaurants (DE Only)
+5581,741,"Delaware Physicians Care, Inc (DPCI)"
+5583,675,InterGroup Services Corporation (DE)
+5585,15,Medicaid - Delaware/ Diamond State (Ages 0-18)
+5587,15,Medicaid - Delaware/ Diamond State (Ages 19+)
+5589,15,Colorado Medicaid (Traditional) Ages 0-18
+5591,15,Colorado Medicaid (Traditional) Ages 19-20
+5593,743,"Denver Health Medical Plan, Inc. - CHP Plus (Ages 0-18)"
+5595,743,"Denver Health Medical Plan, Inc. - CHP Plus (Ages 19-20)"
+5597,743,"Denver Health Medical Plan, Inc. - CHP Plus (Ages 21-26)"
+5599,743,"Denver Health Medical Plan, Inc. - CHP Plus (Ages 27+)"
+5601,743,"Denver Health Medical Plan, Inc. - Medicaid Choice (Ages 0-18)"
+5603,743,"Denver Health Medical Plan, Inc. - Medicaid Choice (Ages 19-20)"
+5605,743,"Denver Health Medical Plan, Inc. - Medicaid Choice (Ages 21-26)"
+5607,743,"Denver Health Medical Plan, Inc. - Medicaid Choice (Ages 27+)"
+5609,743,"Denver Health Medical Plan, Inc. - Medical Care"
+5611,743,"Denver Health Medical Plan, Inc. - Medicare Choice (SNP)"
+5613,743,"Denver Health Medical Plan, Inc. - Medicare Select"
+5615,743,"Denver Health Medical Plan, Inc. - Point of Service"
+5617,493,BCBS of KS - All Commercial Plans
+5619,493,BCBS of KS - Federal Employee
+5621,558,Preferred Health Professionals - PHP
+5623,490,Anthem Healthy Indiana Plan
+5625,490,Anthem HMO
+5627,490,Anthem Hoosier Healthwise Medicaid (Ages 0-18)
+5629,490,Anthem Hoosier Healthwise Medicaid (Ages 19+)
+5631,745,MDwise (Hoosier Alliance) Medicaid  [Ages 0-18]
+5633,745,MDwise (Hoosier Alliance) Medicaid  [Ages 19+]
+5635,745,MDwise- Healthy Indiana Plan (Ages 0-18)
+5637,745,MDwise- Healthy Indiana Plan (Ages 19+)
+5639,15,Medicaid - Indiana (Hoosier Health (Ages 0-18))
+5641,15,Medicaid - Indiana (Hoosier Health (Ages 19+))
+5643,493,BCBS of TN Blue Cover (MS Healthcare Clinic locations)
+5645,493,BCBS of TN Blue Preferred (MS Healthcare Clinic locations)
+5647,493,BCBS of TN Blue Select (MS Healthcare Clinic locations)
+5649,493,BCBS of TN Federal Employee (MS Healthcare Clinic locations)
+5651,15,Mississippi Medicaid (Ages 18 & Under)
+5653,15,Mississippi Medicaid (Ages 19 & Up)
+5655,49,United HealthCare Community Plan (Ages 0-18)  (MS CAN & CHIP)
+5657,49,United HealthCare Community Plan (Ages 19+) (MS CAN & CHIP)
+5659,747,"BCBS (Out-of-State) Blue Card (must have ""suitcase logo"")"
+5661,747,"CareFirst BCBS [NCA Indemnity (Traditional/PAR), PPO (RPN)]"
+5663,747,CareFirst BCBS HMO (Blue Choice)
+5665,747,CareFirst Federal Employee Program
+5667,15,District of Columbia Medicaid and DC Healthy Families (Ages 0-18)
+5669,15,District of Columbia Medicaid and DC Healthy Families (Ages 19+)
+5671,49,United HealthCare
+5673,15,Medicaid HMO (PCCM)
+5675,591,Other
+5677,593,Other
+5679,595,Other
+5681,597,Other
+5683,599,Other
+5685,601,Other
+5687,603,Other
+5689,605,HEB Work Comp
+5691,607,Other
+5693,609,Other
+5695,611,Security Choice
+5697,613,Other
+5699,549,PPO
+5701,615,Other
+5703,114,Alliant Health Plus
+5705,617,Other
+5707,619,Other
+5709,621,Other
+5711,623,Other
+5713,505,Southcare
+5715,625,Other
+5717,627,Other
+5719,15,Georgia Medicaid
+5721,631,Other
+5723,633,Other
+5725,749,Select 500
+5727,749,Choice Plus
+5729,751,Devon Health Services
+5731,29,Goodyear Tire & Rubber- SummaCare
+5733,753,HealthSmart ACCEL Network
+5735,753,HealthSmart Preferred Care
+5737,751,Premier Network
+5739,29,University of Akron
+5741,755,USA MCO
+5743,721,Health Choice HMO (AHCCCS) Medicaid (Ages 0-18)
+5745,721,HealthChoice Generations Medicare
+5747,493,EMSI - Horizon
+5749,24,Medicare Part B
+5751,24,Medicare Private Fee-For-Service (PFFS)
+5753,49,MEDICARE DIRECT RX (PFFS)
+5755,647,Other
+5757,9,Preferred & Medicare Replacement
+5759,169,Option I & II Medicare Advantage (PFFS)
+5761,549,PPO TakeCare
+5763,77,HMO
+5765,77,POS
+5767,45,Cigna Healthcare of Georgia
+5769,511,CCN
+5771,9,HMO
+5773,527,PHCS 
+5775,527,PHCS PPO
+5777,759,Other
+5779,637,Other
+5781,639,Other
+5783,757,Other
+5785,761,Community ProHealth  Health Reward
+5787,761,Community ProHealth  HealthChoice
+5789,763,Employer Health Programs
+5791,765,Kaiser (Walgreens Enrolled Employees & Dependents plan only)
+5793,49,United Healthcare - Golden Rule
+5795,763,US Family Health Plan
+5797,104,Blue Advantage HMO
+5799,767,Healthchoice Select
+5801,767,Healthchoice PPO
+5803,767,Healthchoice WORKS
+5805,769,MPI Health Plan
+5809,771,PPO
+5811,771,HMO
+5813,773,Health Plan I (PPO) 
+5815,773,Health Plan II (PPO) 
+5817,773,Health Plan III (PPO) 
+5819,773,Dental Plan (PPO) 
+5821,693,AmeriHealth Caritas Louisiana (f.k.a. LACare)(Ages 0-15)
+5823,693,AmeriHealth Caritas Louisiana (f.k.a. LACare)(Ages 16-18)
+5825,693,AmeriHealth Caritas Louisiana (f.k.a. LACare)(Ages 19-20)
+5827,693,AmeriHealth Caritas Louisiana (f.k.a. LACare)(Ages 21+)
+5829,775,New Benefits
+5831,9,Humana Gold Plus
+5833,777,Medicare Advantage
+5835,779,Value Plan
+5837,779,Standard Option
+5839,779,Consumer Option
+5841,45,NALC Consumer Driven Health Plan
+5843,45,NALC Value Option Health Plan
+5845,781,Medicare Advantage
+5847,783,PPO
+5849,513,PPO
+5851,789,Saint Alphonsus Employees and Families
+5853,791,VA Healthcare Health Plan 
+5855,749,BCBS Health Savings Plan
+5857,793,Arkansas Health Care Independence Program
+5859,793,Bronze Plan
+5861,793,Silver Plan
+5863,793,Gold Plan
+5865,795,Bettles Health Alliance
+5867,795,Bettles Health Employee and Family Plan
+5869,795,Bettles Accountable Care
+5871,15,Medicaid - Georgia (GA Dept. of Community Health Ages 0-18))
+5873,15,Medicaid - Georgia (GA Dept. of Community Health Ages 19-21))
+5875,15,Medicaid - Georgia (GA Dept. of Community Health Ages 22+))
+5877,797,Piedmont WellStar HealthPlans Commercial Products
+5879,797,Piedmont WellStar HealthPlans Medicare Advantage HMO
+5881,797,Piedmont WellStar HealthPlans Piedmont Employee Plan
+5883,797,Piedmont WellStar HealthPlans WellStar Employee Plan
+5885,799,SSM Health Care - ExclusiveChoice
+5887,29,SummaCare - Commercial
+5889,29,SummaCare Secure (Medicare Advantage)
+5891,493,BCBS of IL HMO & Blue Precision HIE  MacNeal Health Providers: Site #221
+5893,493,BCBS of IL HMO & Blue Precision HIE  Weiss Health Providers: Site #445
+5895,493,BCBS of IL MA HMO & HMO-POS  MacNeal Health Providers: Site #706
+5897,493,BCBS of IL MA HMO & HMO-POS  Weiss Health Providers: Site #707
+5899,493,BCBS of IL MA HMO  West Suburban Health Providers: Site #708
+5901,9,Humana Gold  MacNeal Health Providers
+5903,9,Humana Gold  Weiss Health Providers
+5905,9,Humana HMO  MacNeal Health Providers
+5907,9,Humana HMO  Weiss Health Providers
+5909,801,"Memorial Hermann Health Plan, Inc. (formerly MHealth)"
+5913,493,BCBS of IL HMO  West Suburban Health Providers: Site #100
+5915,493,BCBS of IL MA HMO & HMO-POS  West Suburban Health Providers: Site #708
+5917,9,Humana HMO  West Suburban Health Providers
+5919,795,Bettles Taxidermy
+5921,493,Ascension Health/Smart Health
+5923,493,Silver Cross: Blue Advantage (HMO) [Commercial]
+5925,493,Silver Cross: Blue Medicare Advantage (HMO)
+5927,801,MHealth
+5929,317,BlueSelect
+5933,300,PEEHIP (Public Education Employees' Health Insurance Plan)
+5935,823,Blue Coast Standard
+5937,823,Blue Coast Choice Plan
+5941,825,Basic
+5943,825,Basic Plus
+5945,825,Worldwide
+5947,825,Premium Plan
+5949,829,Southern Nevada (HMO)
+5951,829,Greater Nevada (HMO)
+5953,831,QA Telemedicine Plan
+5955,833,Colorado Health Neighborhoods (CHN)
+5957,835,Colorado Health Neighborhoods (CHN)
+5959,837,Colorado Health Neighborhoods (CHN)
+5961,856,Centura Health Associate Plan
+5963,839,Colorado HealthOp - Inactive
+5965,488,TEST
+5967,841,UPMC for Kids
+5969,841,Other
+5971,841,UPMC for Kids Free CHIP
+5973,841,UPMC for Kids Full-Cost CHIP
+5975,841,UPMC for Kids Low Cost 2 CHIP
+5977,841,UPMC for Kids Low Cost 1 CHIP
+5979,841,UPMC for Kids Low Cost 3 CHIP
+5981,841,UPMC for Life HMO
+5983,841,UPMC for Life HMO Rx (HMO)
+5985,841,UPMC for Life Options (HMO SNP)
+5987,841,UPMC for Life PPO High Deductible with Rx (PPO)
+5989,841,UPMC for Life PPO Rx (PPO)
+5991,841,UPMC for Life Rx Enhanced (HMO)
+5993,841,UPMC for Life Specialty Plan (HMO SNP)
+5995,841,UPMC for You Advantage (HMO SNP)
+5997,841,UPMC Individual Advantage Guaranteed Renewable Plan EPO
+5999,841,UPMC Individual Advantage Guaranteed Renewable Plan HSA
+6001,841,UPMC Individual Advantage Short Term Plan
+6003,843,Exempla Spine Care at Denver West
+6005,57,Other
+6007,845,Be Protected
+6009,845,Be Focused
+6011,845,Be Focused  Rose City (marketplace only)
+6013,845,Standard Gold plan
+6015,845,Be Prepared
+6017,845,Be Smart
+6019,845,Be Aligned
+6021,845,Be Aligned  Rose City (marketplace only)
+6023,845,Standard Silver Plan
+6025,845,Be Connected
+6027,845,Be Connected  Rose City (marketplace only)
+6029,845,Be Savvy
+6031,845,Standard Bronze Plan
+6033,845,Be Bold (marketplace only)
+6034,61,Anthem Blue Cross PPO
+6036,846,Secure
+6038,846,Bronze Edge
+6040,846,Bronze
+6042,846,Bronze Edge +
+6044,846,Silver Edge +
+6046,846,Gold Edge
+6048,846,Platinum Edge
+6054,850,Health Maintenance Organization (HMO)
+6056,850,Point-of-Service (POS)
+6058,850,Preferred Provider Organization (PPO)
+6060,850,Regional Preferred Provider Organization (RPPO)
+6062,850,Private Fee-For-Service (PFFS)
+6064,850,Chronic Condition SNP
+6066,850,Dual Eligible SNP
+6068,850,Institutional SNP
+6070,852,Access Healthplex
+6072,852,CapDent
+6074,852,Select
+6076,852,OFF-Exchange (ACA Compliant) Plan
+6078,852,CapDent Plus
+6080,852,Select Plus
+6082,852,OMNI PPO
+6084,852,Preferred Choice
+6086,815,TRICARE Prime
+6088,815,TRICARE Prime Remote
+6090,815,TRICARE Prime Overseas
+6092,815,TRICARE Prime Remote Overseas
+6094,815,TRICARE Standard and Extra
+6096,815,TRICARE Standard Overseas
+6098,815,TRICARE For Life
+6100,815,TRICARE Reserve Select
+6102,815,TRICARE Retired Reserve
+6104,815,TRICARE Young Adult
+6106,815,US Family Health Plan
+6108,854,Essential Care (Bronze)
+6110,854,Balanced Care and Silver
+6112,854,Gold
+6114,858,Essential Care (Bronze)
+6116,858,Balanced Care (Silver)
+6118,858,Secure Care (Gold)
+6120,572,Horizon Advance EPO
+6122,572,Horizon Advantage EPO
+6124,572,Horizon Advantage EPO Essentials
+6126,572,Horizon Blue TotalCare (HMO SNP)
+6128,572,Managed Long-Term Services & Supports (MLTSS)
+6130,572,BlueCard PPO NJCF (New Jersey Carpenters Health Fund)
+6132,862,OHP Healthy Kids
+6134,862,OHP Plus
+6136,862,OHP Plus Supplemental 
+6138,862,OHP with Limited Drug
+6140,864,CareOregon
+6142,864,Kaiser Permanente NW
+6144,864,Providence Health & Services
+6146,864,Tuality Health Alliance
+6148,864,Access Dental Care
+6150,864,Advantage Dental Services 
+6152,864,Capitol Dental Care
+6154,864,CareOregon Dental
+6156,864,Family Dental Care
+6158,864,Kaiser Permanente Dental*
+6160,864,Managed Dental Care of Oregon
+6162,864,ODS Community Health Dental Plan
+6164,864,Willamette Dental Group
+6166,866,Southern Simple/Fácil Health Platinum
+6168,866,Southern Simple/Fácil Health Gold
+6170,866,Southern Simple/Fácil Health Silver
+6172,866,Southern Simple/Fácil Health Bronze
+6174,866,Southern Simple/Fácil Health Catastrophic
+6176,866,Southern Simple/Fácil Health Gold HSA
+6178,866,Southern Simple/Fácil Health Silver HSA
+6180,866,Southern Simple/Fácil Health Bronze HSA
+6182,866,Northern Simple/Fácil Health Platinum
+6184,866,Northern Simple/Fácil Health Gold 
+6186,866,Northern Simple/Fácil Health Silver
+6188,866,Northern Simple/Fácil Health Silver
+6190,866,Northern Simple/Fácil Health Bronze HSA
+6192,866,Northern Simple/Fácil Health Catastrophic
+6194,866,Frontier Simple/Fácil Health Platinum
+6196,866,Frontier Simple/Fácil Health Gold
+6198,866,Frontier Simple/Fácil Health Silver
+6200,866,Frontier Simple/Fácil Health Bronze HSA
+6202,866,Frontier Simple/Fácil Health Catastrophic
+6204,866,Southern Star/Estrella Health Platinum
+6206,866,Southern Star/Estrella Health Gold
+6208,866,Southern Star/Estrella Health Silver
+6210,866,Union Star/Estrella Health Platinum
+6212,866,Union Star/Estrella Health Gold
+6214,866,Union Star/Estrella Health Silver
+6216,866,VIP Health Platinum
+6218,866,VIP Health Gold
+6220,866,VIP Health Silver
+6222,866,Connected/Conectado Health Platinum
+6224,866,Connected/Conectado Health Gold
+6226,866,Connected/Conectado Health Silver
+6228,866,Southern Simple/Fácil Platinum
+6230,866,Southern Simple/Fácil Platinum 100%
+6232,866,Southern Simple/Fácil Gold
+6234,866,Southern Simple/Fácil Gold 100%
+6236,866,Southern Simple/Fácil Silver
+6238,866,Southern Simple/Fácil Silver 100%
+6240,866,Southern Simple/Fácil Silver 94%
+6242,866,Southern Simple/Fácil Silver 87%
+6244,866,Southern Simple/Fácil Silver 73%
+6246,866,Southern Simple/Fácil Bronze
+6248,866,Southern Simple/Fácil Bronze 100%
+6250,866,Southern Simple/Fácil Catastrophic
+6252,866,Southern Simple/Fácil Gold HSA 
+6254,866,Southern Simple Gold HSA
+6256,866,Southern Simple Bronze HSA
+6258,866,"Co-Options Simple, A Multi-State Plan Gold"
+6260,866,"Co-Options Simple, A Multi-State Plan Silver"
+6262,866,"Co-Options Simple, A Multi-State Plan Silver 100%"
+6264,866,"Co-Options Simple, A Multi-State Plan Silver 94%"
+6266,866,"Co-Options Simple, A Multi-State Plan Silver 87%"
+6268,866,"Co-Options Simple, A Multi-State Plan Silver 73%"
+6270,866,Northern Simple/Fácil Platinum
+6272,866,Northern Simple/Fácil Platinum 100%
+6274,866,Northern Simple/Fácil Gold
+6276,866,Northern Simple/Fácil Gold 100%
+6278,866,Northern Simple/Fácil Silver
+6280,866,Northern Simple/Fácil Silver 100%
+6282,866,Northern Simple/Fácil Silver 94%
+6284,866,Northern Simple/Fácil Silver 87%
+6286,866,Northern Simple/Fácil Silver 73%
+6288,866,Northern Simple/Fácil Bronze HSA
+6290,866,Northern Simple/Fácil Bronze 100%
+6292,866,Northern Simple/Fácil Catastrophic
+6294,866,Frontier Simple/Fácil Platinum
+6296,866,Frontier Simple/Fácil Platinum 100%
+6298,866,Frontier Simple/Fácil Gold 100%
+6300,866,Frontier Simple/Fácil Gold
+6302,866,Frontier Simple/Fácil Silver
+6304,866,Frontier Simple/Fácil Silver 100%
+6306,866,Frontier Simple/Fácil Silver 94%
+6308,866,Frontier Simple/Fácil Silver 87%
+6310,866,Frontier Simple/Fácil Silver 73%
+6312,866,Frontier Simple/Fácil Bronze HSA
+6314,866,Frontier Simple/Fácil Bronze 100%
+6316,866,Frontier Simple/Fácil Catastrophic
+6318,866,Southern Star/Estrella Platinum
+6320,866,Southern Star/Estrella Platinum 100%
+6322,866,Southern Star/Estrella Gold
+6324,866,Southern Star/Estrella Gold 100%
+6326,866,Southern Star/Estrella Silver
+6328,866,Southern Star/Estrella Silver 100%
+6330,866,Southern Star/Estrella Silver 94%
+6332,866,Southern Star/Estrella Silver 87%
+6334,866,Southern Star/Estrella Silver 73%
+6336,866,Union Star/Estrella Platinum
+6338,866,Union Star/Estrella Platinum 100%
+6340,866,Union Star/Estrella Gold
+6342,866,Union Star/Estrella Gold 100%
+6344,866,Union Star/Estrella Silver
+6346,866,Union Star/Estrella Silver 100%
+6348,866,Union Star/Estrella Silver 94%
+6350,866,Union Star/Estrella Silver 87%
+6352,866,Union Star/Estrella Silver 73%
+6354,866,VIP Platinum
+6356,866,VIP Platinum 100%
+6358,866,VIP Gold
+6360,866,VIP Gold 100%
+6362,866, VIP Silver
+6364,866,VIP Silver 100%
+6366,866,VIP Silver 94%
+6368,866,VIP Silver 87%
+6370,866,VIP Silver 73%
+6372,866,Connected/Conectado Platinum
+6374,866,Connected/Conectado Platinum 100%
+6376,866,Connected/Conectado Gold
+6378,866,Connected/Conectado Gold 100%
+6380,866,Connected/Conectado Silver
+6382,866,Connected/Conectado Silver 100%
+6384,866,Connected/Conectado Silver 94%
+6386,866,Connected/Conectado Silver 87%
+6388,866,Connected/Conectado Silver 73%
+6390,868,Consumers Choice Gold 1
+6392,868,Consumers Choice Gold 2
+6394,868,"CO-OPtions Consumers Choice Gold 4, A Multistate Plan"
+6396,868,Consumers Choice Silver 1
+6398,868,Consumers Choice Silver 2
+6400,868,Consumers Choice Silver HDP 1
+6402,868,Consumers Choice Silver 10
+6404,868,Consumers Choice Silver 11
+6406,868,"CO-OPtions Consumers Choice Silver 12, A Multistate Plan"
+6408,868,Consumers Choice Bronze 1
+6410,868,Consumers Choice Bronze HDP 1
+6412,868,Consumers Choice Bronze 10
+6414,868,Consumers Choice Value Plan
+6416,872,CrestPoint Health Medicare Advantage Value plan
+6418,872,CrestPoint Health Medicare Advantage Classic plan
+6420,872,CrestPoint Health Medicare Advantage Elite plan
+6422,872,CrestPoint Health Platinum plan
+6424,872,CrestPoint Health Gold plan
+6426,872,CrestPoint Health Bronze plan
+6428,874,Community Safe Harbor
+6430,874,Community Option HSA
+6432,874,Community Option
+6434,874,Community Option PLUS
+6436,874,Community Value
+6438,874,Community Value PLUS
+6440,874,Community Choice
+6442,874,Community Preferred
+6444,874,Community Preferred PLUS
+6446,874,Community Advantage
+6448,878,The Empire Plan
+6450,880,Carelink HMO
+6452,882,Simply Blue PPO
+6454,882,Simply Blue Routine Care
+6456,882,Simply Blue HRA PPO
+6458,882,Simply Blue HSA PPO
+6460,882,Community Blue PPO
+6462,882,Community Blue HRA PPO
+6464,882,Healthy Blue Achieve PPO
+6466,882,Blue Elect Plus Self Referral Option HMO
+6468,882,BCN HMO
+6470,882,BCN Routine Care HMO
+6472,882,BCN HRA HMO
+6474,882,BCN HSA HMO
+6476,882,Healthy Blue Living
+6478,882,BCN Advantage HMO-POS
+6480,882,Self-funded Plan
+6482,15,CountyCare
+6484,884,Consumer Driven Option
+6486,884,High Option
+6488,884,Conversion Option
+6490,886,Unified Health one 
+6492,727,Care 1st Arizona
+6494,727,Maricopa Health Plan
+6496,727,DCS/CMDP
+6498,727,Health Net Access
+6500,727,Health Choice AZ
+6502,727,Mercy Care Plan
+6504,727,Phoenix Health Plan
+6506,727,University Family Care
+6508,727,CRS Fully Integrated
+6510,727,CRS Partial Acute
+6512,49,UnitedHealthcare Dual Complete (HMO SNP)
+6516,888,Freedom PPO
+6518,888,Preferred HSA- Compatible PPO
+6520,888,CO-OPtions Land of Lincoln Elite
+6522,888,LLH Family Health Network Plan
+6524,888,Swedish Covenant Land of Lincoln Plan
+6526,888,Adventist Land of Lincoln Plan
+6528,888,Presence Health Land of Lincoln Plan
+6530,888,Land of Lincoln Champion Plan
+6532,888,Illinois Health Partners Land of Lincoln Plan
+6534,888,Chicago Health System Land of Lincoln Plan
+6536,888,Centegra Land of Lincoln Plan
+6538,15,New Hampshire Health Families
+6540,890,Colorado Health Neighborhoods (CHN)
+6542,892,Alpine (HMO)
+6544,892,Sound+Rx (HMO)
+6546,892,Charter+Rx (HMO)
+6548,892,Peak+Rx (HMO)
+6550,894,Catastrophic BlueChoice Young Adult HMO
+6552,894,"BluePreferred PPO HSA Bronze $4,500"
+6554,894,"BlueChoice Plus Bronze $5,500"
+6556,894,"BlueChoice HMO HSA Bronze $6,000"
+6558,894,"BlueChoice HMO HSA Bronze $6,550"
+6560,894,"BlueChoice HMO HSA Silver $1,350"
+6562,894,"BluePreferred PPO HSA Silver $1,600"
+6564,894,"BlueChoice HMO Silver $2,000"
+6566,894,"BlueChoice Plus Silver $2,500"
+6568,894,HealthyBlue HMO Gold $250
+6570,894,HealthyBlue PPO Gold $500
+6572,894,HealthyBlue Plus Gold $750
+6574,894,"HealthyBlue HMO Gold $1,000"
+6576,894,CareFirst EPO
+6578,894,CareFirst PPO
+6580,896,CareSource Advantage (HMO)
+6584,896,CareSource Advantage Plus (HMO)
+6586,896,CareSource Medicaid
+6588,896,CareSource Medicare Part A
+6590,896,CareSource Medicare Part B
+6592,896,CareSource Medicare Part D
+6594,896,CareSource Medicare
+6596,896,Other
+6600,898,Saint Alphonsus Coordinated Care Plan
+6602,900,Anthem HealthKeepers Catastrophic 6850/0%
+6604,900,Anthem HealthKeepers Bronze 50% for HSA
+6606,900,Anthem HealthKeepers Bronze 5500/25%
+6608,900,Anthem HealthKeepers Bronze 4650/35%
+6610,900,Anthem HealthKeepers Bronze 15% for HSA
+6612,900,Anthem HealthKeepers Bronze 35% for HSA
+6614,900,Anthem HealthKeepers Bronze POS 4100/30%
+6616,900,Anthem HealthKeepers Bronze POS 0% for HSA
+6618,900,Anthem HealthKeepers Silver 3350/15%
+6620,900,Anthem HealthKeepers Silver 2600/20%
+6622,900,Anthem HealthKeepers Silver 2250/20%
+6624,900,Anthem HealthKeepers Silver 1550/30%
+6626,900,Anthem HealthKeepers Silver POS 2000/20%
+6628,900, Anthem HealthKeepers Gold 750/20%
+6630,900,Anthem HealthKeepers Gold POS 1100/15%
+6632,15,Illinois Medicaid (Dept. of HFS)
+6634,15,Illinois Medicaid- FamilyCare/All Kids Assist
+6636,15,Illinois Medicaid- All Kids Share
+6638,15,Illinois Medicaid- All Kids Premium Level 1
+6640,15,Illinois Medicaid- All Kids Premium Level 2
+6642,902,Bronze Standard
+6644,902,Bronzevalue
+6646,902,Silver Standard
+6648,902,Silver Aqua
+6650,902,Gold Standard
+6652,902,Gold Radius
+6654,902,Platinum Standard
+6656,902,Platinum Radius
+6658,902,Senior Blue HMO
+6660,902,Forever Blue Medicare PPO
+6662,902,Medigap
+6664,904,Gilsbar 360 Alliance
+6666,904,GilsbarPRO
+6668,904,MedCom Care Management
+6670,904,Gilsbar
+6672,906,Secure Care (Gold)
+6674,906,Balanced Care (Silver)
+6676,906,Essential Care (Bronze)
+6678,128,EnhancedBlue 500 PPO
+6680,128,myBlue HSA 2000 PPO
+6682,128,myBlue HSA 3350 PPO
+6684,61,Silver 87 PPO
+6686,24,Medicare- Part G

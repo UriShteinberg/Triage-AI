@@ -1,0 +1,456 @@
+-- ============================================================
+-- 1) chief_complaint_features
+-- Key: chief_complaint_id
+-- Features: body areas + symptoms + differential diagnoses
+-- ============================================================
+
+WITH
+ba AS (
+  SELECT
+    bas.chief_complaint_id,
+    COUNT(DISTINCT bas.body_area_id) AS n_body_areas,
+    GROUP_CONCAT(DISTINCT b.name)    AS body_areas_list
+  FROM body_areas_symptoms bas
+  JOIN body_areas b
+    ON b._id = bas.body_area_id
+  GROUP BY bas.chief_complaint_id
+),
+sy AS (
+  SELECT
+    s.chief_complaint_id,
+    COUNT(DISTINCT s._id)           AS n_symptoms,
+    GROUP_CONCAT(DISTINCT s.name)   AS symptoms_list
+  FROM symptoms s
+  GROUP BY s.chief_complaint_id
+),
+dd AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT d.diagnosis_id)  AS n_diff_dx,
+    GROUP_CONCAT(DISTINCT dt.name)  AS diff_dx_list
+  FROM differential_diagnoses d
+  LEFT JOIN diagnosis_translations dt
+    ON dt._id = d.diagnosis_id
+  GROUP BY d.chief_complaint_id
+),
+keys AS (
+  SELECT chief_complaint_id FROM body_areas_symptoms
+  UNION
+  SELECT chief_complaint_id FROM symptoms
+  UNION
+  SELECT chief_complaint_id FROM differential_diagnoses
+)
+SELECT
+  k.chief_complaint_id,
+  ba.n_body_areas,
+  ba.body_areas_list,
+  sy.n_symptoms,
+  sy.symptoms_list,
+  dd.n_diff_dx,
+  dd.diff_dx_list
+FROM keys k
+LEFT JOIN ba ON ba.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN sy ON sy.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN dd ON dd.chief_complaint_id = k.chief_complaint_id
+;
+
+
+-- ============================================================
+-- 2) diagnosis_features
+-- Key: diagnosis_id
+-- Features: diagnosis name + meds + tests + specialties + procedures
+-- ============================================================
+
+WITH
+med AS (
+  SELECT
+    dm.diagnosis_id,
+    COUNT(DISTINCT dm.medication_id) AS n_meds,
+    GROUP_CONCAT(DISTINCT m.name)    AS meds_list
+  FROM diagnosis_medications dm
+  LEFT JOIN medications m
+    ON m._id = dm.medication_id
+  GROUP BY dm.diagnosis_id
+),
+tst AS (
+  SELECT
+    dmt.diagnosis_id,
+    COUNT(DISTINCT dmt.medical_test_id) AS n_tests,
+    GROUP_CONCAT(DISTINCT mtt.name)     AS tests_list
+  FROM diagnoses_medical_tests dmt
+  LEFT JOIN medical_test_translations mtt
+    ON mtt._id = dmt.medical_test_id
+  GROUP BY dmt.diagnosis_id
+),
+spec AS (
+  SELECT
+    dms.diagnosis_id,
+    COUNT(DISTINCT dms.medical_specialty_id) AS n_specialties,
+    GROUP_CONCAT(DISTINCT mst.name)          AS specialties_list
+  FROM diagnoses_medical_specialties dms
+  LEFT JOIN medical_specialty_translations mst
+    ON mst._id = dms.medical_specialty_id
+  GROUP BY dms.diagnosis_id
+),
+proc AS (
+  SELECT
+    dms.diagnosis_id,
+    COUNT(DISTINCT msp.procedure_id) AS n_procedures,
+    GROUP_CONCAT(DISTINCT pt.name)   AS procedures_list
+  FROM diagnoses_medical_specialties dms
+  LEFT JOIN medical_specialties_procedures msp
+    ON msp.medical_specialty_id = dms.medical_specialty_id
+  LEFT JOIN procedure_translations pt
+    ON pt._id = msp.procedure_id
+  GROUP BY dms.diagnosis_id
+),
+keys AS (
+  SELECT _id AS diagnosis_id FROM diagnosis_translations
+  UNION
+  SELECT diagnosis_id FROM diagnosis_medications
+  UNION
+  SELECT diagnosis_id FROM diagnoses_medical_tests
+  UNION
+  SELECT diagnosis_id FROM diagnoses_medical_specialties
+)
+SELECT
+  k.diagnosis_id,
+  dt.name AS diagnosis_name,
+  med.n_meds,
+  med.meds_list,
+  tst.n_tests,
+  tst.tests_list,
+  spec.n_specialties,
+  spec.specialties_list,
+  proc.n_procedures,
+  proc.procedures_list
+FROM keys k
+LEFT JOIN diagnosis_translations dt
+  ON dt._id = k.diagnosis_id
+LEFT JOIN med
+  ON med.diagnosis_id = k.diagnosis_id
+LEFT JOIN tst
+  ON tst.diagnosis_id = k.diagnosis_id
+LEFT JOIN spec
+  ON spec.diagnosis_id = k.diagnosis_id
+LEFT JOIN proc
+  ON proc.diagnosis_id = k.diagnosis_id
+;
+
+-- ============================================================
+-- chief_complaint_knowledge (one row per chief_complaint_id)
+-- Pulls: body areas + symptoms + differential dx + meds + tests +
+--        specialties + procedures (aggregated across diff dx)
+-- ============================================================
+
+WITH
+-- Body areas attached to a chief complaint
+ba AS (
+  SELECT
+    bas.chief_complaint_id,
+    COUNT(DISTINCT bas.body_area_id)        AS n_body_areas,
+    GROUP_CONCAT(DISTINCT b.name)           AS body_areas_list
+  FROM body_areas_symptoms bas
+  JOIN body_areas b
+    ON b._id = bas.body_area_id
+  GROUP BY bas.chief_complaint_id
+),
+
+-- Symptoms attached to a chief complaint
+sy AS (
+  SELECT
+    s.chief_complaint_id,
+    COUNT(DISTINCT s._id)                   AS n_symptoms,
+    GROUP_CONCAT(DISTINCT s.name)           AS symptoms_list
+  FROM symptoms s
+  GROUP BY s.chief_complaint_id
+),
+
+-- Differential diagnoses (as names) attached to a chief complaint
+dd AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT d.diagnosis_id)          AS n_diff_dx,
+    GROUP_CONCAT(DISTINCT dt.name)          AS diff_dx_list
+  FROM differential_diagnoses d
+  LEFT JOIN diagnosis_translations dt
+    ON dt._id = d.diagnosis_id
+  GROUP BY d.chief_complaint_id
+),
+
+-- Medications suggested by the differential diagnoses of the chief complaint
+cc_meds AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT dm.medication_id)        AS n_meds,
+    GROUP_CONCAT(DISTINCT m.name)           AS meds_list
+  FROM differential_diagnoses d
+  JOIN diagnosis_medications dm
+    ON dm.diagnosis_id = d.diagnosis_id
+  LEFT JOIN medications m
+    ON m._id = dm.medication_id
+  GROUP BY d.chief_complaint_id
+),
+
+-- Medical tests suggested by the differential diagnoses
+cc_tests AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT dmt.medical_test_id)     AS n_tests,
+    GROUP_CONCAT(DISTINCT mtt.name)         AS tests_list
+  FROM differential_diagnoses d
+  JOIN diagnoses_medical_tests dmt
+    ON dmt.diagnosis_id = d.diagnosis_id
+  LEFT JOIN medical_test_translations mtt
+    ON mtt._id = dmt.medical_test_id
+  GROUP BY d.chief_complaint_id
+),
+
+-- Specialties suggested by the differential diagnoses
+cc_specs AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT dms.medical_specialty_id) AS n_specialties,
+    GROUP_CONCAT(DISTINCT mst.name)          AS specialties_list
+  FROM differential_diagnoses d
+  JOIN diagnoses_medical_specialties dms
+    ON dms.diagnosis_id = d.diagnosis_id
+  LEFT JOIN medical_specialty_translations mst
+    ON mst._id = dms.medical_specialty_id
+  GROUP BY d.chief_complaint_id
+),
+
+-- Procedures reachable via specialties of the differential diagnoses
+cc_procs AS (
+  SELECT
+    d.chief_complaint_id,
+    COUNT(DISTINCT msp.procedure_id)        AS n_procedures,
+    GROUP_CONCAT(DISTINCT pt.name)          AS procedures_list
+  FROM differential_diagnoses d
+  JOIN diagnoses_medical_specialties dms
+    ON dms.diagnosis_id = d.diagnosis_id
+  JOIN medical_specialties_procedures msp
+    ON msp.medical_specialty_id = dms.medical_specialty_id
+  LEFT JOIN procedure_translations pt
+    ON pt._id = msp.procedure_id
+  GROUP BY d.chief_complaint_id
+),
+
+-- Union of all chief_complaint_id keys we have anywhere
+keys AS (
+  SELECT chief_complaint_id FROM body_areas_symptoms
+  UNION SELECT chief_complaint_id FROM symptoms
+  UNION SELECT chief_complaint_id FROM differential_diagnoses
+)
+
+SELECT
+  k.chief_complaint_id,
+
+  ba.n_body_areas,
+  ba.body_areas_list,
+
+  sy.n_symptoms,
+  sy.symptoms_list,
+
+  dd.n_diff_dx,
+  dd.diff_dx_list,
+
+  cc_meds.n_meds,
+  cc_meds.meds_list,
+
+  cc_tests.n_tests,
+  cc_tests.tests_list,
+
+  cc_specs.n_specialties,
+  cc_specs.specialties_list,
+
+  cc_procs.n_procedures,
+  cc_procs.procedures_list
+
+FROM keys k
+LEFT JOIN ba       ON ba.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN sy       ON sy.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN dd       ON dd.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN cc_meds  ON cc_meds.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN cc_tests ON cc_tests.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN cc_specs ON cc_specs.chief_complaint_id = k.chief_complaint_id
+LEFT JOIN cc_procs ON cc_procs.chief_complaint_id = k.chief_complaint_id
+;
+
+-- ============================================================
+-- agent_cc_dx_knowledge
+-- One row per (chief_complaint_id, diagnosis_id) link
+-- Base: differential_diagnoses (≈ 5,566 rows)
+-- Enrich: chief complaint metadata + diagnosis text + meds/tests/spec/procs
+-- ============================================================
+
+WITH
+-- Pick ONE representative row per chief complaint from "symptoms.csv"
+-- (it looks like a chief-complaint dictionary despite the filename)
+cc AS (
+  SELECT
+    chief_complaint_id,
+    MAX(CASE WHEN primary_complaint = 1 THEN name END) AS chief_complaint_name,
+    MAX(reason_code)                                   AS reason_code,
+    MAX(CAST(life_threatening AS INT))                 AS cc_life_threatening,
+    MAX(CAST(msp_enabled AS INT))                      AS cc_msp_enabled,
+    MAX(CAST(diagnosis_count AS INT))                  AS cc_diagnosis_count
+  FROM symptoms
+  GROUP BY chief_complaint_id
+),
+
+-- Aggregate meds per diagnosis
+med AS (
+  SELECT
+    dm.diagnosis_id,
+    COUNT(DISTINCT dm.medication_id)          AS n_meds,
+    GROUP_CONCAT(DISTINCT m.name)             AS meds_list
+  FROM diagnosis_medications dm
+  LEFT JOIN medications m
+    ON m._id = dm.medication_id
+  GROUP BY dm.diagnosis_id
+),
+
+-- Aggregate tests per diagnosis
+tst AS (
+  SELECT
+    dmt.diagnosis_id,
+    COUNT(DISTINCT dmt.medical_test_id)       AS n_tests,
+    GROUP_CONCAT(DISTINCT mtt.name)           AS tests_list
+  FROM diagnoses_medical_tests dmt
+  LEFT JOIN medical_test_translations mtt
+    ON mtt._id = dmt.medical_test_id
+  GROUP BY dmt.diagnosis_id
+),
+
+-- Aggregate specialties per diagnosis
+spec AS (
+  SELECT
+    dms.diagnosis_id,
+    COUNT(DISTINCT dms.medical_specialty_id)  AS n_specialties,
+    GROUP_CONCAT(DISTINCT mst.name)           AS specialties_list
+  FROM diagnoses_medical_specialties dms
+  LEFT JOIN medical_specialty_translations mst
+    ON mst._id = dms.medical_specialty_id
+  GROUP BY dms.diagnosis_id
+),
+
+-- Aggregate procedures per diagnosis via specialty -> procedure
+proc AS (
+  SELECT
+    dms.diagnosis_id,
+    COUNT(DISTINCT msp.procedure_id)          AS n_procedures,
+    GROUP_CONCAT(DISTINCT pt.name)            AS procedures_list
+  FROM diagnoses_medical_specialties dms
+  LEFT JOIN medical_specialties_procedures msp
+    ON msp.medical_specialty_id = dms.medical_specialty_id
+  LEFT JOIN procedure_translations pt
+    ON pt._id = msp.procedure_id
+  GROUP BY dms.diagnosis_id
+)
+
+SELECT
+  dd._id                                   AS cc_dx_id,
+
+  dd.chief_complaint_id,
+  cc.chief_complaint_name,
+  cc.reason_code,
+  cc.cc_life_threatening,
+  cc.cc_msp_enabled,
+  cc.cc_diagnosis_count,
+
+  dd.diagnosis_id,
+  CAST(dd.most_common AS INT)              AS most_common,
+  CAST(dd.common_peds AS INT)              AS common_peds,
+  CAST(dd.life_or_limb_threatening AS INT) AS life_or_limb_threatening,
+
+  dt.name                                  AS diagnosis_name,
+  dt.description                           AS diagnosis_description,
+  dt.symptoms                              AS diagnosis_symptoms_text,
+  dt.workup                                AS diagnosis_workup,
+  dt.treatment                             AS diagnosis_treatment,
+  dt.other_specific_tests                  AS diagnosis_other_specific_tests,
+
+  med.n_meds,
+  med.meds_list,
+
+  tst.n_tests,
+  tst.tests_list,
+
+  spec.n_specialties,
+  spec.specialties_list,
+
+  proc.n_procedures,
+  proc.procedures_list
+
+FROM differential_diagnoses dd
+LEFT JOIN cc
+  ON cc.chief_complaint_id = dd.chief_complaint_id
+LEFT JOIN diagnosis_translations dt
+  ON dt._id = dd.diagnosis_id
+LEFT JOIN med
+  ON med.diagnosis_id = dd.diagnosis_id
+LEFT JOIN tst
+  ON tst.diagnosis_id = dd.diagnosis_id
+LEFT JOIN spec
+  ON spec.diagnosis_id = dd.diagnosis_id
+LEFT JOIN proc
+  ON proc.diagnosis_id = dd.diagnosis_id
+;
+
+-- medication_details
+SELECT
+  m._id                AS medication_id,
+  m.name               AS medication_name,
+  m.group_name,
+  CAST(m.prescription AS INT) AS prescription,
+  m.why,
+  m.how,
+  m.side_effects,
+  m.precautions,
+  m.overdose,
+  m.special_dietary,
+  m.storage_conditions,
+  m.other_information,
+  m.if_i_forget,
+  CAST(m.combination AS INT) AS combination,
+  CAST(m.generic_medication_id AS INT) AS generic_medication_id
+FROM medications m
+;
+
+-- procedure_details
+SELECT
+  p._id                AS procedure_id,
+  p.name               AS procedure_name,
+  p.description        AS procedure_description,
+  p.common_complications
+FROM procedure_translations p
+;
+
+-- medical_test_details
+SELECT
+  t._id           AS medical_test_id,
+  t.name          AS medical_test_name,
+  t.description   AS medical_test_description
+FROM medical_test_translations t
+;
+
+-- specialty_details
+SELECT
+  s._id            AS medical_specialty_id,
+  s.name           AS specialty_name,
+  s.description    AS specialty_description
+FROM medical_specialty_translations s
+;
+
+-- wise_content_kb
+SELECT
+  w._id            AS wise_content_id,
+  w.wiseable_type,
+  w.wiseable_id,
+  w.content,
+  w.attribution_text,
+  w.medical_society_id,
+  w.pdf_url
+FROM wise_contents w
+;

@@ -1,0 +1,743 @@
+_id,name,specialty_type,approved,premier
+1,Starmark,medical,1,
+2,Regence Blue Shield of Idaho,medical,1,
+3,Regence,medical,1,
+4,Principal Financial Group,medical,1,
+5,DentalPlans.com Vision,medical,1,
+6,Asuris Northwest Health,medical,1,
+7,PacifiCare (UnitedHealthcare company),medical,1,
+8,Kaiser Permanente,medical,1,
+9,Humana,medical,1,
+10,"Health First Health Plan, Inc",medical,1,0
+11,AmeriHealth,medical,1,
+12,Affinity Health Plan,medical,1,
+13,Oxford Health Plans (United Healthcare Company),medical,1,
+14,Mutual of Omaha Insurance Company,medical,1,
+15,Medicaid,medical,1,
+16,EmblemHealth,medical,1,
+17,Anthem Blue Cross and Blue Shield,medical,1,
+18,WellsFargo,medical,1,
+19,Significa,medical,1,
+20,Select Health,medical,1,
+21,Independent Health,medical,1,
+22,Blue Cross Blue Shield of Mississippi,medical,1,
+23,Premera Blue Cross,medical,1,
+24,Medicare,medical,1,
+25,HIP Health Plans of New York,medical,1,
+26,Harvard Pilgrim Health Care,medical,1,
+27,GEHA Health Plans,medical,1,
+28,CarePlus Health Plan,medical,1,
+29,SummaCare,medical,1,
+30,Regence Blue Cross Blue Shield of Utah,medical,1,
+31,Health Net,medical,1,
+32,Empire Blue Cross Blue Shield of New York,medical,1,
+33,Aetna,medical,1,0
+34,Independence Blue Cross,medical,1,
+35,Highmark Blue Cross Blue Shield,medical,1,
+36,Health Alliance Plan (HAP),medical,1,0
+37,AmeriChoice by UnitedHealthcare of Iowa,medical,1,
+38,Workers Compensation,medical,1,
+39,UNICARE Life & Health Insurance Company,medical,1,
+40,Nationwide Health Plan,medical,1,
+41,MVP HealthCare,medical,1,
+42,Horizon Blue Cross Blue Shield,medical,1,
+43,HealthSpring,medical,1,
+44,Coventry Health Care,medical,1,
+45,Cigna,medical,1,
+46,Blue Cross Blue Shield of Arkansas,medical,1,
+47,AIG,medical,1,0
+48,AFLAC,medical,1,
+49,United HealthCare,medical,1,
+50,Providence Health Plans,medical,1,
+51,CareFirst Blue Cross Blue Shield,medical,1,
+52,MAPFRE | Health,medical,1,
+53,Affinity Dental Health Plan,dental,1,
+54,Qualcare,medical,1,
+55,Self Pay,medical,1,
+56,CHS,medical,1,
+57,Bollinger,medical,1,
+58,SutterSelect,medical,1,
+59,SCAN Health Plan,medical,1,
+60,Blue Shield of California,medical,1,
+61,Anthem Blue Cross Blue Shield of California,medical,1,
+62,Medical Mutual of Ohio,medical,1,
+63,Aetna (Dental),dental,1,
+64,Hometown Health Inc. ,medical,1,
+65,HealthSmart,medical,1,
+66,United Medical Resources,medical,1,
+67,TRICARE North Region (Health Net),medical,1,
+68,TRICARE South Region ,medical,1,0
+69,UnitedHealthcare  Military & Services,medical,1,0
+70,Capital Health Plan,medical,1,
+71,Health New England,medical,1,
+72,Welborn Health Plans,medical,1,
+73,Blue Cross and Blue Shield of Michigan,medical,1,
+74,HealthPartners,medical,1,
+75,"QualChoice of Arkansas, Inc",medical,1,
+76,The Empire Plan - United Health Care,medical,1,
+77,WellCare,medical,1,
+78,Provider One,medical,1,
+79,Banner Health - Self Insured,medical,1,
+80,Priority Health,medical,1,
+81,Optima Health,medical,1,
+82,Altius/Coventry,medical,1,
+83,Lutheran Preferred,medical,1,
+84,Cos Healthplan,medical,1,
+85,Blue Cross and Blue Shield (Federal employment plan),medical,1,
+86,Tufts Health Plan,medical,1,
+87,"Capital District Physicians Health Plan, Inc. (CDPHP)",medical,1,
+88,Universal Healthcare,medical,1,
+89,CommunityCare of Oklahoma,medical,1,
+90,Blue Cross Blue Shield of Wyoming,medical,1,
+91,ODS Health Plan,medical,1,
+92,Keystone Mercy Health Plan,medical,1,
+93,Bravo Health Mid-Atlantic,medical,1,
+94,Medica Healthcare Plans Inc,medical,1,
+95,PCIP,medical,1,
+96,Employer Contracted,medical,1,
+97,Allegiance,medical,1,
+98,Amerigroup,medical,1,
+99,Johns Hopkins Health,medical,1,
+100,Maryland Physicians Care,medical,1,
+101,Priority Partners,medical,1,
+102,Johns Hopkins Employer Health Program,medical,1,
+103,Sagamore Health Network,medical,1,
+104,Blue Cross Blue Shield of Texas,medical,1,
+105,Oxford Medicare Advantage,medical,1,
+106,Fallon Community Health Plan,medical,1,
+107,Mutual Medical,medical,1,
+108,AFLAC Dental,dental,1,0
+109,HealthLink PPO,medical,1,
+110,HealthLink Open Access III,medical,1,
+111,Presbyterian Health Plan,medical,1,
+112,Abrazo Advantage Health Plan,medical,1,
+113,Alameda Alliance for Health,medical,1,
+114,"Alliant Health Plans, Inc",medical,1,
+115,AlohaCare,medical,1,
+116,American Republic Insurance Company,medical,1,
+117,Wisconsin Physicians Service Insurance Corp,medical,1,
+118,American Specialty Health Incorporated,medical,1,
+119,America's 1st Choice Health Plans of Georgia,medical,1,
+120,America's 1st Choice Health Plans of South Carolina,medical,1,
+121,America's 1st Choice Health Plans of North Carolina,medical,1,
+122,"Windsor Health Plan, Inc.",medical,1,
+123,AmeriChoice by UnitedHealthcare of Florida,medical,1,
+124,"Windsor Health Plan, Inc.- Medicare",medical,1,
+125,Western Health Advantage,medical,1,
+126,WellPath/Coventry Health Care of Carolina,medical,1,
+127,AmeriChoice by UnitedHealthcare of Connecticut,medical,1,
+128,Wellmark Blue Cross Blue Shield - South Dakota,medical,1,
+129,AmeriChoice by UnitedHealthcare of New Jersey,medical,1,
+130,Wellmark Blue Cross Blue Shield - Iowa,medical,1,
+131,AmeriChoice by UnitedHealthcare of New York,medical,1,
+132,"WellCare Health Plans, Inc - TX",medical,1,
+133,"WellCare Health Plans, Inc - OH",medical,1,
+134,"WellCare Health Plans, Inc - NY",medical,1,
+135,"WellCare Health Plans, Inc - NJ",medical,1,
+136,"WellCare Health Plans, Inc - MO",medical,1,
+137,AmeriChoice by UnitedHealthcare of Pennsylvania,medical,1,
+138,"WellCare Health Plans, Inc - LA",medical,1,
+139,"WellCare Health Plans, Inc - IL",medical,1,
+140,"WellCare Health Plans, inc - GA",medical,1,
+141,AmeriChoice by UnitedHealthcare of Tennessee,medical,1,
+142,"WellCare Health Plans, Inc - FL",medical,1,
+143,"WellCare Health Plans, Inc - CT",medical,1,
+144,VNSNY CHOICE,medical,1,
+145,Viva Health,medical,1,
+146,Coventry Health Care of Florida,medical,1,
+147,AmeriHealth Mercy Health Plan,medical,1,
+148,"Vantage Health Plan, Inc.",medical,1,
+149,University Health Care Health Plans,medical,1,
+150,University Health Alliance (UHA),medical,1,
+151,Anthem Blue Cross Blue Shield of Colorado,medical,1,
+152,Ucare ,medical,1,
+153,Universal American Corp,medical,1,
+154,Anthem Blue Cross Blue Shield of Colorado Dental,medical,1,
+155,AmeriHealth Dental,dental,1,0
+156,"Univera Community Health, Inc.",medical,1,
+157,Union Pacific Railroad Employees Health Systems,medical,1,
+158,Anthem Blue Cross Blue Shield of Connecticut,medical,1,
+159,"Tufts Associated Health Plans, Inc.",medical,1,
+160,Anthem Blue Cross Blue Shield of Georgia,medical,1,
+161,Anthem Blue Cross Blue Shield of Indiana,medical,1,
+162,Trillium Community Health Plan,medical,1,
+163,"Total Health Care, Inc.",medical,1,
+164,Anthem Blue Cross Blue Shield of Kentucky,medical,1,
+165,"Total Care, Inc.",medical,1,
+166,Anthem Blue Cross Blue Shield of Maine,medical,1,
+167,Sutter SeniorCare,medical,1,
+168,Suffolk Health Plan,medical,1,
+169,Sterling Life Insurance Company,medical,1,
+170,Anthem Blue Cross Blue Shield of Missouri,medical,1,
+171,Anthem Blue Cross Blue Shield of Nevada,medical,1,
+172,Southern Health / Coventry Health Care of Virginia (DC),medical,1,
+173,Southeastern Indiana Health Organization (SIHO),medical,1,
+174,South Country Health Alliance,medical,1,
+175,Anthem Blue Cross Blue Shield of New Hampshire,medical,1,
+176,Anthem Blue Cross Blue Shield of Ohio,medical,1,
+177,"Sistemas Medicos Nacionales, S.A. (SIMNSA)",medical,1,
+178,Anthem Blue Cross Blue Shield of Virginia,medical,1,
+179,Anthem Blue Cross Blue Shield of Wisconsin,medical,1,
+180,"SETON Health Plan, Inc.",medical,1,
+181,"Sentara Health Plans, Inc.",medical,1,
+182,Arcadian Health Plan/Desert Canyon Community Care,medical,1,
+183,Senior Whole Health of New York,medical,1,
+184,Senior Whole Health of Massachusetts,medical,1,
+185,"Select Health of South Carolina, Inc.",medical,1,
+186,Arcadian Health Plan/Arkansas/Texarkana Community Care,medical,1,
+187,"Security Health Plan of Wisconsin, Inc.",medical,1,
+188,Arcadian Community Care-CA,medical,1,
+189,Scott and White Health Plan,medical,1,
+190,Saint Mary's Health Plans,medical,1,
+191,Arcadian Health Plan/Southeast Community Care,medical,1,
+192,Arcadian Community Care-LA,medical,1,
+193,Rocky Mountain Health Plans/Medicaid,medical,1,
+194,Rocky Mountain Health Plans,medical,1,
+195,Arcadian Health Plan/Northeast Community Care-ME,medical,1,
+196,Puget Sound Health Partners,medical,1,
+197,Arcadian Health Plan/Ozark Health Plan,medical,1,
+198,Arcadian Health Plan/Northeast Community Care-NH,medical,1,
+199,Arcadian Health Plan/Northeast Community Care-NY,medical,1,
+200,Regence Blue Shield,medical,1,
+201,Arcadian Health Plan/Southeast Community Care-NC,medical,1,
+202,Arcadian Health Plan/Southeast Community Care-SC,medical,1,
+203,Arcadian Health Plan/Texas Community Care,medical,1,
+204,Arcadian Health Plan/Columbia Community Care,medical,1,
+205,Regence Blue Cross Blue Shield of Oregon,medical,1,
+206,Arcadian Health Plan/Spokane Community Care,medical,1,
+207,Arcadian Health Plan/Southeast Community Care-VA,medical,1,
+208,Providence Health Plan - Medicare plans,medical,1,
+209,Arise Health Plan,medical,1,
+210,Priority Health - HSA & HRA,medical,1,
+211,Priority Health - (Self Funded - HSA) ,medical,1,
+212,Assurant Health,medical,1,
+213,PreferredOne Community Health Plan,medical,1,
+214,"Preferred Medical Plan, Inc. (PMP)",medical,1,
+215,"Preferred Health Systems / Preferred Plus of Kansas, Inc.",medical,1,
+216,"Preferred Care Partners, Inc.",medical,1,
+217,Piedmont Community Health Plan,medical,1,
+218,"Physician's United Plan, Inc.",medical,1,
+219,Physicians Plus Insurance Corporation,medical,1,
+220,"Physicians Health Plan of Northern Indiana, Inc. (PHPNI)",medical,1,
+221,Physicians Health Choice,medical,1,
+222,Physicians' Benefits Trust,medical,1,
+223,Phoenix Health Plan,medical,1,
+224,PersonalCare / Coventry Health Care of Illinois,medical,1,
+225,Peoples Health,medical,1,
+226,Peach State Health Plan (Peach State),medical,1,
+227,Blue Cross of Idaho Health Service,medical,1,
+228,"Paramount Care of Michigan, Inc.",medical,1,
+229,PacificSource Health Plans- OR,medical,1,
+230,PacificSource Health Plans- MT,medical,1,
+231,PacificSource Health Plans-ID,medical,1,
+232,"Optimum HealthCare, Inc.",medical,1,
+233,"ODS Health Plans, Inc.",medical,1,
+234,New West Health Services,medical,1,
+235,Network Health Plan,medical,1,
+236,Network Health,medical,1,
+237,Neighborhood Health Providers (NHP),medical,1,
+238,"Neighborhood Health Plan of Rhode Island, Inc.",medical,1,
+239,MVP Health Care Plan,medical,1,
+240,High Mark West Virginia,medical,1,
+241,Mount Carmel Health Plan,medical,1,
+242,Molina Health Plan - TX,medical,1,
+243,Molina Health Plan- NM,medical,1,
+244,Molina Health Plan - FL,medical,1,
+245,Molina Healthcare,medical,1,
+246,"Midwest Health Plan, Inc.",medical,1,
+247,Mid Rogue MRIPA HealthPlan,medical,1,
+248,Metropolitan Health Plan (MHP),medical,1,
+249,"MetroPlus Health Plan, Inc.",medical,1,
+250,MercyCare Health Plans,medical,1,
+251,"Mercy Health Plans, Inc.",medical,1,
+252,MercyCare Advantage | Medicare,medical,1,
+253,MedStar Family Choice,medical,1,
+254,"Medical Associates Health Plan, Inc.",medical,1,
+255,"Medica Healthcare Medicare Plans, Inc.",medical,1,
+256,Medica Health Plans,medical,1,
+257,MDWise,medical,1,
+258,MD Care Healthplan (HMO),medical,1,
+259,Martin's Point Health Care,medical,1,
+260,Managed Health Services,medical,1,
+261,MaineCare,medical,1,
+262,Lovelace Health Plan,medical,1,
+263,Lifewise Health Plan of Washington,medical,1,
+264,LifeWise Health Plan of Oregon,medical,1,
+265,Liberty Health Advantage,medical,1,
+266,"Leon Medical Centers Health Plans, Inc.",medical,1,
+267,LA Care Health Plan,medical,1,
+268,KPS Health Plans,medical,1,
+269,KelseyCare Advantage,medical,1,
+270,"Kaiser Permanente Foundation Health Plan of the Northwest, Inc.",medical,1,
+271,"Kaiser Permanente Foundation Health Plan of the Mid-Atlantic States, Inc.",medical,1,
+272,"Kaiser Permanente Foundation Health Plan of Ohio, Inc.",medical,1,
+273,"Kaiser Permanente Foundation Health Plan of Southern California, Inc.",medical,1,
+274,"Kaiser Permanente Foundation Health Plan of Georgia, Inc.",medical,1,
+275,"Kaiser Permanente Foundation Health Plan of Colorado, Inc.",medical,1,
+276,JMH Health Plan,medical,1,
+277,"Inter-County Health Plans, Inc.",medical,1,
+278,Inter-Valley Health Plan,medical,1,
+279,Inland Empire Health Plan,medical,1,
+280,"Independent Health Association, Inc.",medical,1,
+281,Independent Care Health Plan (iCare),medical,1,
+282,Heart of America Health Plan,medical,1,
+283,EmblemHealth | Medicare,medical,1,
+284,HM Insurance Group,medical,1,
+285,Hometown Health ,medical,1,
+286,"Honored Citizens Choice Health Plan, Inc.",medical,1,
+287,HuamanOne North Carolina,medical,1,
+288,Hudson Health Plan,medical,1,
+289,HumanaOne ,medical,1,
+290,Blue Cross Blue Shield of Arkansas Dental,medical,1,
+291,Asuris Northwest Health Dental,medical,1,
+292,Atlantis Health Plan (AHP),medical,1,
+293,ATRIO Health Plans,medical,1,
+294,AultCare Health Plans,medical,1,
+295,Avera Health Plans,medical,1,
+296,"AvMed, Inc.",medical,1,
+297,Bankers Life and Casualty Company,medical,1,
+298,Beech Street,medical,1,
+299,Blue Cross Blue Shield of Rhode Island,medical,1,
+300,Blue Cross Blue Shield of Alabama,medical,1,
+301,Blue Cross Blue Shield of Florida,medical,1,
+302,Blue Cross Blue Shield of Illinois,medical,1,
+303,Blue Cross Blue Shield of Mississippi Dental,medical,1,
+304,Blue Cross Blue Shield of Rhode Island Dental,medical,1,
+305,Blue Cross Blue Shield of Alabama Dental,medical,1,
+306,Blue Cross Blue Shield of Florida Dental,medical,1,
+307,Blue Cross Blue Shield of Illinois Dental,medical,1,
+308,Blue Cross Blue Shield of Kansas,medical,1,
+309,Blue Cross Blue Shield of Kansas Dental,medical,1,
+310,Blue Cross Blue Shield of Kansas City,medical,1,
+311,Blue Cross Blue Shield of Kansas City Dental,medical,1,
+312,Blue Cross Blue Shield of Louisiana,medical,1,
+313,Blue Cross Blue Shield of Montana,medical,1,
+314,Blue Cross Blue Shield of Nebraska,medical,1,
+315,Blue Cross Blue Shield of New Mexico,medical,1,
+316,Blue Cross Blue Shield of New Mexico Dental,medical,1,
+317,Blue Cross Blue Shield of North Carolina,medical,1,
+318,Blue Cross Blue Shield of North Carolina Dental,medical,1,
+319,Blue Cross Blue Shield of Oklahoma,medical,1,
+320,Blue Cross Blue Shield of Oklahoma Dental,medical,1,
+321,"Healthy Palm Beaches, Inc.",medical,1,
+322,"HealthSun Health Plans, Inc.",medical,1,
+323,Blue Cross Blue Shield of Vermont,medical,1,
+324,Blue Cross and Blue Shield of Wyoming,medical,1,
+325,HealthSpring West Tennessee/North Mississippi,medical,1,
+326,Blue Cross Blue Shield of Arizona,medical,1,
+327,HealthSpring of Texas,medical,1,
+328,Blue Cross Blue Shield of Arizona Dental,medical,1,
+329,Blue Cross Blue Shield of Delaware,medical,1,
+330,Blue Cross Blue Shield of Delaware Dental,medical,1,
+331,Blue Cross Blue Shield of Massachusetts,medical,1,
+332,Blue Cross Blue Shield of Michigan,medical,1,
+333,HealthSpring Middle Tennessee,medical,1,
+334,Blue Cross Blue Shield of Michigan Dental,dental,1,
+335,"HealthPlus of Michigan, Inc.",medical,1,
+336,"HealthPartners, Inc",medical,1,
+337,Blue Cross Blue Shield of Minnesota,medical,1,
+338,Blue Cross Blue Shield of North Dakota,medical,1,
+339,Blue Cross Blue Shield of South Carolina,medical,1,
+340,Blue Cross Blue Shield of South Carolina Dental,medical,1,
+341,"HealthNow of New York, Inc.",medical,1,
+342,Blue Cross Blue Shield of Tennessee,medical,1,
+343,Blue Cross Blue Shield of Western New York,medical,1,
+344,"Healthfirst, Inc. New York",medical,1,
+345,Blue Cross Blue Shield of Western New York Dental,medical,1,
+346,"Healthfirst, Inc. New Jersey",medical,1,
+347,"Health Tradition Health Plan, Inc.",medical,1,
+348,"Health Plus of Louisiana, Inc.",medical,1,
+349,"Health Plus (PHSP), Inc",medical,1,
+350,Blue Cross of Northeastern Pennsylvania,medical,1,
+351,"Health Plan Select, Inc",medical,1,
+352,Blue Cross of Northeastern Pennsylvania Dental,medical,1,
+353,"Health Plan of the Upper Ohio Valley, Inc",medical,1,
+354,Blue Shield of Puerto Rico,medical,1,
+355,Bluegrass Family Health,medical,1,
+356,Boston Medical Center HealthNet Plan,medical,1,
+357,Health Plan of San Mateo,medical,1,
+358,Health Plan of San Joaquin,medical,1,
+359,Health Plan of Nevada,medical,1,
+360,Bridgeway Health Solutions,medical,1,
+361,Buckeye Community Health Plan Inc. (BCHP),medical,1,
+362,CalOPTIMA,medical,1,
+363,Capital Blue Cross,medical,1,
+364,Care 1st Health Plan of Arizona,medical,1,
+365,Care 1st Health Plan of Southern California,medical,1,
+366,Carelink/Coventry West Virginia,medical,1,
+367,Carelink/Coventry West Virginia Dental,medical,1,
+368,CareMore Health Plan,medical,1,
+369,CareOregon,medical,1,
+370,CareSource Michigan,medical,1,
+371,CareSource Ohio,medical,1,
+372,Carolina Care Plan (CCP),medical,1,
+373,Celtic Insurance Company,medical,1,
+374,CeltiCare Health Plan,medical,1,
+375,CenCal Health,medical,1,
+376,Central Health Plan of California,medical,1,
+377,Chartered Health Plan,medical,1,
+378,Children's Community Health Plan,medical,1,
+379,Children's Mercy Family Health Partners,medical,1,
+380,Chinese Community Health Plan,medical,1,
+381,Chinese Community Health Plan Dental,medical,1,
+382,Meridian Health Plan,medical,1,
+383,Health Partners of Philadelphia,medical,1,
+384,"Health Net Federal Services, LLC",medical,1,
+385,"Health First Health Plans, Inc. (HFHP)",medical,1,
+386,Health Choice Arizona,medical,1,
+387,Health America / Coventry Health Care,medical,1,
+388,Health Alliance Plan of Michigan,medical,1,
+389,"Health Alliance Medical Plans, Inc.",medical,1,
+390,Health Advantage,medical,1,
+391,Hawaii Medical Service Association Blue Cross Blue Shield,medical,1,
+392,"Harvard Pilgrim Health Care, Inc.",medical,1,
+393,"Gundersen Lutheran Health Plan, Inc.",medical,1,
+394,Group Health Plan / Coventry Health Care of Missouri (Illinois),medical,1,
+395,Group Health Cooperative of South Central Wisconsin,medical,1,
+396,Group Health Cooperative of Eau Claire,medical,1,
+397,GroupHealth,medical,1,
+398,UnitedHealthcare Wisconsin,medical,1,0
+399,Citrus Health Care (CHC),medical,1,
+400,PacificSource Health Plans Dental,medical,1,
+401,Colorado Access Health Plan,medical,1,
+402,Colorado Choice Health Plans/San Luis Valley HMO,medical,1,
+403,Columbia United Providers,medical,1,
+404,Commonwealth Care Alliance,medical,1,
+405,Commonwealth of Pennsylvania Public Schools Retirement System,medical,1,
+406,Colorado Choice Health Plans/San Luis Valley HMO Dental,medical,1,
+407,Community Care Health Plan,medical,1,
+408,Community First Health Plans,medical,1,
+409,Community Health Choice,medical,1,
+410,Community Health Group,medical,1,
+411,Community Health Plan (California),medical,1,
+412,Community Health Plan of Washington (CHP),medical,1,
+413,CommunityCare Managed Healthcare Plans of Oklahoma,medical,1,
+414,Concert Health Plan,medical,1,
+415,"ConnectiCare, Inc.",medical,1,
+416,"Cox HealthPlans, LLC",medical,1,
+417,DakotaCare,medical,1,
+418,DakotaCare Dental,medical,1,
+419,"Dean Health Insurance, Inc.",medical,1,
+420,Denver Health Medical Plan,medical,1,
+421,Driscoll Children's Health Plan,medical,1,
+422,"Easy Choice Health Plan, Inc.",medical,1,
+423,"El Paso First Health Plans, Inc.",medical,1,
+424,"ElderPlan, Inc.",medical,1,
+425,Empire Blue Cross Blue Shield of New York Dental,medical,1,
+426,"Essence, Inc.",medical,1,
+427,Excellus Blue Cross Blue Shield,medical,1,
+428,Excellus Blue Cross Blue Shield Dental,medical,1,
+429,Fallon Community Health Plan (FCHP),medical,1,
+430,Fallon Community Health Plan (FCHP) Dental,medical,1,
+431,"FamilyCare, Inc",medical,1,
+432,"Fidelis Care, Inc.",medical,1,
+433,Fidelus SecureCare,medical,1,
+434,UnitedHealthcare Texas,medical,1,0
+435,UnitedHealthcare Tennessee,medical,1,0
+436,UnitedHealthcare South Carolina,medical,1,0
+437,UnitedHealthcare Rhode Island,medical,1,0
+438,UnitedHealthcare Pennsylvania,medical,1,0
+439,UnitedHealthcare Ohio,medical,1,0
+440,UnitedHealthcare New York,medical,1,0
+441,UnitedHealthcare New Mexico,medical,1,0
+442,UnitedHealthcare New Jersey,medical,1,0
+443,UnitedHealthcare Nevada,medical,1,0
+444,UnitedHealthcare Nebraska,medical,1,0
+445,UnitedHealthcare Mississippi,medical,1,0
+446,UnitedHealthcare Michigan,medical,1,0
+447,UnitedHealthcare Massachusetts,medical,1,0
+448,UnitedHealthcare Maryland,medical,1,0
+449,UnitedHealthcare Louisiana,medical,1,0
+450,UnitedHealthcare Iowa,medical,1,0
+451,UnitedHealthcare Indiana,medical,1,0
+452,UnitedHealthcare Hawaii,medical,1,0
+453,UnitedHealthcare Georgia,medical,1,0
+454,UnitedHealthcare Florida,medical,1,0
+455,UnitedHealthcare Delaware,medical,1,0
+456,UnitedHealthcare District of Columbia,medical,1,0
+457,UnitedHealthcare Connecticut,medical,1,0
+458,UnitedHealthcare Arizona,medical,1,0
+459,United Healthcare Alabama,medical,1,
+460,"Grand Valley Health Plan, Inc.",medical,1,
+461,GlobalHealth Incorporated,medical,1,
+462,Geisinger Health Plan,medical,1,
+463,Gateway Health Plan Medicare Assured Plan,medical,1,
+464,Fresenius Medical Care Health Plan,medical,1,
+465,Freedom Health Plan,medical,1,
+466,"Florida Health Care Plan, Inc. (FHCP) Blue Cross Blue Shield",medical,1,
+467,"FirstCarolinaCare, Inc.",medical,1,
+468,FIRSTCARE,medical,1,
+469,"First Medical Health Plan, Inc",medical,1,
+470,First Health Network,medical,1,0
+471,First Choice Health Network,medical,1,
+472,Fidelis SecureCare,medical,1,
+473,Avera Health Plans Dental,medical,1,
+474,Neighborhood Health Plan   ,medical,1,
+475,Providence Health Plan,medical,1,
+476,Bankers Life and Casualty Co,medical,1,
+477,PacificSource Community Solutions,medical,1,
+478,CWIBenefits,medical,1,
+479,1199SEIU National Benefit Fund,medical,1,
+480,1199SEIU,medical,1,0
+481,Blue Cross Blue Shield of Georgia,medical,1,
+482,USAA,medical,1,
+483,Advantage Health Solutions,medical,1,
+484,Medicare Advantage Health Solutions,medical,1,
+485,Other,medical,1,
+486,Paramount,medical,1,
+487,Triple-S Salud,medical,1,0
+488,University of Pittsburgh Medical Center (UPMC),medical,0,0
+489,AmeriPlan ,medical,1,
+490,Anthem & BCBS,medical,0,0
+491,Assist Card Inc.,medical,0,
+492,Banner Health Plans,medical,0,
+493,BCBS,medical,0,
+494,"Caprock HealthPlans, Inc.",medical,0,
+495,Care Improvement Plus,medical,1,0
+496,"CBCA Administrators, Inc.",medical,0,
+497,Child Health Plan Plus,medical,0,
+498,CIGNA- Harrah's/Caesars,medical,0,
+499,Cofinity,medical,0,
+500,Consulate General of Chile,medical,0,
+501,Consulate General of Ecuador,medical,0,
+502,Consulate General,medical,0,
+503,Consulate General of Venezuela,medical,0,
+504,Core Health Insurance ,medical,0,
+505,Coventry,medical,1,0
+506,EBMC - Employee Benefits Management Corp.,medical,0,
+507,ECOM PPO Advisors,medical,0,
+508,Encore / Encircle Networks,medical,0,
+509,Evolutions Health Care ,medical,0,
+510,"First Access, Inc.",medical,0,
+511,First Health/CCN,medical,1,0
+512,First Medical,medical,0,
+513,Galaxy Health Network,medical,1,0
+514,"GMMI, Inc",medical,0,
+515,Great West,medical,0,
+516,HealthCare USA,medical,0,
+517,Healthlink,medical,0,
+518,Health Markets,medical,0,
+519,HealthScope Benefits,medical,0,
+520,HMN (Health Management Network),medical,0,
+521,IAC - Insurers Administrative Corporation ,medical,0,
+522,"Innova College Virtual Campus, Inc.",medical,0,
+523,Integrated Health Plan,medical,0,
+524,Lewer Agency,medical,0,
+525,Planned Administrators,medical,0,
+526,Mercy Health Plan,medical,0,
+527,Multiplan,medical,1,0
+528,NetCard Systems,medical,0,
+529,National PPO Network,medical,0,
+530,PayerFusion,medical,0,
+531,Peoples Health Plan,medical,0,
+532,PHCS,medical,1,0
+533,POMCO,medical,0,
+534,Preferred Benefit Administrator,medical,0,
+535,Premium Medical Service,medical,0,
+536,ProMedical,medical,0,
+537,S & S Healthcare,medical,0,
+538,Star Healthcare Network,medical,0,
+539,Student Assurance Services,medical,0,
+540,The Alliance,medical,0,
+541,Three Rivers Provider Network,medical,0,
+542,Travel Care Services ,medical,0,
+543,TriCare,medical,0,
+544,United Mine Workers of America (UMWA),medical,0,
+545,UNICARE PPO,medical,0,
+546,Universal Assistance,medical,0,
+547,Universal Health Care Group,medical,0,
+548,University Hospital Health System,medical,0,
+549,USA Managed Care Organization,medical,1,0
+550,Walgreens,medical,0,
+551,World Assist Corporation,medical,0,
+552,HFN Inc.,medical,0,
+553,Matcor Metal Fabrication,medical,0,0
+554,State of IL,medical,0,
+555,Caterpillar Inc,medical,0,
+556,Century Health Solutions,medical,0,
+557,Emerald Health Network,medical,0,
+558,Freedom Network,medical,0,
+559,MassHealth,medical,1,0
+560,South Lake Hospital,medical,1,
+561,Colorado Access,medical,1,
+562,CHAMPVA,medical,1,
+563,Regence Uniform Medical Plan,medical,1,
+564,Medicare Advantage Health Plans,medical,1,
+565,Cigna HealthCare of California,medical,1,0
+566,Anthem Blue Cross- California Health Plans,medical,1,0
+567,Anthem Blue Cross- California,medical,1,0
+568,PEIA (West Virginia Public Employees Health Insurance) ,medical,1,0
+569,IHS (Indian Health Service) ,medical,1,0
+570,iTriage Health,medical,1,0
+571,Meritain Health,medical,1,0
+572,Horizon BCBS of New Jersey,medical,1,0
+573,Aetna NJ State Health Benefits Program,medical,1,0
+574,HUSKY Health of Connecticut ,medical,1,0
+575,Colorado Accountable Care,medical,1,0
+577,Insurance Administrators of America (IAA),medical,1,0
+579,Evercare UHC,medical,1,0
+581,n/a,medical,1,0
+583,Cigna Medicare Access,medical,1,0
+585,Coventry First Health,medical,1,0
+587,Wellmed / UnitedHealth Group,medical,1,0
+589,Imagine Health,medical,1,0
+591,Medicus International,medical,1,0
+593,National ChoiceCare,medical,1,0
+595,Political Subdivision Workers Compensation Alliance,medical,1,0
+597,Pyramid Life Insurance Co.,medical,1,0
+599,Railroad Medicare,medical,1,0
+601,Select Care of Texas,medical,1,0
+603,Texas Health Care Networks,medical,1,0
+605,Texas Health Care Foundation,medical,1,0
+607,Texas Star / Texas Mutual Insurance ,medical,1,0
+609,Texas True Choice ,medical,1,0
+611,Unicare Medicare,medical,1,0
+613,Universal Healthcare Medicare Advantage,medical,1,0
+615,Wise Provider Networks,medical,1,0
+617,Allied Benefits Systems,medical,1,0
+619,American Heritage Life Insurance,medical,1,0
+621,American Medical Security,medical,1,0
+623,Commerce Benefits Group,medical,1,0
+625,CTI Administrators,medical,1,0
+627,Employee Benefit Claims,medical,1,0
+629,LifeWell Health Plans,medical,1,0
+631,Peachcare,medical,1,0
+633,USA Health Network,medical,1,0
+635,Athenahealth,medical,1,0
+637,CNIC Health Solutions,medical,1,0
+639,EBMS,medical,1,0
+641,Golden Rule Insurance Company,medical,1,0
+643,Health Partners,medical,1,0
+645,Mega Life & Health,medical,1,0
+647,HealthMarkets Care Assured,medical,1,0
+649,AmeriCard Health Network,medical,1,
+651,AvMed Health Plans,medical,1,
+653,Avalon,medical,1,
+655,Circana Health Passport,medical,1,
+657,Consulate General of Brazil,medical,1,
+659,Darden Restaurants,medical,1,
+661,Dimensions Network,medical,1,
+663,Florida Health Solution,medical,1,
+665,Freedom 1st,medical,1,
+667,GEHA,medical,1,
+669,Health Choices FL,medical,1,
+671,Health Network 1,medical,1,
+673,Integral Quality Care,medical,1,
+675,InterGroup Services Corporation,medical,1,
+677,MDI Healthcare Solutions,medical,1,
+679,"NovaNet, Inc.",medical,1,
+681,Stratose (f.k.a. NPPN- National Preferred Provider Network),medical,1,
+683,WPS,medical,1,
+685,Signature Health Alliance,medical,1,
+687,Windsor Health,medical,1,
+689,Amerigroup Louisiana,medical,1,
+691,BCBS of Louisiana,medical,1,
+693,LACare Louisiana,medical,1,
+695,Home State Health Plan,medical,1,
+697,Missouri Care,medical,1,
+699,Health Insurance Risk-Sharing Plan (HIRSP),medical,1,
+701,iCare,medical,1,
+703,Trilogy Health Insurance,medical,1,
+705,WEA Trust,medical,1,
+707,Mhealth,medical,1,
+709,"Managed Care Consultants, LLC",medical,1,
+711,MGM Resorts Health Plan,medical,1,
+713,HealthSpan,medical,1,
+715,Preferred Health Plan,medical,1,
+717,SIHO,medical,1,
+719,Arizona Foundation for Medical Care,medical,1,
+721,HealthChoice,medical,1,
+723,HealthNet,medical,1,
+725,Pima Community Access Program (PCAP),medical,1,
+727,Arizona Health Care Cost Containment System (AHCCCS),medical,1,0
+729,BCBS/Highmark,medical,1,
+731,BCBS/IBC,medical,1,
+733,Peach State Health Plan,medical,1,
+735,University of Pennsylvania/UPHS,medical,1,
+737,Keystone First,medical,1,
+739,Viking Yacht Company,medical,1,
+741,"Delaware Physicians Care, Inc (DPCI)",medical,1,
+743,"Denver Health Medical Plan, Inc.",medical,1,
+745,MDwise- Hoosier Health,medical,1,
+747,CareFirst BCBS,medical,1,
+749,Banner Plan Administration,medical,1,0
+751,Premier Network / Devon Health Services,medical,1,
+753,HealthSmart ACCEL Network,medical,1,
+755,USA MCO,medical,1,
+757,Samba,medical,1,0
+759,Blue Cross Blue Shield of Colorado,medical,1,0
+761,Community ProHealth,medical,0,
+763,Johns Hopkins Healthcare,medical,0,
+765,Kaiser Plan,medical,0,
+767,Healthchoice Orlando,medical,1,0
+769,Motion Picture Industry Health Plans,medical,1,0
+771,PEEHIP (BCBS) of Alabama,medical,1,0
+773,Care N' Care,medical,1,0
+775,New Benefits,medical,0,
+777,AARP,medical,1,0
+779,Mail Handlers Benefit Plan (MHBP),medical,1,0
+781,Medi-Cal (California Medicaid),medical,1,0
+783,UFCW & EMPLOYERS TRUST,medical,1,0
+785,Innovation Health,medical,1,0
+787,FCPS/Aetna/Innovation Health,medical,1,0
+789,Saint Alphonsus Health Alliance,medical,1,0
+791,VA Healthcare,medical,1,0
+793,Ambetter of Arkansas,medical,1,0
+795,iTriage Smart Network,medical,1,0
+797,Piedmont Wellstar Health Plans,medical,0,
+799,SSM Health Care,medical,0,
+801,"Memorial Hermann Health Plan, Inc. (formerly MHealth)",medical,0,
+803,TriCare Prime Remote- North region,medical,1,0
+805,TriCare Prime- Overseas- Africa & Eurasia,medical,1,0
+807,TriCare Prime-Overseas- Latin America & Canada,medical,1,0
+809,TriCare Prime- Overseas- Pacific (Singapore),medical,1,0
+811,TriCare Prime-Overseas- Pacific (Sydney),medical,1,0
+813,TriCare South Region ,medical,1,0
+815,TRICARE West Region,medical,1,0
+817,TriCare Reserve Select,medical,1,0
+819,TriCare Retired Reserve,medical,1,0
+821,HealthMaster,medical,1,0
+823,Blue Coast Insurance,medical,1,0
+825,Compass Rose Benefits Group,medical,1,0
+827,FTR Insurance,medical,1,0
+829,Senior Dimensions,medical,1,0
+831,QA Telemedicine,medical,1,0
+833,Aetna (Colorado Health Neighborhoods),medical,1,0
+835,Anthem BC/BS (Colorado Health Neighborhoods),medical,1,0
+837,United Healthcare (Colorado Health Neighborhoods),medical,1,0
+839,Colorado HealthOp - Inactive,medical,1,0
+841,"University of Pittsburgh Medical Center ""UPMC""",medical,1,0
+843,Exempla Spine Care at Denver West,medical,1,0
+845,MODA Health,medical,1,0
+846,Oscar Health,medical,1,0
+848,MyGPPlus,medical,1,0
+850,UnitedHealthcare Medicare Solutions,medical,1,0
+852,Healthplex,medical,1,0
+854,Ambetter Health from Coordinated Care,medical,1,0
+856,Centura Health Associate Plan,medical,1,0
+858,Ambetter from Magnolia Health,medical,1,0
+860,Horizon Blue Cross Blue Shield of New Jersey,medical,1,0
+862,Oregon Health Plan,medical,1,0
+864,Health Share of Oregon,medical,1,0
+866,Nevada Health CO-OP,medical,1,0
+868,Consumers' Choice Health Plan,medical,1,0
+870,Passport Health Plan,medical,1,0
+872,CrestPoint Health,medical,1,0
+874,Maine Community Health Options,medical,1,0
+876,Staywell Health Plan,medical,1,0
+878,NYSHIP,medical,1,0
+880,Carelink from Coventry,medical,1,0
+882,Blue Care Network,medical,1,0
+884,APWU Health Plan,medical,1,0
+886,NCE (National Congress of Employers),medical,1,0
+888,Land of Lincoln Health,medical,1,0
+890,Aetna Whole Health (Colorado Health Neighborhoods),medical,1,0
+892,Soundpath Health,medical,1,0
+894,CareFirst Blue Cross Blue Shield of Maryland,medical,1,0
+896,CareSource Kentucky,medical,1,0
+898,Saint Alphonsus Micron,medical,1,0
+900,Anthem HealthKeepers Plus of Virginia,medical,1,0
+902,Blueshield of Northeastern New York,medical,1,0
+904,"Gilsbar, Inc.",medical,1,0
+906,Ambetter Insured by Celtic,medical,1,0
+908,Aetna Whole Health,medical,1,0

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Triage Agent</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .main-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .input-section {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .examples {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .example-btn {
+            background: #e9ecef;
+            border: 1px solid #dee2e6;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+
+        .example-btn:hover {
+            background: #dee2e6;
+        }
+
+        .response-section {
+            margin-top: 30px;
+            display: none;
+        }
+
+        .response-section.visible {
+            display: block;
+        }
+
+        .response-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .steps-section {
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-header {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .step-content {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .step-label {
+            font-weight: 600;
+            color: #666;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .json-view {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.visible {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-box {
+            background: #fee;
+            border-left: 5px solid #e33;
+            padding: 15px;
+            border-radius: 5px;
+            color: #c33;
+            margin-bottom: 20px;
+        }
+
+        .triage-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .badge-critical {
+            background: #dc3545;
+            color: white;
+        }
+
+        .badge-urgent {
+            background: #fd7e14;
+            color: white;
+        }
+
+        .badge-standard {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .badge-non-urgent {
+            background: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Clinical Triage Agent</h1>
+            <p class="subtitle">AI-powered triage assistant for healthcare professionals</p>
+        </div>
+
+        <div class="main-panel">
+            <div class="input-section">
+                <div style="margin-bottom: 20px;">
+                    <label>Input Mode:</label>
+                    <button class="example-btn" onclick="switchMode('text')" id="textModeBtn" style="background: #667eea; color: white;">Text Input</button>
+                    <button class="example-btn" onclick="switchMode('structured')" id="structuredModeBtn">Structured Input</button>
+                </div>
+
+                <!-- Text Mode -->
+                <div id="textMode">
+                    <label for="promptInput">Enter Patient Information:</label>
+                    <textarea 
+                        id="promptInput" 
+                        placeholder="Example: 72yo male with shortness of breath, SpO2 88%, BP 95/60, HR 110, RR 26"
+                    ></textarea>
+                    
+                    <div class="examples">
+                        <strong>Quick Examples:</strong><br>
+                        <button class="example-btn" onclick="loadExample(1)">Critical - Chest Pain</button>
+                        <button class="example-btn" onclick="loadExample(2)">Urgent - Respiratory</button>
+                        <button class="example-btn" onclick="loadExample(3)">Non-Urgent - Ankle Sprain</button>
+                    </div>
+                </div>
+
+                <!-- Structured Mode -->
+                <div id="structuredMode" style="display: none;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label>Chief Complaint:</label>
+                            <textarea id="chiefComplaint" style="min-height: 80px;" placeholder="e.g., shortness of breath"></textarea>
+                        </div>
+                        <div>
+                            <label>Demographics:</label>
+                            <input type="number" id="age" placeholder="Age" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px; margin-bottom: 10px;">
+                            <select id="sex" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <option value="">Select Sex</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label>Vital Signs:</label>
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                            <div>
+                                <input type="number" id="spo2" placeholder="SpO2 (%)" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 95-100</small>
+                            </div>
+                            <div>
+                                <input type="number" id="sbp" placeholder="SBP (mmHg)" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 90-140</small>
+                            </div>
+                            <div>
+                                <input type="number" id="dbp" placeholder="DBP (mmHg)" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 60-90</small>
+                            </div>
+                            <div>
+                                <input type="number" id="hr" placeholder="Heart Rate" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 60-100</small>
+                            </div>
+                            <div>
+                                <input type="number" id="rr" placeholder="Resp Rate" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 12-20</small>
+                            </div>
+                            <div>
+                                <input type="number" step="0.1" id="temp" placeholder="Temp (°C)" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">Normal: 36-38</small>
+                            </div>
+                            <div>
+                                <input type="number" id="pain" placeholder="Pain (0-10)" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                <small style="color: #666;">0=none, 10=worst</small>
+                            </div>
+                            <div>
+                                <select id="mental" style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px;">
+                                    <option value="">Mental Status</option>
+                                    <option value="alert">Alert</option>
+                                    <option value="confused">Confused</option>
+                                    <option value="drowsy">Drowsy</option>
+                                    <option value="unresponsive">Unresponsive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="examples">
+                        <strong>Quick Fill:</strong><br>
+                        <button class="example-btn" onclick="loadStructuredExample(1)">Critical - Hypoxia</button>
+                        <button class="example-btn" onclick="loadStructuredExample(2)">Urgent - Stroke</button>
+                        <button class="example-btn" onclick="loadStructuredExample(3)">Non-Urgent - Sprain</button>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button class="btn-primary" onclick="runAgent()" id="runBtn">Run Triage Agent</button>
+                </div>
+            </div>
+
+            <div class="loading" id="loadingIndicator">
+                <div class="spinner"></div>
+                <p style="margin-top: 15px; color: #666;">Analyzing patient data...</p>
+            </div>
+
+            <div class="response-section" id="responseSection">
+                <h2>Triage Assessment</h2>
+                <div id="responseBox" class="response-box"></div>
+
+                <div class="steps-section">
+                    <h3>Execution Steps</h3>
+                    <div id="stepsContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentMode = 'text';
+
+        function switchMode(mode) {
+            currentMode = mode;
+            const textMode = document.getElementById('textMode');
+            const structuredMode = document.getElementById('structuredMode');
+            const textBtn = document.getElementById('textModeBtn');
+            const structuredBtn = document.getElementById('structuredModeBtn');
+
+            if (mode === 'text') {
+                textMode.style.display = 'block';
+                structuredMode.style.display = 'none';
+                textBtn.style.background = '#667eea';
+                textBtn.style.color = 'white';
+                structuredBtn.style.background = '#e9ecef';
+                structuredBtn.style.color = '#000';
+            } else {
+                textMode.style.display = 'none';
+                structuredMode.style.display = 'block';
+                textBtn.style.background = '#e9ecef';
+                textBtn.style.color = '#000';
+                structuredBtn.style.background = '#667eea';
+                structuredBtn.style.color = 'white';
+            }
+        }
+
+        const examples = {
+            1: "Patient: 45yo male, BP 180/110, HR 120, temp 38.5C, SpO2 95%, complaining of severe chest pain radiating to left arm, shortness of breath, sweating, nausea.",
+            2: "Patient: 72yo male with shortness of breath, SpO2 88%, BP 95/60, HR 110, RR 26, temp 37.8C. History of COPD.",
+            3: "Patient: 28yo female, BP 118/75, HR 78, temp 36.8C, SpO2 99%, ankle pain and swelling after twisting it while jogging yesterday."
+        };
+
+        const structuredExamples = {
+            1: {
+                chief_complaint: "shortness of breath",
+                age: 72,
+                sex: "M",
+                vitals: {
+                    spo2: 88,
+                    sbp: 95,
+                    dbp: 60,
+                    hr: 110,
+                    rr: 26,
+                    temp: 37.8,
+                    pain: 6
+                },
+                mental: "alert"
+            },
+            2: {
+                chief_complaint: "sudden onset right-sided weakness and slurred speech",
+                age: 68,
+                sex: "F",
+                vitals: {
+                    spo2: 96,
+                    sbp: 165,
+                    dbp: 95,
+                    hr: 88,
+                    rr: 18,
+                    temp: 37.2,
+                    pain: 0
+                },
+                mental: "confused"
+            },
+            3: {
+                chief_complaint: "ankle pain and swelling after twist",
+                age: 28,
+                sex: "F",
+                vitals: {
+                    spo2: 99,
+                    sbp: 118,
+                    dbp: 75,
+                    hr: 78,
+                    rr: 16,
+                    temp: 36.8,
+                    pain: 4
+                },
+                mental: "alert"
+            }
+        };
+
+        function loadExample(num) {
+            document.getElementById('promptInput').value = examples[num];
+        }
+
+        function loadStructuredExample(num) {
+            const ex = structuredExamples[num];
+            document.getElementById('chiefComplaint').value = ex.chief_complaint;
+            document.getElementById('age').value = ex.age;
+            document.getElementById('sex').value = ex.sex;
+            document.getElementById('spo2').value = ex.vitals.spo2 || '';
+            document.getElementById('sbp').value = ex.vitals.sbp || '';
+            document.getElementById('dbp').value = ex.vitals.dbp || '';
+            document.getElementById('hr').value = ex.vitals.hr || '';
+            document.getElementById('rr').value = ex.vitals.rr || '';
+            document.getElementById('temp').value = ex.vitals.temp || '';
+            document.getElementById('pain').value = ex.vitals.pain || '';
+            document.getElementById('mental').value = ex.mental || '';
+        }
+
+        async function runAgent() {
+            let requestBody;
+
+            if (currentMode === 'text') {
+                const prompt = document.getElementById('promptInput').value.trim();
+                if (!prompt) {
+                    alert('Please enter patient information');
+                    return;
+                }
+                requestBody = { prompt: prompt };
+            } else {
+                // Structured mode
+                const chiefComplaint = document.getElementById('chiefComplaint').value.trim();
+                const age = document.getElementById('age').value;
+                const sex = document.getElementById('sex').value;
+
+                if (!chiefComplaint) {
+                    alert('Please enter chief complaint');
+                    return;
+                }
+
+                requestBody = {
+                    chief_complaint: chiefComplaint,
+                    age: age ? parseInt(age) : null,
+                    sex: sex || null,
+                    vitals: {}
+                };
+
+                // Add vitals if provided
+                const spo2 = document.getElementById('spo2').value;
+                const sbp = document.getElementById('sbp').value;
+                const dbp = document.getElementById('dbp').value;
+                const hr = document.getElementById('hr').value;
+                const rr = document.getElementById('rr').value;
+                const temp = document.getElementById('temp').value;
+                const pain = document.getElementById('pain').value;
+                const mental = document.getElementById('mental').value;
+
+                if (spo2) requestBody.vitals.spo2 = parseFloat(spo2);
+                if (sbp) requestBody.vitals.sbp = parseFloat(sbp);
+                if (dbp) requestBody.vitals.dbp = parseFloat(dbp);
+                if (hr) requestBody.vitals.hr = parseFloat(hr);
+                if (rr) requestBody.vitals.rr = parseFloat(rr);
+                if (temp) requestBody.vitals.temp = parseFloat(temp);
+                if (pain) requestBody.vitals.pain = parseFloat(pain);
+                if (mental) requestBody.mental = mental;
+
+                // Remove empty vitals object
+                if (Object.keys(requestBody.vitals).length === 0) {
+                    delete requestBody.vitals;
+                }
+            }
+
+            const runBtn = document.getElementById('runBtn');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const responseSection = document.getElementById('responseSection');
+            const responseBox = document.getElementById('responseBox');
+            const stepsContainer = document.getElementById('stepsContainer');
+
+            // Show loading
+            runBtn.disabled = true;
+            loadingIndicator.classList.add('visible');
+            responseSection.classList.remove('visible');
+
+            try {
+                const response = await fetch('/api/execute', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+
+                const data = await response.json();
+
+                // Hide loading
+                loadingIndicator.classList.remove('visible');
+                responseSection.classList.add('visible');
+
+                if (data.status === 'error') {
+                    responseBox.innerHTML = `<div class="error-box">❌ Error: ${data.error}</div>`;
+                    stepsContainer.innerHTML = '';
+                } else {
+                    // Format response
+                    responseBox.innerHTML = formatResponse(data.response);
+
+                    // Display steps
+                    displaySteps(data.steps);
+                }
+
+            } catch (error) {
+                loadingIndicator.classList.remove('visible');
+                responseSection.classList.add('visible');
+                responseBox.innerHTML = `<div class="error-box">❌ Connection Error: ${error.message}</div>`;
+                stepsContainer.innerHTML = '';
+            } finally {
+                runBtn.disabled = false;
+            }
+        }
+
+        function formatResponse(text) {
+            // Simple formatting
+            let formatted = text
+                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                .replace(/\n/g, '<br>');
+            
+            return formatted;
+        }
+
+        function displaySteps(steps) {
+            const container = document.getElementById('stepsContainer');
+            container.innerHTML = '';
+
+            steps.forEach((step, index) => {
+                const stepDiv = document.createElement('div');
+                stepDiv.className = 'step';
+                
+                stepDiv.innerHTML = `
+                    <div class="step-header">${step.step || ('Step ' + (index + 1))}: ${step.module}</div>
+                    <div class="step-content">
+                        <div class="step-label">Input:</div>
+                        <div class="json-view">${JSON.stringify(step.input || step.prompt || {}, null, 2)}</div>
+                        
+                        <div class="step-label" style="margin-top: 15px;">Output:</div>
+                        <div class="json-view">${JSON.stringify(step.output || step.response || {}, null, 2)}</div>
+                    </div>
+                `;
+                
+                container.appendChild(stepDiv);
+            });
+        }
+
+        // Allow Enter key to submit (with Ctrl/Cmd)
+        document.getElementById('promptInput').addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                runAgent();
+            }
+        });
+    </script>
+</body>
+</html>
