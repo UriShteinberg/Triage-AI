@@ -77,13 +77,14 @@ class DecisionEngine:
                     }
                 ],
                 "temperature": 1,  # GPT-5 models only support temperature=1
-                "max_tokens": 800  # Optimized for budget: allows full response without waste
+                "max_tokens": 1200  # Optimized for budget: allows full response without waste
             }
             
             response = requests.post(self.api_url, json=payload, headers=headers, timeout=15)
             
             if response.status_code == 200:
                 result = response.json()
+                self._log_token_usage("main", result)
                 content = result['choices'][0]['message']['content']
                 
                 # Parse LLM response
@@ -267,3 +268,22 @@ Return EXACT JSON:
             "llm_diagnosis": False,
             "diagnosis": "N/A - LLM unavailable (rule-based assessment only)"
         }
+
+    def _log_token_usage(self, label: str, result: Dict[str, Any]) -> None:
+        """Log token usage and warn if above configured threshold."""
+        usage = result.get("usage", {}) if isinstance(result, dict) else {}
+        if not usage:
+            print(f"LLM token usage [{label}]: unavailable")
+            return
+        total = usage.get("total_tokens")
+        prompt = usage.get("prompt_tokens")
+        completion = usage.get("completion_tokens")
+        details = usage.get("completion_tokens_details", {}) or {}
+        reasoning_tokens = details.get("reasoning_tokens")
+        print(f"LLM token usage [{label}]: total={total} prompt={prompt} completion={completion} reasoning={reasoning_tokens}")
+        try:
+            max_total = int(os.getenv("LMMOD_MAX_TOTAL_TOKENS", "0"))
+        except ValueError:
+            max_total = 0
+        if max_total and isinstance(total, int) and total > max_total:
+            print(f"LLM token usage WARNING [{label}]: total_tokens {total} exceeds LMMOD_MAX_TOTAL_TOKENS={max_total}")

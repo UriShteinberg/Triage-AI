@@ -60,7 +60,7 @@ class ClinicalRuleEngine:
         """
         rule_triggers = []
         critical_flags = []
-        urgency_score = 3  # Start at moderate (3)
+        urgency_score = 2  # Start at low (2) to allow lower-acuity presentations
         
         chief_complaint = (patient_data.get('chief_complaint', '') or '').lower()
         age = patient_data.get('age')
@@ -117,7 +117,7 @@ class ClinicalRuleEngine:
         """Check for critically abnormal vital signs"""
         triggers = []
         critical = []
-        score = 3  # Default moderate
+        score = 2  # Default low
         
         # SpO2 < 90 = IMMEDIATE
         spo2 = vitals.get('spo2')
@@ -185,10 +185,26 @@ class ClinicalRuleEngine:
         """Check for high-risk chief complaints"""
         triggers = []
         critical = []
-        score = 3
+        score = 2
         
+        def _is_negated(text: str, phrase: str) -> bool:
+            # Simple negation handling near the matched phrase
+            negators = [
+                "no", "denies", "deny", "without", "negative for", "not",
+                "no evidence of", "absence of", "no sign of"
+            ]
+            idx = text.find(phrase)
+            if idx < 0:
+                return False
+            window_start = max(0, idx - 40)
+            window = text[window_start:idx].strip()
+            return any(window.endswith(neg) or neg in window for neg in negators)
+
         for high_risk in self.high_risk_complaints:
             if high_risk in complaint:
+                # Skip if negated (e.g., "no chest pain")
+                if _is_negated(complaint, high_risk):
+                    continue
                 triggers.append(f"High-risk complaint: {high_risk}")
                 
                 # Certain complaints are ALWAYS high priority
@@ -207,7 +223,7 @@ class ClinicalRuleEngine:
     def _check_age_risk(self, age: int, complaint: str, vitals: Dict[str, Any]) -> Dict[str, Any]:
         """Check age-related risk factors"""
         triggers = []
-        score = 3
+        score = 2
         
         if age is None:
             return {"triggers": triggers, "score": score}
@@ -241,7 +257,7 @@ class ClinicalRuleEngine:
     def _check_multiple_abnormals(self, vitals: Dict[str, Any]) -> Dict[str, Any]:
         """Check for multiple abnormal vitals (systemic issue)"""
         triggers = []
-        score = 3
+        score = 2
         abnormal_count = 0
         
         # Count abnormal vitals

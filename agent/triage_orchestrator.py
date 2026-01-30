@@ -63,6 +63,7 @@ class TriageOrchestrator:
             
             # STEP 2: Clinical Rule Engine
             rule_result = self.rule_engine.assess_urgency(normalized_data)
+            print(f"Rule baseline: base_urgency={rule_result.get('base_urgency')} ktas_score={rule_result.get('urgency_score')}")
             steps.append({
                 "step": "2. Rule Engine",
                 "module": "Clinical Rule Engine",
