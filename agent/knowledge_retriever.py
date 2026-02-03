@@ -7,6 +7,7 @@ import os
 from typing import Dict, List, Any
 from pinecone import Pinecone
 import requests
+import math
 
 
 class KnowledgeRetriever:
@@ -21,6 +22,15 @@ class KnowledgeRetriever:
         self.index_host = os.getenv('PINECONE_INDEX_HOST', '')
         self.lmmod_api_key = os.getenv('LMMOD_API_KEY', '')
         self.lmmod_url = "https://api.llmod.ai/v1/embeddings"  # LLMod.ai educator platform
+        self.debug = os.getenv('RAG_DEBUG', '').strip().lower() in ('1', 'true', 'yes', 'on')
+        try:
+            self.score_threshold = float(os.getenv('RAG_SCORE_THRESHOLD', '0.7'))
+        except ValueError:
+            self.score_threshold = 0.7
+        try:
+            self.debug_top_k = int(os.getenv('RAG_TOP_K', '3'))
+        except ValueError:
+            self.debug_top_k = 3
         
         self.pc = None
         self.index = None
@@ -30,8 +40,17 @@ class KnowledgeRetriever:
                 self.pc = Pinecone(api_key=self.api_key)
                 if self.index_host:
                     self.index = self.pc.Index(self.index_name, host=self.index_host)
+                if self.debug and self.index:
+                    print(f"RAG DEBUG: index_name='{self.index_name}' host='{self.index_host or 'default'}'")
+                    try:
+                        stats = self.index.describe_index_stats()
+                        print(f"RAG DEBUG: index_stats={stats}")
+                    except Exception as e:
+                        print(f"RAG DEBUG: describe_index_stats failed: {e}")
             except Exception as e:
                 print(f"Pinecone initialization error: {e}")
+        elif self.debug:
+            print("RAG DEBUG: PINECONE_API_KEY not set; retrieval will use fallback.")
     
     def retrieve(self, patient_data: Dict[str, Any], rule_result: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -59,22 +78,48 @@ class KnowledgeRetriever:
         try:
             # Build focused query from chief complaint + critical findings
             query = self._build_focused_query(patient_data, rule_result)
+            if self.debug:
+                print(f"RAG DEBUG: query='{query}'")
+                print(f"RAG DEBUG: query_len={len(query)}")
             
             if not self.index:
+                if self.debug:
+                    print("RAG DEBUG: Pinecone index not initialized; using fallback knowledge.")
                 return self._fallback_knowledge(query, patient_data)
             
             # Get embedding
             embedding = self._get_embedding(query)
             if not embedding:
+                if self.debug:
+                    print("RAG DEBUG: embedding missing; using fallback knowledge.")
                 return self._fallback_knowledge(query, patient_data)
+            if self.debug:
+                norm = math.sqrt(sum(v * v for v in embedding)) if embedding else 0.0
+                print(f"RAG DEBUG: embedding_dim={len(embedding)} embedding_norm={norm:.4f} embedding_head={embedding[:8]}")
             
             # Query Pinecone for top-K matches
             results = self.index.query(
                 vector=embedding,
-                top_k=3,  # Optimized: 3 most relevant diagnoses (budget constraint)
+                top_k=self.debug_top_k,  # Optimized: 3 most relevant diagnoses (budget constraint)
                 include_metadata=True,
+                include_values=self.debug,
                 namespace=os.getenv('PINECONE_NAMESPACE', 'ccdx_kb')
             )
+            if self.debug:
+                matches = results.get('matches', [])
+                print(f"RAG DEBUG: matches_found={len(matches)} score_threshold={self.score_threshold}")
+                for match in matches:
+                    score = match.get('score', 0)
+                    match_id = match.get('id', '')
+                    meta = match.get('metadata', {})
+                    name = meta.get('diagnosis_name', '')
+                    values = match.get('values') or []
+                    values_head = values[:8] if values else []
+                    values_dim = len(values) if values else 0
+                    print(f"RAG DEBUG: match id={match_id} score={score:.4f} name='{name}' values_dim={values_dim} values_head={values_head}")
+                if matches:
+                    max_score = max(m.get('score', 0) for m in matches)
+                    print(f"RAG DEBUG: max_score={max_score:.4f}")
             
             # Extract high-risk diagnoses
             diagnoses = []
@@ -86,7 +131,7 @@ class KnowledgeRetriever:
                 score = match.get('score', 0)
                 
                 diagnosis_name = metadata.get('diagnosis_name', '')
-                if diagnosis_name and score > 0.7:  # Only high-confidence matches
+                if diagnosis_name and score > self.score_threshold:  # Only high-confidence matches
                     # Determine if life-threatening
                     life_threatening = self._is_life_threatening(diagnosis_name, metadata)
                     
@@ -156,12 +201,16 @@ class KnowledgeRetriever:
                 "input": text,
                 "dimensions": 1024  # Match Pinecone index dimension
             }
+            if self.debug:
+                print(f"RAG DEBUG: embedding_model={payload['model']} dims={payload['dimensions']} input_len={len(text)}")
             
             response = requests.post(self.lmmod_url, json=payload, headers=headers, timeout=10)
             
             if response.status_code == 200:
                 result = response.json()
                 return result['data'][0]['embedding']
+            if self.debug:
+                print(f"RAG DEBUG: embedding_status={response.status_code} body_head={response.text[:200]}")
             
         except Exception as e:
             print(f"Embedding error: {e}")

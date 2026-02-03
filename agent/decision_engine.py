@@ -6,6 +6,7 @@ Step 4: Decision Fusion - Single LLM call to justify triage decision
 import os
 from typing import Dict, Any
 import requests
+import time
 import json
 
 
@@ -20,6 +21,9 @@ class DecisionEngine:
     def __init__(self):
         self.api_key = os.getenv('LMMOD_API_KEY', '')
         self.api_url = "https://api.llmod.ai/v1/chat/completions"  # LLMod.ai educator platform
+        self.request_timeout = 30
+        self.max_retries = 2
+        self.retry_backoff_seconds = 1
         
         # KTAS (Korean Triage Acuity Scale) / ESI levels
         self.urgency_levels = {
@@ -57,6 +61,10 @@ class DecisionEngine:
         try:
             # Build comprehensive prompt
             prompt = self._build_decision_prompt(patient_data, rule_result, knowledge_result)
+            if knowledge_result.get('high_risk_diagnoses'):
+                print(f"RAG CONTEXT: included {len(knowledge_result.get('high_risk_diagnoses', []))} diagnoses in LLM prompt.")
+            else:
+                print("RAG CONTEXT: empty (no diagnoses included in LLM prompt).")
             
             # Call LLM
             headers = {
@@ -80,7 +88,21 @@ class DecisionEngine:
                 "max_tokens": 1200  # Optimized for budget: allows full response without waste
             }
             
-            response = requests.post(self.api_url, json=payload, headers=headers, timeout=15)
+            response = None
+            for attempt in range(self.max_retries + 1):
+                try:
+                    response = requests.post(
+                        self.api_url,
+                        json=payload,
+                        headers=headers,
+                        timeout=self.request_timeout
+                    )
+                    break
+                except requests.exceptions.RequestException as e:
+                    if attempt >= self.max_retries:
+                        raise
+                    print(f"⚠️ LLM request failed (attempt {attempt + 1}/{self.max_retries + 1}): {e}")
+                    time.sleep(self.retry_backoff_seconds * (attempt + 1))
             
             if response.status_code == 200:
                 result = response.json()
@@ -161,7 +183,11 @@ KTAS LEVELS:
 4=Less Urgent (<60min)
 5=Non-Urgent (<120min)
 
-CONSTRAINT: KTAS ≥ {base_urgency.upper()} baseline (can upgrade, not downgrade).
+CONSTRAINT: If baseline is KTAS 1-2, you must use that KTAS. If baseline is KTAS 3-5, you may choose any KTAS based on clinical judgment.
+
+RATIONALE REQUIREMENT:
+- In the "justification" field, explicitly state the urgency in text (e.g., "This is emergent; evaluate within 15 minutes (KTAS 2)").
+- The urgency text in the justification must match the KTAS level in "urgency_level" (unless rule-based override is applied by the system).
 
 Return EXACT JSON:
 {{
@@ -195,17 +221,22 @@ Return EXACT JSON:
             # Extract LLM's diagnosis and KTAS assignment
             diagnosis = result.get('diagnosis', 'Clinical assessment pending')
             urgency_level = result.get('urgency_level', 'KTAS 3')
-            ktas_num = int(''.join(filter(str.isdigit, urgency_level)) or '3')
+            justification = result.get('justification', '')
+            # Prefer KTAS inferred from narrative/justification; fallback to urgency_level field
+            inferred_ktas = self._infer_ktas_from_text(justification)
+            if inferred_ktas:
+                ktas_num = inferred_ktas
+            else:
+                ktas_num = int(''.join(filter(str.isdigit, urgency_level)) or '3')
             ktas_num = max(1, min(5, ktas_num))  # Clamp to 1-5
             
-            # SAFETY FLOOR: LLM cannot assign LOWER urgency than rule baseline
-            # (Higher KTAS number = lower urgency, so ktas_num must be <= rule_score)
+            # SAFETY: Only interfere when rule baseline is KTAS 1-2 (highest emergency)
             rule_score = rule_result.get('urgency_score', 3)
             original_ktas = ktas_num
-            if ktas_num > rule_score:  # LLM trying to downgrade below safety floor
+            if rule_score <= 2:
                 ktas_num = rule_score
                 urgency_level = self.urgency_levels[ktas_num]
-                print(f"⚠️ Safety constraint: LLM diagnosed KTAS {original_ktas}, but rule baseline is KTAS {rule_score}. Using KTAS {ktas_num}.")
+                print(f"⚠️ Safety constraint: Rule baseline is KTAS {rule_score}. Using KTAS {ktas_num} instead of LLM KTAS {original_ktas}.")
             
             # Log successful LLM diagnosis
             print(f"✅ LLM DIAGNOSIS: {diagnosis}")
@@ -215,7 +246,7 @@ Return EXACT JSON:
                 "diagnosis": diagnosis,
                 "urgency_level": self.urgency_levels[ktas_num],
                 "ktas_number": ktas_num,
-                "justification": result.get('justification', ''),
+                "justification": justification,
                 "red_flags": result.get('red_flags', []),
                 "recommended_actions": result.get('recommended_actions', []),
                 "confidence": 0.95 if original_ktas == ktas_num else 0.85,  # Lower confidence if safety override
@@ -228,6 +259,31 @@ Return EXACT JSON:
             print(f"LLM parse error: {e}, using rule-based fallback")
             # Fallback to rule-based
             return self._rule_based_decision({}, rule_result, {})
+
+    def _infer_ktas_from_text(self, text: str) -> int:
+        """Infer KTAS number from narrative text (justification/rationale)."""
+        if not text:
+            return 0
+        t = text.lower()
+
+        # Direct KTAS mention in narrative
+        for k in range(1, 6):
+            if f"ktas {k}" in t or f"ktas-{k}" in t:
+                return k
+
+        # Time-based cues
+        time_map = {
+            1: ["immediate", "resuscitation", "life-threatening", "now", "minutes to die"],
+            2: ["within 15 minutes", "within 15 min", "<15 min", "<15 minutes", "emergent"],
+            3: ["within 30 minutes", "within 30 min", "<30 min", "<30 minutes", "urgent"],
+            4: ["within 1 hour", "within 60 minutes", "within 60 min", "<60 min", "less urgent"],
+            5: ["within 2 hours", "within 120 minutes", "within 120 min", "<120 min", "non-urgent"]
+        }
+        for k, phrases in time_map.items():
+            if any(p in t for p in phrases):
+                return k
+
+        return 0
     
     def _rule_based_decision(self, patient_data: Dict, rule_result: Dict, 
                              knowledge_result: Dict) -> Dict[str, Any]:
@@ -287,3 +343,6 @@ Return EXACT JSON:
             max_total = 0
         if max_total and isinstance(total, int) and total > max_total:
             print(f"LLM token usage WARNING [{label}]: total_tokens {total} exceeds LMMOD_MAX_TOTAL_TOKENS={max_total}")
+
+
+
