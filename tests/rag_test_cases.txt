@@ -1,0 +1,22 @@
+Test cases (free text). Mix of urgency + one worsening sequence.
+
+1) Patient: 22yo male, BP 116/72, HR 84, temp 37.4C, SpO2 98%, runny nose, mild sore throat, dry cough for 2 days, no shortness of breath.
+2) Patient: 28yo female, BP 118/75, HR 78, temp 36.8C, SpO2 99%, ankle pain and swelling after twisting it while jogging yesterday, able to bear weight.
+3) Patient: 34yo female, BP 122/80, HR 86, temp 37.1C, SpO2 99%, burning with urination and lower abdominal pressure for 1 day, no flank pain.
+4) Patient: 52yo male, BP 136/84, HR 104, temp 37.2C, SpO2 92%, sharp chest pain worse with breathing, sudden onset 2 hours ago, short of breath.
+5) Patient: 78yo male, BP 94/58, HR 112, temp 39.2C, SpO2 95%, sudden confusion, weak and lethargic, decreased urine output today.
+6) Patient: 31yo female, BP 128/82, HR 96, temp 38.4C, SpO2 98%, severe headache "worst of my life" with neck stiffness and photophobia.
+7) Patient: 29yo female (28 weeks pregnant), BP 102/64, HR 110, temp 37.0C, SpO2 98%, vaginal bleeding and cramping abdominal pain.
+8) Patient: 45yo male with diabetes, BP 110/70, HR 102, temp 36.5C, SpO2 97%, glucose 52, sweaty, shaky, confused after insulin.
+9) Patient: 61yo female, BP 88/54, HR 118, temp 37.8C, SpO2 94%, severe sudden abdominal pain with rigid abdomen and vomiting.
+10) Patient: 19yo female, BP 120/76, HR 92, temp 36.9C, SpO2 99%, hives and swollen lips after peanuts, no trouble breathing.
+
+Worsening sequence (same problem, different stages):
+A) Patient: 40yo male, BP 124/78, HR 88, temp 37.8C, SpO2 96%, cough and low fever for 3 days, mild shortness of breath on stairs.
+B) Patient: 40yo male, BP 118/70, HR 108, temp 39.0C, SpO2 93%, cough with higher fever, shortness of breath at rest, feels weak.
+C) Patient: 40yo male, BP 98/60, HR 124, temp 39.6C, SpO2 88%, cough, high fever, breathing very fast, lips look blue, feels like can't catch breath.
+
+Worsening sequence (no rule trigger on lowest-risk case):
+D) Patient: 26yo female, BP 116/74, HR 76, temp 36.7C, SpO2 99%, mild intermittent lower-back ache after long day at desk, no urinary symptoms.
+E) Patient: 26yo female, BP 110/70, HR 92, temp 37.9C, SpO2 98%, worsening lower-back pain now constant, mild nausea.
+F) Patient: 26yo female, BP 96/62, HR 118, temp 39.1C, SpO2 97%, severe flank pain with fever and chills, vomiting, feels weak.
