@@ -7,13 +7,17 @@ from flask import Flask, jsonify, request, send_file, Response
 from flask_cors import CORS
 import os
 import json
+from pathlib import Path
+
 from dotenv import load_dotenv
 
 from agent.triage_orchestrator import TriageOrchestrator
 from config.team_info import TEAM_INFO, AGENT_INFO
 
-# Load environment variables
-load_dotenv()
+# Load environment variables (override existing shell vars)
+repo_root = Path(__file__).resolve().parent
+dotenv_path = os.getenv("ENV_FILE", str(repo_root / ".env"))
+load_dotenv(dotenv_path=dotenv_path, override=True)
 
 app = Flask(__name__)
 CORS(app)

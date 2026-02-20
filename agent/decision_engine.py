@@ -85,6 +85,7 @@ class DecisionEngine:
                     }
                 ],
                 "temperature": 1,  # GPT-5 models only support temperature=1
+                "reasoning_effort": "low",
                 "max_tokens": 1200  # Optimized for budget: allows full response without waste
             }
             
@@ -106,8 +107,16 @@ class DecisionEngine:
             
             if response.status_code == 200:
                 result = response.json()
+
+                print("=== FULL LLM JSON (first 1200 chars) ===")
+                print(json.dumps(result, ensure_ascii=False)[:1200])
+                print("=== END FULL LLM JSON ===")
+
                 self._log_token_usage("main", result)
                 content = result['choices'][0]['message']['content']
+                print("=== RAW LLM OUTPUT (first 500 chars) ===")
+                print(content[:500])
+                print("=== END RAW LLM OUTPUT ===")
                 
                 # Parse LLM response
                 return self._parse_llm_response(content, rule_result)
@@ -134,6 +143,8 @@ class DecisionEngine:
         critical_flags = rule_result.get('critical_flags', [])
         
         high_risk_dx = knowledge_result.get('high_risk_diagnoses', [])
+        risk_domains = knowledge_result.get('risk_domains', [])
+
         
         prompt = f"""CLINICAL CASE FOR TRIAGE:
 
@@ -171,10 +182,15 @@ CLINICAL ALERTS:
             for dx in high_risk_dx[:3]:
                 life_threat = "🔴 LIFE-THREATENING" if dx.get('life_threatening') else ""
                 prompt += f"- {dx.get('name')} {life_threat} (Confidence: {dx.get('confidence', 0):.2f})\n"
-        
+        if risk_domains:
+            prompt += "\nRISK DOMAINS IDENTIFIED FROM MEDICAL KNOWLEDGE BASE:\n"
+            for domain in risk_domains:
+                prompt += f"- {domain.upper()} (consider and rule out if life-threatening)\n"
+
         prompt += f"""
 
 TASK: Diagnose, assign KTAS (1-5), provide reasoning, identify red flags, recommend actions.
+You MUST explicitly consider the identified risk domains in your reasoning and address them in the justification.
 
 KTAS LEVELS:
 1=Resuscitation (immediate, life-threatening)
