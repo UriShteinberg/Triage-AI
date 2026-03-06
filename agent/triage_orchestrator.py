@@ -140,13 +140,13 @@ class TriageOrchestrator:
         ktas_num = decision.get('ktas_number', 3)
         
         if ktas_num == 1:
-            emoji = ""
+            emoji = "🔴"
         elif ktas_num == 2:
             emoji = "🟠"
         elif ktas_num == 3:
-            emoji = ""
+            emoji = "🟡"
         else:
-            emoji = ""
+            emoji = "🟢"
         
         output.append(f"{emoji} **TRIAGE DECISION: {urgency_level}**\n")
         

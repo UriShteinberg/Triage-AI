@@ -180,7 +180,7 @@ CLINICAL ALERTS:
         if high_risk_dx:
             prompt += f"\nPOTENTIAL HIGH-RISK DIAGNOSES (from medical knowledge base):\n"
             for dx in high_risk_dx[:3]:
-                life_threat = "LIFE-THREATENING" if dx.get('life_threatening') else ""
+                life_threat = "🔴 LIFE-THREATENING" if dx.get('life_threatening') else ""
                 prompt += f"- {dx.get('name')} {life_threat} (Confidence: {dx.get('confidence', 0):.2f})\n"
         if risk_domains:
             prompt += "\nRISK DOMAINS IDENTIFIED FROM MEDICAL KNOWLEDGE BASE:\n"

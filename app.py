@@ -2,6 +2,9 @@
 Clinical Triage Agent - Main Application
 Flask API server implementing all required endpoints
 """
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 from flask import Flask, jsonify, request, send_file, Response
 from flask_cors import CORS
