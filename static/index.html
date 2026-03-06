@@ -147,39 +147,6 @@
             line-height: 1.6;
         }
 
-        .steps-section {
-            margin-top: 20px;
-        }
-
-        .step {
-            background: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .step-header {
-            font-weight: 600;
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
-        .step-content {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        .step-label {
-            font-weight: 600;
-            color: #666;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
 
         .json-view {
             background: #2d2d2d;
@@ -369,10 +336,6 @@
                 <h2>Triage Assessment</h2>
                 <div id="responseBox" class="response-box"></div>
 
-                <div class="steps-section">
-                    <h3>Execution Steps</h3>
-                    <div id="stepsContainer"></div>
-                </div>
             </div>
         </div>
     </div>
@@ -534,8 +497,6 @@
             const loadingIndicator = document.getElementById('loadingIndicator');
             const responseSection = document.getElementById('responseSection');
             const responseBox = document.getElementById('responseBox');
-            const stepsContainer = document.getElementById('stepsContainer');
-
             // Show loading
             runBtn.disabled = true;
             loadingIndicator.classList.add('visible');
@@ -558,20 +519,14 @@
 
                 if (data.status === 'error') {
                     responseBox.innerHTML = `<div class="error-box">❌ Error: ${data.error}</div>`;
-                    stepsContainer.innerHTML = '';
                 } else {
-                    // Format response
                     responseBox.innerHTML = formatResponse(data.response);
-
-                    // Display steps
-                    displaySteps(data.steps);
                 }
 
             } catch (error) {
                 loadingIndicator.classList.remove('visible');
                 responseSection.classList.add('visible');
                 responseBox.innerHTML = `<div class="error-box">❌ Connection Error: ${error.message}</div>`;
-                stepsContainer.innerHTML = '';
             } finally {
                 runBtn.disabled = false;
             }
@@ -586,28 +541,6 @@
             return formatted;
         }
 
-        function displaySteps(steps) {
-            const container = document.getElementById('stepsContainer');
-            container.innerHTML = '';
-
-            steps.forEach((step, index) => {
-                const stepDiv = document.createElement('div');
-                stepDiv.className = 'step';
-                
-                stepDiv.innerHTML = `
-                    <div class="step-header">${step.step || ('Step ' + (index + 1))}: ${step.module}</div>
-                    <div class="step-content">
-                        <div class="step-label">Input:</div>
-                        <div class="json-view">${JSON.stringify(step.input || step.prompt || {}, null, 2)}</div>
-                        
-                        <div class="step-label" style="margin-top: 15px;">Output:</div>
-                        <div class="json-view">${JSON.stringify(step.output || step.response || {}, null, 2)}</div>
-                    </div>
-                `;
-                
-                container.appendChild(stepDiv);
-            });
-        }
 
         // Allow Enter key to submit (with Ctrl/Cmd)
         document.getElementById('promptInput').addEventListener('keydown', function(e) {

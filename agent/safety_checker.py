@@ -89,7 +89,7 @@ class ClinicalRuleEngine:
         urgency_score = max(urgency_score, multi_vital_rules['score'])
         
         # Map internal score to KTAS urgency level
-        # Internal: 5=most urgent → KTAS: 1=most urgent (flip it)
+        # Internal: 5=most urgent -> KTAS: 1=most urgent (flip it)
         if urgency_score >= 5:
             base_urgency = "immediate"  # KTAS 1
             ktas_score = 1

@@ -140,13 +140,13 @@ class TriageOrchestrator:
         ktas_num = decision.get('ktas_number', 3)
         
         if ktas_num == 1:
-            emoji = "🔴"
+            emoji = ""
         elif ktas_num == 2:
             emoji = "🟠"
         elif ktas_num == 3:
-            emoji = "🟡"
+            emoji = ""
         else:
-            emoji = "🟢"
+            emoji = ""
         
         output.append(f"{emoji} **TRIAGE DECISION: {urgency_level}**\n")
         
@@ -169,7 +169,7 @@ class TriageOrchestrator:
         # Red flags (if any)
         red_flags = decision.get('red_flags', [])
         if red_flags:
-            output.append("\n**⚠️ RED FLAGS:**")
+            output.append("\n**[!] RED FLAGS:**")
             for flag in red_flags[:3]:
                 output.append(f"  • {flag}")
             output.append("")
@@ -187,7 +187,7 @@ class TriageOrchestrator:
         if high_risk_dx:
             output.append("**🩺 CONSIDER:**")
             for dx in high_risk_dx[:3]:
-                life_threat = " 🔴" if dx.get('life_threatening') else ""
+                life_threat = " " if dx.get('life_threatening') else ""
                 output.append(f"  • {dx.get('name')}{life_threat}")
             output.append("")
         
@@ -202,7 +202,7 @@ class TriageOrchestrator:
         """Format error response"""
         error_details = "\n".join([f"  • {err}" for err in errors]) if errors else ""
         
-        response = f"❌ **Error:** {error_message}"
+        response = f"[X] **Error:** {error_message}"
         if error_details:
             response += f"\n\n**Details:**\n{error_details}"
         

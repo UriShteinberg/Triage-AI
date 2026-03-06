@@ -102,7 +102,7 @@ class DecisionEngine:
                 except requests.exceptions.RequestException as e:
                     if attempt >= self.max_retries:
                         raise
-                    print(f"⚠️ LLM request failed (attempt {attempt + 1}/{self.max_retries + 1}): {e}")
+                    print(f"[!] LLM request failed (attempt {attempt + 1}/{self.max_retries + 1}): {e}")
                     time.sleep(self.retry_backoff_seconds * (attempt + 1))
             
             if response.status_code == 200:
@@ -121,11 +121,11 @@ class DecisionEngine:
                 # Parse LLM response
                 return self._parse_llm_response(content, rule_result)
             else:
-                print(f"❌ LLM API ERROR - Status {response.status_code}: {response.text[:200]}")
+                print(f"[X] LLM API ERROR - Status {response.status_code}: {response.text[:200]}")
                 return self._rule_based_decision(patient_data, rule_result, knowledge_result)
                 
         except Exception as e:
-            print(f"❌ LLM Error: {e}")
+            print(f"[X] LLM Error: {e}")
             return self._rule_based_decision(patient_data, rule_result, knowledge_result)
     
     def _build_decision_prompt(self, patient_data: Dict, rule_result: Dict, 
@@ -175,12 +175,12 @@ CLINICAL ALERTS:
         if critical_flags:
             prompt += f"\nCRITICAL FLAGS:\n"
             for flag in critical_flags:
-                prompt += f"- ⚠️ {flag}\n"
+                prompt += f"- [!] {flag}\n"
         
         if high_risk_dx:
             prompt += f"\nPOTENTIAL HIGH-RISK DIAGNOSES (from medical knowledge base):\n"
             for dx in high_risk_dx[:3]:
-                life_threat = "🔴 LIFE-THREATENING" if dx.get('life_threatening') else ""
+                life_threat = "LIFE-THREATENING" if dx.get('life_threatening') else ""
                 prompt += f"- {dx.get('name')} {life_threat} (Confidence: {dx.get('confidence', 0):.2f})\n"
         if risk_domains:
             prompt += "\nRISK DOMAINS IDENTIFIED FROM MEDICAL KNOWLEDGE BASE:\n"
@@ -252,11 +252,11 @@ Return EXACT JSON:
             if rule_score <= 2:
                 ktas_num = rule_score
                 urgency_level = self.urgency_levels[ktas_num]
-                print(f"⚠️ Safety constraint: Rule baseline is KTAS {rule_score}. Using KTAS {ktas_num} instead of LLM KTAS {original_ktas}.")
+                print(f"[!] Safety constraint: Rule baseline is KTAS {rule_score}. Using KTAS {ktas_num} instead of LLM KTAS {original_ktas}.")
             
             # Log successful LLM diagnosis
-            print(f"✅ LLM DIAGNOSIS: {diagnosis}")
-            print(f"✅ LLM KTAS ASSIGNMENT: {self.urgency_levels[ktas_num]}")
+            print(f"[OK] LLM DIAGNOSIS: {diagnosis}")
+            print(f"[OK] LLM KTAS ASSIGNMENT: {self.urgency_levels[ktas_num]}")
             
             return {
                 "diagnosis": diagnosis,
@@ -305,7 +305,7 @@ Return EXACT JSON:
                              knowledge_result: Dict) -> Dict[str, Any]:
         """Fallback rule-based decision when LLM unavailable"""
         
-        print("❌ LLM UNAVAILABLE - Using rule-based fallback (no diagnosis provided)")
+        print("[X] LLM UNAVAILABLE - Using rule-based fallback (no diagnosis provided)")
         
         base_urgency = rule_result.get('base_urgency', 'moderate')
         score = rule_result.get('urgency_score', 3)
@@ -317,7 +317,7 @@ Return EXACT JSON:
         ktas_num = max(1, min(5, ktas_num))
         
         # Build justification
-        justification = f"⚠️ RULE-BASED MODE (LLM unavailable). Baseline urgency: {base_urgency}. "
+        justification = f"[!] RULE-BASED MODE (LLM unavailable). Baseline urgency: {base_urgency}. "
         if rule_triggers:
             justification += f"Triggered rules: {', '.join(rule_triggers[:2])}."
         

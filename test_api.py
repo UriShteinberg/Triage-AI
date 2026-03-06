@@ -97,10 +97,10 @@ except Exception as e:
     print(f"  {FAIL} Request failed: {e}")
     results.append(False)
 
-# ── D: POST /api/execute (chest pain - critical) ──────────────
-section("D) POST /api/execute - Critical case (chest pain)")
+# ── D: POST /api/execute (mild case) ─────────────────────────
+section("D) POST /api/execute - Mild case (sore throat)")
 try:
-    payload = {"prompt": "Patient: 45yo male, BP 180/110, HR 120, temp 38.5C, SpO2 95%, severe chest pain radiating to left arm, sweating"}
+    payload = {"prompt": "Patient: 28yo female, BP 118/76, HR 74, temp 37.8C, SpO2 99%, sore throat and mild cough for 2 days, no difficulty breathing"}
     r = requests.post(f"{BASE}/api/execute", json=payload, timeout=90)
     d = r.json()
     results.append(check("HTTP 200", r.status_code == 200))
@@ -121,10 +121,10 @@ except Exception as e:
     print(f"  {FAIL} Request failed: {e}")
     results.append(False)
 
-# ── E: POST /api/execute (meningitis) ────────────────────────
-section("E) POST /api/execute - Meningitis case")
+# ── E: POST /api/execute (minor injury) ──────────────────────
+section("E) POST /api/execute - Minor injury case")
 try:
-    payload = {"prompt": "Patient: 31yo female, BP 128/82, HR 96, temp 38.4C, SpO2 98%, severe headache worst of my life with neck stiffness and photophobia"}
+    payload = {"prompt": "Patient: 35yo male, BP 122/80, HR 78, temp 36.9C, SpO2 99%, twisted ankle while jogging, mild swelling, able to bear weight"}
     r = requests.post(f"{BASE}/api/execute", json=payload, timeout=90)
     d = r.json()
     results.append(check("status == 'ok'", d.get("status") == "ok"))
