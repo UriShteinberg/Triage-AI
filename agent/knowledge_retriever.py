@@ -25,25 +25,87 @@ class KnowledgeRetriever:
     def _build_rag_query(self, chief_complaint: str, rule_triggers: list, vitals: dict) -> str:
         parts = []
 
-        # Complaint
+        # Complaint - preserve critical clinical terms
         if chief_complaint:
-            cc = chief_complaint
+            cc = chief_complaint.lower()
 
-            # להוריד prefix קבוע
-            cc = cc.replace("Patient:", "").strip()
+            # Remove prefix
+            cc = cc.replace("patient:", "").strip()
 
-            # להוריד vitals מספריים (הם רעש לחיפוש סמנטי)
-            for token in ["BP", "HR", "RR", "SpO2", "temp", "Temp", "°C", "%", "mmHg", "bpm"]:
+            # Preserve critical medical terms before cleaning
+            critical_terms = {
+                'mva': 'motor vehicle accident trauma',
+                'gcs': 'glasgow coma scale altered consciousness',
+                'trauma': 'traumatic injury',
+                'accident': 'trauma injury',
+                'hemorrhage': 'bleeding hemorrhage',
+                'stroke': 'stroke cerebrovascular',
+                'seizure': 'seizure epilepsy',
+                'syncope': 'syncope loss consciousness fainting',
+                'pregnant': 'pregnancy obstetric',
+                'diabetic': 'diabetes mellitus diabetic',
+                'chest pain': 'chest pain cardiac coronary',
+                'abdominal pain': 'abdominal pain',
+                'headache': 'headache cephalalgia',
+                'shortness of breath': 'dyspnea respiratory distress breathing difficulty',
+                'difficulty breathing': 'dyspnea respiratory distress breathing difficulty'
+            }
+            
+            # Expand critical terms
+            for term, expansion in critical_terms.items():
+                if term in cc:
+                    cc = cc.replace(term, expansion)
+            
+            # Detect classic clinical syndromes by keyword combinations
+            syndrome_patterns = []
+            
+            # Meningitis/Meningococcemia patterns
+            has_fever = any(word in cc for word in ['fever', 'febrile', 'temperature'])
+            has_rash = any(word in cc for word in ['rash', 'petechial', 'petechiae', 'purpura', 'purpuric'])
+            has_neuro = any(word in cc for word in ['neck stiff', 'stiff neck', 'lethargy', 'lethargic', 'confusion', 'confused', 'altered mental', 'altered consciousness'])
+            has_headache = 'headache' in cc or 'cephalalgia' in cc
+            
+            if has_fever and has_rash and has_neuro:
+                syndrome_patterns.append("meningitis meningococcemia bacterial infection sepsis spinal fluid infection")
+            elif has_fever and has_neuro and has_headache:
+                syndrome_patterns.append("meningitis encephalitis central nervous system infection brain inflammation")
+            elif has_fever and has_neuro:
+                syndrome_patterns.append("meningitis encephalitis infection")
+            elif has_rash and (has_fever or has_neuro):
+                syndrome_patterns.append("meningococcemia sepsis bacterial infection")
+            
+            # Acute coronary syndrome patterns
+            has_chest_pain = any(word in cc for word in ['chest pain', 'chest discomfort', 'cardiac'])
+            has_cardiac_radiation = any(word in cc for word in ['arm', 'jaw', 'shoulder', 'radiating'])
+            has_diaphoresis = any(word in cc for word in ['diaphoresis', 'diaphoretic', 'sweating', 'clammy'])
+            
+            if has_chest_pain and (has_cardiac_radiation or has_diaphoresis):
+                syndrome_patterns.append("acute coronary syndrome myocardial infarction heart attack angina")
+            
+            # Stroke patterns
+            has_weakness = any(word in cc for word in ['weakness', 'weak', 'paralysis', 'hemiparesis'])
+            has_speech = any(word in cc for word in ['slurred speech', 'speech difficulty', 'aphasia'])
+            has_facial = any(word in cc for word in ['facial droop', 'face droop'])
+            
+            if (has_weakness or has_speech or has_facial) and 'acute' in cc:
+                syndrome_patterns.append("stroke cerebrovascular accident ischemic stroke hemorrhagic stroke")
+            
+            # Add syndrome patterns to query
+            if syndrome_patterns:
+                cc = cc + " " + " ".join(syndrome_patterns)
+
+            # Remove numeric vitals (noise for semantic search)
+            for token in ["bp", "hr", "rr", "spo2", "temp", "°c", "%", "mmhg", "bpm"]:
                 cc = cc.replace(token, " ")
 
-            # להשאיר רק מילים (ולא רצפים של מספרים/סימנים)
+            # Keep only letters and spaces, remove isolated numbers
             cc = "".join(ch if (ch.isalpha() or ch.isspace()) else " " for ch in cc)
-            cc = " ".join(cc.split())  # לנקות רווחים
+            cc = " ".join(cc.split())  # Clean whitespace
 
             parts.append(cc)
 
 
-        # Vitals חריגים בלבד (רק אם קיימים)
+        # Vitals - use explicit clinical descriptions to improve semantic matching
         if isinstance(vitals, dict):
             spo2 = vitals.get("spo2")
             sbp = vitals.get("sbp")
@@ -51,29 +113,66 @@ class KnowledgeRetriever:
             rr = vitals.get("rr")
             temp = vitals.get("temp")
 
+            # Low oxygen - critical hypoxemia
             if spo2 is not None and spo2 <= 92:
-                parts.append(f"hypoxemia SpO2 {spo2}")
-            if sbp is not None and sbp <= 90:
-                parts.append(f"hypotension SBP {sbp}")
-            if hr is not None and hr >= 120:
-                parts.append(f"tachycardia HR {hr}")
+                if spo2 < 88:
+                    parts.append("critical hypoxemia low oxygen level respiratory failure")
+                else:
+                    parts.append("hypoxemia decreased oxygen saturation")
+            
+            # Blood pressure abnormalities
+            if sbp is not None:
+                if sbp <= 90:
+                    if sbp < 80:
+                        parts.append("severe hypotension shock low blood pressure circulatory collapse")
+                    else:
+                        parts.append("hypotension low blood pressure")
+                elif sbp >= 180:
+                    parts.append("severe hypertension high blood pressure")
+            
+            # Heart rate
+            if hr is not None:
+                if hr >= 120:
+                    if hr >= 150:
+                        parts.append("severe tachycardia rapid heart rate cardiovascular instability")
+                    else:
+                        parts.append("tachycardia elevated heart rate")
+                elif hr <= 50:
+                    parts.append("bradycardia slow heart rate")
+            
+            # Respiratory rate
             if rr is not None and rr >= 24:
-                parts.append(f"tachypnea RR {rr}")
-            if temp is not None and temp >= 38.0:
-                parts.append(f"fever {temp}C")
+                if rr >= 30:
+                    parts.append("severe tachypnea respiratory distress")
+                else:
+                    parts.append("tachypnea increased respiratory rate")
+            
+            # Temperature
+            if temp is not None:
+                if temp >= 38.0:
+                    if temp >= 39.0:
+                        parts.append("high fever severe infection")
+                    else:
+                        parts.append("fever elevated temperature")
+                elif temp <= 35.0:
+                    parts.append("hypothermia low temperature")
 
-        # עד 2 טריגרים, נקי
+        # Clean and limit rule triggers (skip redundant ones)
         if rule_triggers:
             for t in rule_triggers[:2]:
                 if not t:
                     continue
                 clean = str(t).lower()
+                # Remove redundant prefixes
                 clean = clean.replace("high-risk complaint:", "").strip()
+                # Skip if already covered by vital signs description
+                if any(word in clean for word in ["hypotension", "tachycardia", "tachypnea", "hypoxemia"]):
+                    continue
                 parts.append(clean)
 
-        # query קצר
+        # Build final query
         query = " | ".join(parts)
-        return query[:600]
+        return query[:800]  # Increased from 600 to allow richer descriptions
 
     def __init__(self):
         self.api_key = os.getenv('PINECONE_API_KEY', '')
@@ -83,13 +182,13 @@ class KnowledgeRetriever:
         self.lmmod_url = "https://api.llmod.ai/v1/embeddings"  # LLMod.ai educator platform
         self.debug = os.getenv('RAG_DEBUG', '').strip().lower() in ('1', 'true', 'yes', 'on')
         try:
-            self.score_threshold = float(os.getenv('RAG_SCORE_THRESHOLD', '0.7'))
+            self.score_threshold = float(os.getenv('RAG_SCORE_THRESHOLD', '0.55'))
         except ValueError:
-            self.score_threshold = 0.7
+            self.score_threshold = 0.55
         try:
-            self.debug_top_k = int(os.getenv('RAG_TOP_K', '3'))
+            self.debug_top_k = int(os.getenv('RAG_TOP_K', '10'))
         except ValueError:
-            self.debug_top_k = 3
+            self.debug_top_k = 10
         
         self.pc = None
         self.index = None
@@ -170,6 +269,7 @@ class KnowledgeRetriever:
             specialists = set()
             tests = set()
             risk_domains = set()
+            seen_diagnoses = {}  # Track unique diagnoses by name
 
             for match in results.get('matches', []):
                 metadata = match.get('metadata', {})
@@ -177,17 +277,29 @@ class KnowledgeRetriever:
                 diagnosis_name = metadata.get('diagnosis_name', '')
 
                 if diagnosis_name and score > self.score_threshold:
+                    # Deduplicate: only keep highest scoring instance of each diagnosis
+                    if diagnosis_name in seen_diagnoses:
+                        if score > seen_diagnoses[diagnosis_name]['confidence']:
+                            # Replace with higher score
+                            diagnoses.remove(seen_diagnoses[diagnosis_name])
+                        else:
+                            # Skip this duplicate with lower score
+                            continue
+                    
                     life_threatening = self._is_life_threatening(diagnosis_name, metadata)
 
-                    diagnoses.append({
+                    diagnosis_entry = {
                         'name': diagnosis_name,
                         'life_threatening': life_threatening,
                         'confidence': float(score),
                         'symptoms': metadata.get('diagnosis_symptoms_text', ''),
                         'recommended_tests': self._extract_tests(metadata)
-                    })
+                    }
+                    
+                    diagnoses.append(diagnosis_entry)
+                    seen_diagnoses[diagnosis_name] = diagnosis_entry
 
-                    # 🔥 NEW: Extract risk domain
+                    # Extract risk domain
                     domain = self._map_to_risk_domain(diagnosis_name)
                     if domain != "other":
                         risk_domains.add(domain)
@@ -197,13 +309,19 @@ class KnowledgeRetriever:
                     if metadata.get('tests_list'):
                         tests.update(self._parse_list(metadata['tests_list']))
 
+            # Sort and limit to top 5 unique diagnoses
+            unique_diagnoses = sorted(
+                diagnoses,
+                key=lambda x: (x['life_threatening'], x['confidence']),
+                reverse=True
+            )[:5]
+
+            if self.debug:
+                print(f"RAG DEBUG: unique_diagnoses={len(unique_diagnoses)} (after deduplication from {len(results.get('matches', []))} matches)")
+
             return {
-                "high_risk_diagnoses": sorted(
-                    diagnoses,
-                    key=lambda x: (x['life_threatening'], x['confidence']),
-                    reverse=True
-                ),
-                "risk_domains": list(risk_domains),  # 🔥 NEW
+                "high_risk_diagnoses": unique_diagnoses,
+                "risk_domains": list(risk_domains),
                 "recommended_specialists": list(specialists)[:3],
                 "recommended_tests": list(tests)[:5]
             }

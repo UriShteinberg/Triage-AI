@@ -30,9 +30,18 @@ triage_agent = TriageOrchestrator()
 def get_team_info():
     """
     GET /api/team_info
-    Returns student details
+    Returns student details with exact field order as required
     """
-    return jsonify(TEAM_INFO)
+    # Force exact field order as required by assignment
+    ordered_response = {
+        "group_batch_order_number": TEAM_INFO["group_batch_order_number"],
+        "team_name": TEAM_INFO["team_name"],
+        "students": TEAM_INFO["students"]
+    }
+    return Response(
+        json.dumps(ordered_response, ensure_ascii=False, indent=2),
+        mimetype='application/json'
+    )
 
 
 @app.route('/api/agent_info', methods=['GET'])

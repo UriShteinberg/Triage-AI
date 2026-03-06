@@ -48,8 +48,8 @@ class TriageOrchestrator:
             steps.append({
                 "step": "1. Normalization",
                 "module": "Input Validator",
-                "input": self._safe_input_display(patient_input),
-                "output": validation_result
+                "prompt": self._safe_input_display(patient_input),
+                "response": validation_result
             })
             
             if not validation_result.get('valid'):
@@ -67,12 +67,12 @@ class TriageOrchestrator:
             steps.append({
                 "step": "2. Rule Engine",
                 "module": "Clinical Rule Engine",
-                "input": {
+                "prompt": {
                     "vitals": normalized_data.get('vitals', {}),
                     "age": normalized_data.get('age'),
                     "complaint": normalized_data.get('chief_complaint')
                 },
-                "output": rule_result
+                "response": rule_result
             })
             
             # STEP 3: Medical Risk Recall (RAG)
@@ -80,11 +80,11 @@ class TriageOrchestrator:
             steps.append({
                 "step": "3. Medical Risk Recall",
                 "module": "Knowledge Retriever (RAG)",
-                "input": {
+                "prompt": {
                     "chief_complaint": normalized_data.get('chief_complaint'),
                     "rule_triggers": rule_result.get('rule_triggers', [])
                 },
-                "output": knowledge_result
+                "response": knowledge_result
             })
             
             # STEP 4: Decision Fusion (LLM)
@@ -96,12 +96,12 @@ class TriageOrchestrator:
             steps.append({
                 "step": "4. Decision Fusion",
                 "module": "Decision Engine (LLM)",
-                "input": {
+                "prompt": {
                     "patient_data": normalized_data,
                     "base_urgency": rule_result.get('base_urgency'),
                     "high_risk_diagnoses": [dx.get('name') for dx in knowledge_result.get('high_risk_diagnoses', [])[:3]]
                 },
-                "output": final_decision
+                "response": final_decision
             })
             
             # STEP 5: Format Output
