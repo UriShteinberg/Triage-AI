@@ -3,8 +3,8 @@ Team and Agent Information Configuration
 """
 
 TEAM_INFO = {
-    "group_batch_order_number": "1_1",  # We need to update with the actual batch and order number
-    "team_name": "Clinical AI Solutions",
+    "group_batch_order_number": "2_1",
+    "team_name": "Triage AI",
     "students": [
         {
             "name": "Yuval Rainis",
@@ -103,40 +103,6 @@ AGENT_INFO = {
                         ],
                         "urgency_indicators": [
                             "classic ACS presentation"
-                        ]
-                    }
-                },
-                {
-                    "module": "Knowledge Retriever",
-                    "prompt": {
-                        "query": "chest pain radiating to left arm shortness of breath sweating male 45",
-                        "context": "emergency triage"
-                    },
-                    "response": {
-                        "top_diagnoses": [
-                            {
-                                "name": "Acute Myocardial Infarction",
-                                "confidence": 0.92
-                            },
-                            {
-                                "name": "Unstable Angina",
-                                "confidence": 0.78
-                            },
-                            {
-                                "name": "Aortic Dissection",
-                                "confidence": 0.65
-                            }
-                        ],
-                        "recommended_tests": [
-                            "ECG",
-                            "Troponin",
-                            "CBC",
-                            "CMP",
-                            "Chest X-ray"
-                        ],
-                        "specialists": [
-                            "Cardiology",
-                            "Cardiothoracic Surgery"
                         ]
                     }
                 },
@@ -250,41 +216,6 @@ AGENT_INFO = {
                         "urgency_indicators": [
                             "stable injury",
                             "able to ambulate"
-                        ]
-                    }
-                },
-                {
-                    "module": "Knowledge Retriever",
-                    "prompt": {
-                        "query": "ankle sprain swelling pain sports injury twisted",
-                        "context": "outpatient orthopedic"
-                    },
-                    "response": {
-                        "top_diagnoses": [
-                            {
-                                "name": "Ankle Sprain",
-                                "confidence": 0.88
-                            },
-                            {
-                                "name": "Ankle Fracture",
-                                "confidence": 0.35
-                            },
-                            {
-                                "name": "Soft Tissue Injury",
-                                "confidence": 0.72
-                            }
-                        ],
-                        "recommended_tests": [
-                            "X-ray ankle"
-                        ],
-                        "specialists": [
-                            "Orthopedics",
-                            "Sports Medicine"
-                        ],
-                        "treatment": [
-                            "RICE protocol",
-                            "NSAIDs",
-                            "immobilization"
                         ]
                     }
                 },
