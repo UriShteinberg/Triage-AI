@@ -79,10 +79,7 @@ PORT=5000
 ```
 
 ## Deployment
-Deployed on Render: [Your Render URL]
-
-## Development Team
-[Team member details from TEAM_INFO]
+Deployed on Render: https://triage-ai-erwh.onrender.com
 
 ## License
 Academic Project - 2026
